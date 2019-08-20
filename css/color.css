@@ -1,0 +1,17 @@
+.white{
+	color:#ffffff;
+}
+.white_middle{
+	color: #e0e0e0;
+}
+
+
+.box_shadow{
+	box-shadow: 0px 0px 8px #00000064;
+}
+
+/*purple*/
+.p700_bg{
+	background: #7535D9;
+	color: #ffffff;
+}

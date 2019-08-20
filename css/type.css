@@ -1,0 +1,71 @@
+@font-face {
+	font-family : nanumSquare_regular;
+	src : url(font/NanumSquareRegular.ttf);
+}
+@font-face {
+	font-family : nanumSquare_bold;
+	src : url(font/NanumSquareExtraBold.ttf);
+}
+
+/*Big font*/
+.h1{
+	font-family : nanumSquare_bold;
+	font-size: 32px;
+	line-height: 42px;
+}
+.section_title_bold{
+	font-family : nanumSquare_bold;
+	font-size: 18px;
+	line-height: 28px;
+}
+.section_title_regular{
+	font-family : nanumSquare_regular;
+	font-size: 18px;
+	line-height: 28px;
+}
+.section_body{
+	font-family : nanumSquare_regular;
+	font-size: 14.8px;
+	line-height: 22px;
+}
+.body{
+	font-family : nanumSquare_regular;
+	font-size: 12.8px;
+	line-height: 22px;
+}
+@media screen and (max-width: 680px) {
+  .h1{
+		font-family : nanumSquare_bold;
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.section_title_bold{
+		font-family : nanumSquare_bold;
+		font-size: 16.8px;
+		line-height: 22px;
+	}
+	.section_title_regular{
+		font-family : nanumSquare_regular;
+		font-size: 16.8px;
+		line-height: 22px;
+	}
+	.section_body{
+		font-family : nanumSquare_regular;
+		font-size: 12.8px;
+		line-height: 20px;
+	}
+	.body{
+		font-family : nanumSquare_regular;
+		font-size: 12.8px;
+		line-height: 22px;
+	}
+}
+
+.text_center{
+	text-align: center;
+}
+
+/*TEXT SHADOW*/
+.text_shadow{
+	text-shadow: 0px 0px 8px #00000086;
+}

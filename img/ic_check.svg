@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="17px" viewBox="0 0 24 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic_check</title>
+    <desc>Created with Sketch.</desc>
+    <g id="confirmed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Global-Innovation-PC-Copy" transform="translate(-194.000000, -1475.000000)" fill="#FFCC00">
+            <g id="Group-5-Copy" transform="translate(0.000000, 1008.000000)">
+                <g transform="translate(0.000000, -10.000000)" id="Group-2">
+                    <g transform="translate(194.000000, 470.000000)">
+                        <path d="M7.20039562,23.5818182 C6.58383771,23.5818182 5.96943979,23.3484941 5.50288137,22.8880048 L0.702897621,18.1504602 C-0.234299207,17.2254546 -0.234299207,15.7255479 0.702897621,14.8003055 C1.64009445,13.8752999 3.1597693,13.8752999 4.09720613,14.8003055 L7.34727513,18.0083338 L20.0636321,7.54925656 C21.0812286,6.71165867 22.5946635,6.84715244 23.4437806,7.85245941 C24.2921778,8.8575295 24.1546582,10.3510404 23.1363417,11.1886383 L8.73639043,23.0324999 C8.28951194,23.4003702 7.74423378,23.5818182 7.20039562,23.5818182 Z" id="ic_check"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

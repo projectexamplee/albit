@@ -1,0 +1,12 @@
+/*Header BG*/
+/*home*/
+#header_home{
+	background-image: url(../img/header_bg_home.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#header_decacorn{
+	background-image: url(../img/header_bg_decacorn.jpg);
+	background-size: cover;
+	background-position: center;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="114px" viewBox="0 0 114 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic_first</title>
+    <desc>Created with Sketch.</desc>
+    <g id="confirmed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="competitiveness-pc" transform="translate(-205.000000, -367.000000)">
+            <g id="Group-14" transform="translate(130.000000, 367.000000)">
+                <g id="ic_first" transform="translate(75.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="114" height="114"></rect>
+                    <path d="M49.2,37.5 L49.2,45.3 L57,45.3 L57,76.5 L64.8,76.5 L64.8,37.5 L49.2,37.5 L49.2,37.5 Z M57,18 C67.3434431,18 77.2632457,22.1089168 84.5771645,29.4228355 C91.8910832,36.7367543 96,46.6565569 96,57 C96,78.5391052 78.5391052,96 57,96 C46.6565569,96 36.7367543,91.8910832 29.4228355,84.5771645 C22.1089168,77.2632457 18,67.3434431 18,57 C18,46.6565569 22.1089168,36.7367543 29.4228355,29.4228355 C36.7367543,22.1089168 46.6565569,18 57,18 Z" fill="#5F14D3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

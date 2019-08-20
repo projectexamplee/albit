@@ -1,0 +1,41 @@
+
+/*HOME 설명 + 이미지 컬럼*/
+/*.text_col2{
+	width: 50%;
+}
+.img_col2{
+	width: 50%;
+}
+@media screen and (max-width: 680px) {
+	.text_col2{
+		width: calc(100% - 80px);
+	}
+	.img_col2{
+		width: 108px;
+	}
+}*/
+/*3 SECTION*/
+.section3{
+	display: flex;
+	flex-direction: row;
+}
+.section3_title{
+
+}
+@media screen and (max-width: 680px) {
+	.section3{
+		flex-direction: column-reverse;
+	}
+	.section3>.img_col2{
+		width: 100%;
+	}
+	.section3>.text_col2{
+		width: 100%;
+	}
+	.section3_title{
+		display: none;
+	}
+	#download{
+		justify-content: center;
+	}
+}

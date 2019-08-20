@@ -1,0 +1,70 @@
+/*Home*/
+.download_ic{
+	width: 144px;
+	height: 42.6px;
+}
+.icon_regular{
+	width: 144px;
+	height: auto;
+}
+.mobile_frame{
+	width: 228px;
+	height: auto;
+}
+
+@media screen and (max-width: 680px) {
+	.download_ic{
+		width: 124px;
+		height: auto;
+	}
+	.icon_regular{
+		width: 128px;
+		height: auto;
+		margin-top: 8px;
+	}
+	.mobile_frame{
+		width: 168px;
+		height: auto;
+	}
+
+}
+
+
+/*Way to Decacorn*/
+.gp_mechanism{
+	width: calc(100% - 16px);
+	height: auto;
+}
+
+/*Competitiveness*/
+.ic_competive{
+	height: 78px;
+	width: auto;
+	margin-bottom: 8px;
+}
+/*Digital Nomad*/
+#gp_digital_nomad{
+	margin-top:-48px;
+}
+
+/*COL1 SIZE with padding*/
+.full_img{
+	width: 100%;
+	height: auto;
+}
+.full_img_pd1x{
+	width: calc(100% - 16px);
+	height: auto;
+}
+.full_img_pd2x{
+	width: calc(100% - 32px);
+	height: auto;
+}
+.full_img_pd3x{
+	width: calc(100% - 48px);
+	height: auto;
+}
+.full_img_pd4x{
+	width: calc(100% - 64px);
+	height: auto;
+}
