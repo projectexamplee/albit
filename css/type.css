@@ -1,61 +1,65 @@
-@font-face {
-	font-family : nanumSquare_regular;
-	src : url(font/NanumSquareRegular.ttf);
-}
-@font-face {
-	font-family : nanumSquare_bold;
-	src : url(font/NanumSquareExtraBold.ttf);
-}
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap');
 
 /*Big font*/
 .h1{
-	font-family : nanumSquare_bold;
+	font-family : 'Noto Sans KR', sans-serif;
+	font-weight: 700;
 	font-size: 28px;
 	line-height: 38px;
 }
 .section_title_bold{
-	font-family : nanumSquare_bold;
+	font-family : 'Noto Sans KR', sans-serif;
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 28px;
 }
 .section_title_regular{
-	font-family : nanumSquare_regular;
+	font-family : 'Noto Sans KR', sans-serif;
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 28px;
 }
 .section_body{
-	font-family : nanumSquare_regular;
+	font-family : 'Noto Sans KR', sans-serif;
+	font-weight: 400;
 	font-size: 14.8px;
 	line-height: 26px;
 }
 .body{
-	font-family : nanumSquare_regular;
+	font-family : 'Noto Sans KR', sans-serif;
+	font-weight: 400;
 	font-size: 12.8px;
 	line-height: 22px;
 }
 @media screen and (max-width: 680px) {
   .h1{
-		font-family : nanumSquare_bold;
+		font-family : 'Noto Sans KR', sans-serif;
+		font-weight: 700;
 		font-size: 22px;
 		line-height: 28px;
 	}
 	.section_title_bold{
-		font-family : nanumSquare_bold;
+		font-family : 'Noto Sans KR', sans-serif;
+		font-weight: 700;
 		font-size: 16.8px;
 		line-height: 28px;
 	}
 	.section_title_regular{
-		font-family : nanumSquare_regular;
+		font-family : 'Noto Sans KR', sans-serif;
+		font-weight: 400;
 		font-size: 16.8px;
 		line-height: 28px;
 	}
 	.section_body{
-		font-family : nanumSquare_regular;
+		font-family : 'Noto Sans KR', sans-serif;
+		font-weight: 400;
 		font-size: 12.8px;
 		line-height: 20px;
 	}
 	.body{
-		font-family : nanumSquare_regular;
+		font-family : 'Noto Sans KR', sans-serif;
+		font-weight: 400;
 		font-size: 10.8px;
 		line-height: 22px;
 	}
