@@ -24,7 +24,8 @@ a{
 img.logo{
 	width: 56px;
 	height: 56px;
-	margin:0 16px;
+	margin-left: -16px;
+	margin-right:16px;
 }
 
 @media screen and (max-width: 680px) {

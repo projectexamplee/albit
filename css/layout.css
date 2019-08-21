@@ -172,6 +172,9 @@ body, html{
 .margin_bottom_4x{
 	margin-bottom: 64px;
 }
+.margin_bottom_8x{
+	margin-bottom: 128px;
+}
 @media screen and (max-width: 680px) {
 	.margin_bottom_1x{
 		margin-bottom: 8px;
@@ -184,6 +187,9 @@ body, html{
 	}
 	.margin_bottom_4x{
 		margin-bottom: 32px;
+	}
+	.margin_bottom_8x{
+		margin-bottom: 64px;
 	}
 }
 /*RIGHT*/
@@ -236,8 +242,19 @@ body, html{
 		height: 4px;
 		background-color: #5F14D3;
 	}
+	.img_col1{
+		width: 100%;
+	}
 	.img_col2{
 		width: 50%;
+	}
+	.text_col4{
+		position: relative;
+		width: calc(40% - 32px);
+		padding: 16px;
+	}
+	.image_col6{
+		width: 60%;
 	}
 @media screen and (max-width: 680px) {
 	.content_section{
@@ -259,6 +276,14 @@ body, html{
 		box-shadow: none;
 	}
 	.img_col2{
+		width: 100%;
+	}
+	.text_col4{
+		position: relative;
+		width: calc(100% - 16px);
+		padding: 8px;
+	}
+	.image_col6{
 		width: 100%;
 	}
 }
