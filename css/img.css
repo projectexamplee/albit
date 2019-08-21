@@ -68,3 +68,26 @@
 	width: calc(100% - 64px);
 	height: auto;
 }
+.full_img_pd6x{
+	width: calc(100% - 96px);
+	height: auto;
+}
+
+
+
+/*Visible - HIDE*/
+.visible_pc{
+	display: block;
+}
+.visible_mobile{
+	display: none;
+}
+@media screen and (max-width: 680px) {
+	.visible_pc{
+		display: none;
+	}
+	.visible_mobile{
+		display: block;
+	}
+
+}

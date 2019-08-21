@@ -18,7 +18,7 @@ a{
 	height: 48px;
 	font-family: nanumSquare_bold;
 	color: #383838;
-	font-size: 14.8px;
+	font-size: 12.8px;
 	cursor: pointer;
 }
 img.logo{
@@ -62,7 +62,7 @@ img.logo{
 @media screen and (max-width: 680px) {
 	.slide_menu{
 		display: block !important;
-		z-index: 9;
+		z-index: 99;
 		width: 100%;
 		background: #fff;
 		position: fixed;

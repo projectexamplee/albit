@@ -44,6 +44,10 @@ body, html{
 .justify_center{
 	justify-content: center;
 }
+.margin_center{
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /*LAYOUT WITHOUT MEDIA QUERRY*/
 /*SIZE*/
@@ -205,6 +209,10 @@ body, html{
 		display: flex;
 		flex-direction: row;
 	}
+	.text_col1{
+		width: calc(100% - 32px);
+		padding: 16px;
+	}
 	.text_col2{
 		position: relative;
 		width: calc(50% - 32px);
@@ -235,6 +243,10 @@ body, html{
 	.content_section{
 		display: flex;
 		flex-direction: column;
+	}
+	.text_col1{
+		width: calc(100% - 16px);
+		padding: 8px;
 	}
 	.text_col2{
 		position: relative;

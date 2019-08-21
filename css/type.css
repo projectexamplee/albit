@@ -10,8 +10,8 @@
 /*Big font*/
 .h1{
 	font-family : nanumSquare_bold;
-	font-size: 32px;
-	line-height: 42px;
+	font-size: 28px;
+	line-height: 38px;
 }
 .section_title_bold{
 	font-family : nanumSquare_bold;
@@ -26,7 +26,7 @@
 .section_body{
 	font-family : nanumSquare_regular;
 	font-size: 14.8px;
-	line-height: 22px;
+	line-height: 26px;
 }
 .body{
 	font-family : nanumSquare_regular;
