@@ -1,12 +1,32 @@
 /*Header BG*/
 /*home*/
 #header_home{
-	background-image: url(../img/header_bg_home.jpg);
+	background-image: url(../img/bg_header_home.jpg);
 	background-size: cover;
 	background-position: center;
 }
 #header_decacorn{
-	background-image: url(../img/header_bg_decacorn.jpg);
+	background-image: url(../img/bg_header_decacorn.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#header_gi{
+	background-image: url(../img/bg_header_gi.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#header_competitiveness{
+	background-image: url(../img/bg_header_competitiveness.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#header_we{
+	background-image: url(../img/bg_header_we.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#header_nomad{
+	background-image: url(../img/bg_header_digitalnomad.jpg);
 	background-size: cover;
 	background-position: center;
 }
