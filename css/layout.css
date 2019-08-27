@@ -80,7 +80,7 @@ img { max-width:100% !important; height: auto !important; }
 		width: 50%;
 	}
 	.col4_2_pd_1x{
-		width: calc((100% - 24px)/2);
+		width: calc((100% - 8px)/2);
 	}
 }
 
@@ -230,6 +230,7 @@ img { max-width:100% !important; height: auto !important; }
 	padding: 8px;
 	width: calc(100% - 16px);
 }
+
 
 
 
