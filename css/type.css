@@ -36,7 +36,7 @@
 	font-family : 'Noto Sans KR', sans-serif;
 	font-weight: 400;
 	font-size: 12.8px;
-	line-height: 22px;
+	line-height: 16.8px;
 }
 @media screen and (max-width: 680px) {
   .h1{
@@ -73,7 +73,7 @@
 		font-family : 'Noto Sans KR', sans-serif;
 		font-weight: 400;
 		font-size: 10.8px;
-		line-height: 22px;
+		line-height: 14px;
 	}
 }
 
