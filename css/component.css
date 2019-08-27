@@ -91,3 +91,14 @@ img.logo{
 	font-family : 'Noto Sans KR', sans-serif;
 	font-weight: 400;
 }
+
+.card{
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.photo{
+	background: cover;
+	background-position: center;
+	padding:50% 0;
+}

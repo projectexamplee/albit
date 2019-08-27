@@ -5,13 +5,26 @@
 	color: #e0e0e0;
 }
 
+.black_900{
+	color:#383838;
+}
+.black_500{
+	color: #989898;
+}
+
 
 .box_shadow{
 	box-shadow: 0px 0px 8px #00000064;
+}
+.box_shadow_light{
+	box-shadow: 0px 0px 8px #0000000f;
 }
 
 /*purple*/
 .p700_bg{
 	background: #7535D9;
 	color: #ffffff;
+}
+.p700{
+	color: #7535D9;
 }

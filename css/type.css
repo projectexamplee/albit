@@ -26,6 +26,12 @@
 	font-size: 14.8px;
 	line-height: 26px;
 }
+.section_body_bold{
+	font-family : 'Noto Sans KR', sans-serif;
+	font-weight: 700;
+	font-size: 14.8px;
+	line-height: 26px;
+}
 .body{
 	font-family : 'Noto Sans KR', sans-serif;
 	font-weight: 400;
@@ -54,6 +60,12 @@
 	.section_body{
 		font-family : 'Noto Sans KR', sans-serif;
 		font-weight: 400;
+		font-size: 12.8px;
+		line-height: 20px;
+	}
+	.section_body_bold{
+		font-family : 'Noto Sans KR', sans-serif;
+		font-weight: 700;
 		font-size: 12.8px;
 		line-height: 20px;
 	}

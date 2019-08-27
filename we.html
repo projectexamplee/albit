@@ -180,6 +180,17 @@
 					</div>
 				</div>
 			</div>
+			<!--section5-->
+			<div class="flex_row col1 margin_top_6x margin_ver_4x">
+				<div class="text_col1 flex_col">
+					<p class="h1 margin_bottom_1x text_center">
+						DECACORN에 올라 탈 수 있는 ‘써주세요.’ 호(號)에 승선해 주신 팀 멤버님들. 함께 만들 수 있어서
+						행복합니다.
+					</p>
+				</div>
+				<div id="members" class="flex_row img_col1 space_between">
+				</div>
+			</div>
 		</div>
 	</div>
 	<footer>
@@ -193,6 +204,7 @@
 		</div>
 	</footer>
 </body>
+<script src="https://d3js.org/d3.v5.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 	  $("#btt_menu").on("click",function(){
@@ -202,6 +214,168 @@
 	  $("#btt_close").on("click",function(){
 	  	$(".slide_menu").removeClass("menu_on");
 	  });
+
+	  /*멤버소개 데이터 바인딩*/
+	  var members = [
+	  		{
+	  			name:"김철수",
+	  			title:"UX designer",
+	  			phtoPath:"img/profile/p1.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"사미자",
+	  			title:"기획자",
+	  			phtoPath:"img/profile/p2.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"박영희",
+	  			title:"마켓터",
+	  			phtoPath:"img/profile/p3.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"최용수",
+	  			title:"Android 개발자",
+	  			phtoPath:"img/profile/p4.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"김철수",
+	  			title:"IOS 개발자",
+	  			phtoPath:"img/profile/p5.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"진성민",
+	  			title:"사업 개발",
+	  			phtoPath:"img/profile/p6.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"최하민",
+	  			title:"CS 및 운영",
+	  			phtoPath:"img/profile/p7.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"김철수",
+	  			title:"UX designer",
+	  			phtoPath:"img/profile/p8.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"김철수",
+	  			title:"UX designer",
+	  			phtoPath:"img/profile/p9.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"김철수",
+	  			title:"UX designer",
+	  			phtoPath:"img/profile/p10.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"김철수",
+	  			title:"UX designer",
+	  			phtoPath:"img/profile/p11.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"김철수",
+	  			title:"UX designer",
+	  			phtoPath:"img/profile/p12.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"김철수",
+	  			title:"UX designer",
+	  			phtoPath:"img/profile/p13.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"김철수",
+	  			title:"UX designer",
+	  			phtoPath:"img/profile/p14.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"김철수",
+	  			title:"UX designer",
+	  			phtoPath:"img/profile/p15.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"김철수",
+	  			title:"UX designer",
+	  			phtoPath:"img/profile/p16.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"김철수",
+	  			title:"UX designer",
+	  			phtoPath:"img/profile/p17.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"김철수",
+	  			title:"UX designer",
+	  			phtoPath:"img/profile/p18.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"김철수",
+	  			title:"UX designer",
+	  			phtoPath:"img/profile/p19.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		},
+	  		{
+	  			name:"김철수",
+	  			title:"UX designer",
+	  			phtoPath:"img/profile/p20.jpg",
+	  			message:"열심히 잘하겠습니다. 일빗 화이팅"
+	  		}
+	  ];
+
+	  var membersDiv = d3.select("#members").selectAll(".member")
+	  					   .data(members)
+	  					   .enter()
+	  					   .append("div")
+	  					   .attr("class","col4_2_pd_1x card box_shadow_light flex_col flex_center")
+	  					   .style("margin-bottom","8px");
+
+
+	  var memverPhoto = membersDiv.append("div")
+	  							  .attr("class","col1 photo")
+	  							  .style("background-image",function(d){
+	  							  	return "url(" + d.phtoPath + ")";
+	  							  });
+
+
+
+	  var memberInfo = membersDiv.append("div")
+			  			.attr("class","text_center col1_pd_tiny");
+			  			
+
+	  memberInfo.append("p")
+	  			.attr("class"," section_body_bold black_900")
+	  			.html(function(d){
+			  				return d.name;
+			  			});
+
+	  memberInfo.append("p")
+	  			.attr("class","section_body p700")
+	  			.html(function(d){
+	  				return d.title;
+	  			});
+	  memberInfo.append("p")
+	  			.attr("class","body black_500")
+	  			.html(function(d){
+	  				return d.message;
+	  			});
+
 	});
 </script>
 </html>
