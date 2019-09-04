@@ -1,0 +1,60 @@
+[
+    {
+            "name":"user",
+            "type":"node middle_node",
+            "number":30,
+            "flow":300,
+            "blocked_flow":10
+    },
+    {
+            "name":"app",
+            "type":"node middle_node",
+            "number":30,
+            "flow":0,
+            "blocked_flow":10
+    },
+    {
+            "name":"departure_node",
+            "type":"node middle_node",
+            "number":100,
+            "flow":0,
+            "blocked_flow":10
+    },
+    {
+            "name":"flow_tunnel",
+            "type":"tunnel",
+            "number":300,
+            "flow":100,
+            "blocked_flow":10,
+            "data_recieved":100,
+            "data_sent":200,
+            "response_duration":5.0,
+            "virtualNode":[
+                {
+                    "name":"tunnel_end_node",
+                    "type":"middle_node",
+                    "flow":1  
+                },
+                {
+                    "name":"tunnel_end_node",
+                    "type":"middle_node",
+                    "flow":500   
+                }
+        ]         
+    },
+    {
+            "name":"service",
+            "type":"node middle_node",
+            "number":0,
+            "flow":0,
+            "blocked_flow":10
+    },
+    {
+            "name":"arrival_node",
+            "type":"node last_node",
+            "number":150,
+            "flow":0,
+            "blocked_flow":0
+    
+    }
+]

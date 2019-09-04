@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/color.css">
+	<link rel="stylesheet" href="css/visual_components.css">
+</head>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+	
+</script>
+<body class="middle_white_bg">
+	<div class="live_area space_between flex_row margin_center margin_top_4x">
+		<div class="cotainer col2_margin_2x white_bg" id="AppFlowChart">
+		</div>
+		<div class="cotainer col2_margin_2x white_bg" id="GeneralFlowChart">
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+
+
+	//어플리케이션 플로우 데이터 불러오기
+	d3.json("data/appFlow.json").then(function(data){
+		/*플로우 파티클을 위한 data push*/
+	    data.forEach(function(item){
+	    	item.flowParticles = [];
+	    	var numFlow = item.flow;
+	    	for(i=0;i<numFlow;i++){
+	    		var object = {
+	    			"delay_offset": Math.floor(Math.random() * 30),
+	    			"flow":numFlow
+	    		};
+	    		item.flowParticles.push(object);
+	    	}
+	    });
+		console.log(data);
+		/*
+		차트 순서
+		1. data binding
+		2. coordination
+			노드별로 그룹 위치.사이즈 정리
+			- 노드는 7/1만큼
+			- 터널은 7/2만큼 차지
+			- y축은 노드 중심, 플로우선, 터널이 가운데 정렬되도록 설정
+		3. visualization
+		4. styling
+		*/
+
+		//어플리케이션 플로우차트 SVG추가
+
+		var live_area_width = 1180;
+		var svg_width = live_area_width/2 - 32;
+		var node_width = svg_width/7;
+		var node_height = 128;
+		// var r = 24;
+
+		/*노드 반지름 스케일*/
+		var r1 = d3.scaleLinear()
+		    .domain(d3.extent(data.map(function(d){return d.number})))
+		    .range([8, 32]);
+
+		/*노드 중심 스케일 플로우 수와 같음*/
+		var r2 = d3.scaleLinear()
+		    .domain(d3.extent(data.map(function(d){return d.flow})))
+		    .range([6, 12]);
+
+		console.log(data.map(function(d){return d.flow}));
+
+
+
+		var svg = d3.select("#AppFlowChart").append("svg")
+				.attr("class","fullSize")
+				.attr("id","AppFlowChartSVG");
+
+		var svgGroup = svg.append("g")
+						  .attr('transform', `translate(0,0)`);
+
+		//어플리케이션 플로우차트 각 노드 추가
+		var nodeGroup = svgGroup.selectAll('g')
+								.data(data);
+
+		/*터널의 width는 일반 노드의 2배*/
+		var nodeGroupEnter = nodeGroup
+							    .enter()
+							    .append("g")
+							    .attr("class",function(d){
+							    	return d.type;
+							    })
+							    .attr('transform', function(d,i){
+							    	var weight = 0;
+							  
+							    	if(3<i){
+							    		weight++;
+							    	}
+							   	 return "translate(" + (i+weight)*node_width + ",0)"
+							    });
+
+	    /*일반 노드 그리기*/
+	    /*노드 영역*/
+		var nodeCircle = d3.selectAll(".node")
+						  .append("circle")
+						  .attr("cx",node_width/2)
+						  .attr("cy",node_height/2)
+						  .attr("r",function(d){
+						  	return r1(d.number);
+						  })
+						  .attr("class","node_circle");
+
+		/*노드 중심 == 플로우수와 동일한 지름*/
+		var nodeCenter = d3.selectAll(".node")
+						  .append("circle")
+						  .attr("class","node_center")
+						  .attr("cx",node_width/2)
+						  .attr("cy",node_height/2)
+						  .attr("r",function(d){
+						  	return r2(d.flow);
+						  });
+
+
+	    /*플로우 터널 그리기*/
+	    var flowTunnel = d3.selectAll(".tunnel");
+
+	    var circleNum = 23;
+	    var cxOffset = 6;
+	    var recievedData_LastIndex = parseInt(23 * (data[3].data_recieved/(data[3].data_recieved + data[3].data_sent)));
+	    /*
+	    터널 길이
+	    146 = circleNum * 2r - (circleNum - 1) * cxOffset
+	    */
+
+	    for(i=0;i<circleNum;i++){
+	    	flowTunnel.append("ellipse")
+	    			  .attr("class",function(){
+	    			  	if(i<recievedData_LastIndex){
+	    			  		return "tunnel_circle_recieved";
+	    			  	}
+	    			  	else{
+	    			  		return "tunnel_circle_sent";
+	    			  	}
+	    			  })
+	    			  .attr("cx",i*6 + 8)
+	    			  .attr("cy",node_height/2)
+	    			  .attr("ry",18)
+	    			  .attr("rx",6);
+	    }
+
+	    /*터널 가상노드 그리기*/
+	    flowTunnel.selectAll(".middle_node")
+	    		  .data(function(d){
+	    		  	return d.virtualNode;
+	    		  })
+	    		  .enter()
+	    		  .append("g")
+	    		  .attr("class",function(d){
+	    		  	return d.type;
+	    		  })
+	    		  .attr('transform', function(d,i){
+				   	return "translate(" + i*node_width + ",0)";
+				  });
+
+	    /*플로우 흐름 그리기*/
+	    /*플로우 배경 그리기(두께)*/
+	    var nodeFlowLine = d3.selectAll(".middle_node")
+	    				   .append("line")
+	    				   .attr("x1",node_width/2)
+	    				   .attr("x2",node_width*3/2)
+	    				   .attr("y1",node_height/2)
+	    				   .attr("y2",node_height/2)
+	    				   .attr("stroke","rgba(0, 200, 83, 0.12)")
+	    				   .attr("stroke-width",function(d){
+	    				   		return 2*r2(d.flow);
+	    				   });
+
+	   
+
+
+	    /*플로우 파티클 그리기*/
+	    var flowParticle = nodeGroupEnter.selectAll(".middle_node")
+	    					 .data(function(d){
+	    					 	return d.flowParticles;
+	    					 })
+	    					 .enter()
+	    					 .append("circle")
+	    					 .attr("class","flow_particle")
+	    					 .attr("cx",node_width/2)
+						     .attr("cy",function(d,i){
+						     	return node_height/2 + i*(2*r2(d.flow)/d.flow) - r2(d.flow);
+						     })
+						     .attr("r",function(d){
+						     	// return r2(d.flow)/d.flow;
+						     	return 0.5;
+						     });
+
+		var t = d3.transition()
+				    .duration(700)
+				    .ease(d3.easeLinear);
+
+	    flowParticle.transition(t)
+	    			.delay(function(d){
+	    				console.log(d.delay_offset);
+	    				return d.delay_offset * 500;
+	    			})
+				     .attr("cx",1.5*node_width);
+
+		       
+
+
+
+	});
+</script>
+</html>

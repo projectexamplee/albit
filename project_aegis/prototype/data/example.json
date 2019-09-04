@@ -1,0 +1,18 @@
+{"flow_block":94,
+	"destination_node":299,
+	"user_block":97,
+	"res_data_per":0,
+	"source_node_block":85,
+	"req_data_per":0,
+	"res_data":165,
+	"application_block":31,
+	"mean_res_rate_per":0,
+	"flow_per":0,
+	"req_data":6,
+	"application":17,
+	"service":319,
+	"source_node":229,
+	"mean_res_rate":5,
+	"user":3,
+	"flow":31
+}

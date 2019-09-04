@@ -1,0 +1,23 @@
+.node_circle{
+  stroke-width:1px;
+  stroke: #23c6c8;
+  fill:#72DBDC;
+}
+
+.node_center{
+	fill: #23c6c8;
+}
+
+.tunnel_circle_recieved{
+  stroke-width:0.3px;
+  stroke: #00c853;
+  fill:rgba(0, 200, 83, 0.36);
+}
+.tunnel_circle_sent{
+  stroke-width:0.3px;
+  stroke: #ffab00;
+  fill:rgba(255, 171, 0, 0.36);
+}
+.flow_particle{
+  fill: #23c6c8;
+}

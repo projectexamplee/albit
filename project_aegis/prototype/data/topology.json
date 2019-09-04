@@ -1,0 +1,98 @@
+{
+  "nodes": [
+    {
+      "id": "c-0",
+      "name": "컨트롤러",
+      "group":"A"
+    },
+    {
+      "id": "c-1",
+      "name": "컨트롤러명1",
+      "group":"A"
+    },
+    {
+      "id": "c-2",
+      "name": "컨트롤러명2",
+      "group":"A"
+    },
+    {
+      "id": "node-1",
+      "name": "노드",
+      "group":"B"
+    },
+    {
+      "id": "node-2",
+      "name": "인터페이스명#1",
+      "group":"B"
+    },
+    {
+      "id": "node-3",
+      "name": "페러미터명#1",
+      "group":"B"
+    },
+    {
+      "id": "node-4",
+      "name": "인터페이스명#3",
+      "group":"B"
+    },
+    {
+      "id": "node-5",
+      "name": "인터페이스명#1",
+      "group":"B"
+    },
+    {
+      "id": "node-6",
+      "name": "패러미터명#2",
+      "group":"B"
+    },
+    {
+      "id": "node-7",
+      "name": "패러미터명#1",
+      "group":"B"
+    },
+    {
+      "id": "node-8",
+      "name": "노드",
+      "group":"B"
+    }
+  ],
+  "links": [
+    {
+      "source": "c-0",
+      "target": "c-1"
+    },
+    {
+      "source": "c-0",
+      "target": "c-2"
+    }
+    ,
+    {
+      "source": "node-1",
+      "target": "node-2"
+    },
+    {
+      "source": "node-2",
+      "target": "node-3"
+    },
+    {
+      "source": "node-3",
+      "target": "node-4"
+    },
+    {
+      "source": "node-4",
+      "target": "node-5"
+    },
+    {
+      "source": "node-5",
+      "target": "node-6"
+    },
+    {
+      "source": "node-6",
+      "target": "node-7"
+    },
+    {
+      "source": "node-7",
+      "target": "node-8"
+    }
+  ]
+}
