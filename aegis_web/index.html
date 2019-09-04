@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/layout_dashboard.css">
+	<link rel="stylesheet" type="text/css" href="css/type_dashboard.css">
+	<link rel="stylesheet" type="text/css" href="css/component_dashboard.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/chart.css">
+</head>
+<body class="light_blue_bg">
+	<!--Top Navigation-->
+	<div class="navbar-header dark_highlight_bg white_highlight">
+		<!--Wrapper live area-->
+		<div class="live_area">
+			<ul class="nav navbar-top-links">
+			<li><a>현황</a></li>
+			<li><a>토폴로지</a></li>
+			<li><a>플로우</a></li>
+			<li><a>위협</a></li>
+			<li><a>시스템</a></li>
+		</ul>
+		</div>
+		<!--Wrapper live area-->
+	</div>
+	<!--Top Navigation-->
+
+	<!--Conent Area-->
+	<div class="live_area">
+		<!--Flow Chart Section-->
+		<h2 class="header_section dark_highlight">
+			현황
+		</h2>
+		<p>
+			각 노드의 플로우 및 위협 이벤트 현황들을 확인합니다.
+		</p>
+		<div class="flex_row col1 space_between">
+			<div class="col2_mg_1x ibox content_container">
+				<div class="ibox-title">
+					어플리케이션 플로우 차트
+				</div>
+				<div class="col1 ibox-content bright_blue_bg" id="appFlow">
+					<div class="flex_row col1 margin_bottom_2x" id="appFlowChartLegend"></div>
+					<div class="flex_row col1">
+						<div class="flex_col align_center col2">
+							<strong class="m-b-xs">
+								수신.전송 데이터랑
+							</strong>
+							<div class="col1" id="appFlowData">
+								
+							</div>
+							<div class="flex_row col1 justify_center margin_bottom_2x" id="appFlowDataLegend">
+						</div>
+						</div>
+						<div class="flex_row col2 text_center">
+							<strong class="m-b-xs col1" style="height: 19px">평균 응답속도</strong>
+							<div class="col2" id="appMeanResRateChart" style="width:70%"></div>
+							<div class="col2 flex_col flex_center text_center" style="width:30%">
+								<div class="col1 flex_row flex_center" id="appFlowResponseSpeed">
+									<h1><strong id="app_mean_res_rate"></strong></h1>
+									<span>&nbsp;ms</span><br>
+									<p class="col1 text_center" id="app_mean_res_level"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex_col col1" id="appFlowChart">
+					</div>
+				</div>
+			</div>
+			<div class="col2_mg_1x ibox content_container">
+				<div class="ibox-title">
+					일반 플로우 차트
+				</div>
+				<div class="col1 ibox-content bright_blue_bg" id="generalFlow">
+					<div class="flex_row col1 margin_bottom_2x" id="generalFlowChartLegend">
+					</div>
+					<div class="flex_row col1">
+						<div class="flex_col align_center col2">
+							<strong class="m-b-xs">
+								수신.전송 데이터랑
+							</strong>
+							<div class="col1" id="generalFlowData">
+							</div>
+							<div class="flex_row col1 justify_center margin_bottom_2x" id="generalFlowDataLegend">
+							</div>
+						</div>
+						<div class="flex_row col2 text_center">
+							<strong class="m-b-xs col1" style="height: 19px">평균 응답속도</strong>
+							<div class="col2" id="generalMeanResRateChart" style="width:70%"></div>
+							<div class="col2 flex_col flex_center text_center" style="width:30%">
+								<div class="col1 flex_row flex_center" id="generalFlowReponseSpeed">
+									<h1><strong id="general_mean_res_rate"></strong></h1>
+									<span>&nbsp;ms</span>
+									<p class="col1 text_center" id="general_mean_res_level"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex_col col1" id="generalFlowChart">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Flow Chart Section-->
+		<!--Key Measurement Cards Section-->
+		<div class="flex_row col1 space_between">
+			<div class="col_6_13_mg_1x ibox">
+				<h2 class="header_section dark_highlight">
+					위협 이벤트
+				</h2>
+				<div class="flex_row col1 space_between" id="threatEvent">
+				</div>
+			</div>
+			<div class="col_7_13_mg_1x ibox">
+				<h2 class="header_section dark_highlight">
+					시스템 운영지표
+				</h2>
+				<div class="flex_row col1 space_between" id="systemMeasurement">
+				</div>
+			</div>
+		</div>
+		<!--Key Measurement Cards Section-->
+
+		<!--STATUS ANLYASIS-->
+		<!--STATUS ANLYASIS-->
+		<!--STATUS ANLYASIS-->
+		<h2 class="header_section dark_highlight">
+			지표분석
+		</h2>
+		<p>
+			16개의 주요 지표에대한 분석을 비교합니다.
+		</p>
+		<div class="flex_row col1 space_between" id="statusAnalysis">
+		</div>
+		<!--STATUS ANLYASIS-->
+		<!--STATUS ANLYASIS-->
+		<!--STATUS ANLYASIS-->
+
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		/*FLOW CHART SECTION - START*/
+		/*GET FLOW CHART DATA*/
+		/*First data Load*/
+		$.get("http://210.96.184.227:8282/json/application_flow", function(data){
+			var flowData = jQuery.parseJSON(data).data;
+			setAppFlowChart(flowData);
+		});
+
+		/*Interval Load for Update*/
+		var updateAppFlowData = function(){
+			$.get("http://210.96.184.227:8282/json/application_flow", function(data){
+				var flowData = jQuery.parseJSON(data).data;
+				updateAppFlowChart(flowData);
+			});
+		}
+		setInterval(updateAppFlowData, 1100);
+
+
+		
+
+		/*FLOW CHART SECTION - START*/
+		/*GET FLOW CHART DATA*/
+		$.get("http://210.96.184.227:8282/json/generation_flow", function(data){
+			var flowData = jQuery.parseJSON(data).DATA;
+			setGeneralFlowChart(flowData);
+		});
+		/*Interval Load for Update*/
+		var updateGeneralFlowData = function(){
+			$.get("http://210.96.184.227:8282/json/application_flow", function(data){
+				var flowData = jQuery.parseJSON(data).data;
+				updateGeneralFlowChart(flowData);
+			});
+		}
+		setInterval(updateGeneralFlowData, 1100);
+
+
+		/*THREAT EVENT  SECTION - START*/
+		/*GET THREAT EVENT DATA*/
+		$.get("http://210.96.184.227:8282/json/threat_event", function(data){
+			var threatEventData = jQuery.parseJSON(data).DATA;
+			setThreatEvent(threatEventData);
+		});
+		/*Interval Load for Update*/
+		var updateThreatEventData = function(){
+			$.get("http://210.96.184.227:8282/json/threat_event", function(data){
+				var threatEventData = jQuery.parseJSON(data).DATA;	
+				updateThreatEvent(threatEventData);	
+			});
+		
+		}
+		setInterval(updateThreatEventData, 1100);
+		
+
+		/*THREAT EVENT  SECTION - START*/
+		/*GET THREAT EVENT DATA*/
+		$.get("http://210.96.184.227:8282/json/system_manage_indicator", function(data){
+			var systemIndicatorData = jQuery.parseJSON(data).DATA;
+			setSystemManageIndicator(systemIndicatorData);
+		});
+		/*Interval Load for Update*/
+		var updateSystemManageIndicatorData = function(){
+			$.get("http://210.96.184.227:8282/json/system_manage_indicator", function(data){
+				var systemIndicatorData = jQuery.parseJSON(data).DATA;
+				updateSystemManageIndicator(systemIndicatorData);
+			});
+		}
+		setInterval(updateSystemManageIndicatorData, 1100);
+
+
+		/*Line Graph for System Status*/
+		$.get("http://210.96.184.227:8282/json/indicator",function(data){
+			var indicatorData = jQuery.parseJSON(data).DATA;
+			setSystemIndicator(indicatorData);
+		});
+		var updateSystemIndicatorData = function(){
+			$.get("http://210.96.184.227:8282/json/indicator",function(data){
+				var indicatorData = jQuery.parseJSON(data).DATA;
+				updateSystemIndicator(indicatorData);
+			});
+		}
+		setInterval(updateSystemIndicatorData, 1100);
+	});
+</script>
+<script type="text/javascript" src="js/appFlowChart.js"></script>
+<script type="text/javascript" src="js/generalFlowChart.js"></script>
+<script type="text/javascript" src="js/keyMeasurement.js"></script>
+<script type="text/javascript" src="js/lineCharts.js"></script>
+</html>
