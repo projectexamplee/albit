@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon / footer / social</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer-/-pc" transform="translate(-879.000000, -61.000000)">
+            <g id="Group-2" transform="translate(30.000000, 46.000000)">
+                <g id="Group-3" transform="translate(849.000000, 15.000000)">
+                    <g id="icon-/-footer-/-social">
+                        <circle id="Oval" fill="#EE4123" fill-rule="evenodd" cx="18" cy="18" r="18"></circle>
+                        <g id="icon-/-social-/-fb" transform="translate(6.000000, 6.000000)">
+                            <path d="M17,2 L17,6 L15,6 C14.31,6 14,6.81 14,7.5 L14,10 L17,10 L17,14 L14,14 L14,22 L10,22 L10,14 L7,14 L7,10 L10,10 L10,6 C10,3.790861 11.790861,2 14,2 L17,2 Z" id="Path" fill="#FFFFFF" fill-rule="evenodd"></path>
+                            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

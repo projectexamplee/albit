@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="22px" viewBox="0 0 30 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic_youtube_play_hover</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.86">
+        <g id="Cards-/-video-/-small-Copy-2" transform="translate(-84.000000, -39.000000)">
+            <g id="ic_youtube_play_hover" transform="translate(81.000000, 32.000000)">
+                <path d="M32.34,10.755 C32.535,11.46 32.67,12.405 32.76,13.605 C32.865,14.805 32.91,15.84 32.91,16.74 L33,18 C33,21.285 32.76,23.7 32.34,25.245 C31.965,26.595 31.095,27.465 29.745,27.84 C29.04,28.035 27.75,28.17 25.77,28.26 C23.82,28.365 22.035,28.41 20.385,28.41 L18,28.5 C11.715,28.5 7.8,28.26 6.255,27.84 C4.905,27.465 4.035,26.595 3.66,25.245 C3.465,24.54 3.33,23.595 3.24,22.395 C3.135,21.195 3.09,20.16 3.09,19.26 L3,18 C3,14.715 3.24,12.3 3.66,10.755 C4.035,9.405 4.905,8.535 6.255,8.16 C6.96,7.965 8.25,7.83 10.23,7.74 C12.18,7.635 13.965,7.59 15.615,7.59 L18,7.5 C24.285,7.5 28.2,7.74 29.745,8.16 C31.095,8.535 31.965,9.405 32.34,10.755 Z" id="Shape" fill="#FF0000"></path>
+                <polygon id="Path" fill="#FFFFFF" points="15 22.5 22.785 18 15 13.5"></polygon>
+                <rect id="Rectangle-Copy" x="0" y="0" width="36" height="36"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

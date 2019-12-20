@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap');
+
+/*Big font*/
+body{
+	font-family : 'Noto Sans KR', sans-serif;
+	font-weight: 400;
+}
+
+/*Size*/
+.body{
+	font-size: 12.8px;
+	line-height: 18.6px;
+}
+.caption{
+	font-size: 10.8px;
+	line-height: 16.8px;
+}
+.subtitle{
+	font-size: 16.8px;
+	line-height: 24.8px;
+}
+
+/*Weight*/
+.w400{
+	font-weight: 400;
+}
+.w700{
+	font-weight: 700;
+}
+.w900{
+	font-weight: 900;
+}
+
+/*TEXT OVERFLOW CLIP 1LINE*/
+.ellipse_1line{
+	overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; /* 라인수 */
+	-webkit-box-orient: vertical;
+	word-wrap:break-word;
+}

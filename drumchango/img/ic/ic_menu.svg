@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="11px" viewBox="0 0 16 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic_menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.5,14.25 L17.5,14.25 L17.5,12.6666667 L2.5,12.6666667 L2.5,14.25 Z M2.5,10.2916667 L17.5,10.2916667 L17.5,8.70833333 L2.5,8.70833333 L2.5,10.2916667 Z M2.5,4.75 L2.5,6.33333333 L17.5,6.33333333 L17.5,4.75 L2.5,4.75 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.64">
+        <g id="top_navigation-/-login" transform="translate(-16.000000, -23.000000)">
+            <g id="ic_cs" transform="translate(0.000000, 4.000000)">
+                <g id="icon/navigation/menu_24px" transform="translate(14.000000, 15.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g fill-rule="nonzero"></g>
+                    <g id="✱-/-Color-/-Icons-/-Black-/-Inactive" mask="url(#mask-2)" fill="#000000" fill-opacity="0.54" fill-rule="evenodd">
+                        <rect id="Rectangle" x="0" y="0" width="20" height="19"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

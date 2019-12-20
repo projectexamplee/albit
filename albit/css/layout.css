@@ -25,7 +25,7 @@ img { max-width:100% !important; height: auto !important; }
 .flex_center{
 	justify-content: center;
 	align-items: center;
-}2
+}
 .align_start{
 	align-items: flex-start !important;
 }

@@ -1,0 +1,82 @@
+body, html{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color: #f7f6f5;
+}
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+/*컨텐츠 영역 PC에서 1080px으로 고정*/
+.live_area{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1080px;
+}
+@media screen and (max-width: 680px) {
+	.live_area{
+		width: 100%;
+	}
+}
+
+/*FLEX*/
+.flex_row{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.flex_col{
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*ARRANGEMENT*/
+.space_between{
+	justify-content: space-between;
+}
+.align_center{
+	align-items: center;
+}
+.justify_center{
+	justify-content: center;
+}
+.flex_center{
+	align-items: center;
+	justify-content: center;
+}
+
+
+/*LAYOUT TRANSITION*/
+
+.col2_1{
+	width: 50%;
+}
+.col3_2{
+	width: 33.3%;
+}
+.col4_2{
+	width: 25%;
+}
+.flex_row_col{
+	display: flex;
+	flex-direction: row;
+}
+@media screen and (max-width: 680px) {
+	.col2_1{
+		width: 100%;
+	}
+	.col4_2{
+		width: 25%;
+	}
+	.col3_2{
+		width: 50%;
+	}
+	.flex_row_col{
+		flex-direction: column;
+	}
+}
