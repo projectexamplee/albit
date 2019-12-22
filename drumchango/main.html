@@ -34,11 +34,19 @@
 				margin-left: 0px;
 			}
 		}
-		.subtitle{
+		.section_title{
 			margin-bottom: 16px;
 		}
 		.card.col2{
 			width: calc(50% - 4px);
+		}
+		.card.col3_2{
+			width: calc(33% - 4px);
+		}
+		@media screen and (max-width: 680px) {
+			.card.col3_2{
+				width: calc(50% - 4px);
+			}
 		}
 	
 	</style>
@@ -174,12 +182,12 @@
 	<div class="live_area flex_row">
 		<div class="col2_1 margin_b_2x">
 			<div class="col1 col1_mg_r_1x flex_row padding_2x white white_bg">
-				<p class="subtitle w700">
+				<p class="subtitle w700 section_title">
 					커버스토리
 				</p>
 				<div class="col1 col1_mg_r_1x white white_bg">
 					<div id="cover_c_1" class="container_img_bg padding_1x margin_b_1x">
-						<p class="subtitle w700 white900">
+						<p class="subtitle w700 section_title white900">
 							커버컨텐츠 타이틀
 						</p>
 						<p class="caption white400">
@@ -216,7 +224,7 @@
 		</div>
 		<div class="col2_1 margin_b_2x">
 			<div class="col1 col1_mg_l_1x flex_row padding_2x white white_bg">
-				<p class="subtitle w700">
+				<p class="subtitle w700 section_title">
 					뉴스
 				</p>
 				<!--1st NEWS LIST WITH IMG-->
@@ -305,7 +313,7 @@
 		</div>
 		<div class="col2_1 margin_b_2x">
 			<div class="col1 col1_mg_r_1x flex_row padding_2x white white_bg">
-				<p class="subtitle w700">
+				<p class="subtitle w700 section_title">
 					중고장터
 				</p>
 				<!--SECONDARY PRODUCT LIST WITH IMG-->
@@ -375,12 +383,12 @@
 			</div>
 		</div>
 		<div class="col2_1 margin_b_2x">
-			<div class="col1 col1_mg_l_1x flex_row padding_2x white white_bg">
-				<p class="subtitle w700 col1">
+			<div class="col1 col1_mg_l_1x space_between flex_row padding_2x white white_bg">
+				<p class="subtitle w700 section_title col1">
 					드럼영상
 				</p>
 				<!--CARD START-->
-				<div class="card flex_col col3_2 padding_s margin_b_2x">
+				<div class="card flex_col col3_2 margin_b_3x">
 					<div id="c_3" class="card_img_top flex_center margin_b_1x">
 						<img class="ic_youtube" src="img/ic/ic_youtube.svg">
 					</div>
@@ -391,7 +399,7 @@
 				</div>
 				<!--CARD END-->
 				<!--CARD START-->
-				<div class="card flex_col col3_2 padding_s margin_b_2x">
+				<div class="card flex_col col3_2 margin_b_3x">
 					<div id="c_3" class="card_img_top flex_center margin_b_1x">
 						<img class="ic_youtube" src="img/ic/ic_youtube.svg">
 					</div>
@@ -402,7 +410,7 @@
 				</div>
 				<!--CARD END-->
 				<!--CARD START-->
-				<div class="card flex_col col3_2 padding_s margin_b_2x">
+				<div class="card flex_col col3_2 margin_b_3x">
 					<div id="c_3" class="card_img_top flex_center margin_b_1x">
 						<img class="ic_youtube" src="img/ic/ic_youtube.svg">
 					</div>
@@ -413,7 +421,7 @@
 				</div>
 				<!--CARD END-->
 				<!--CARD START-->
-				<div class="card flex_col col3_2 padding_s margin_b_2x">
+				<div class="card flex_col col3_2 margin_b_3x">
 					<div id="c_3" class="card_img_top flex_center margin_b_1x">
 						<img class="ic_youtube" src="img/ic/ic_youtube.svg">
 					</div>
@@ -424,7 +432,7 @@
 				</div>
 				<!--CARD END-->
 				<!--CARD START-->
-				<div class="card flex_col col3_2 padding_s margin_b_2x">
+				<div class="card flex_col col3_2 margin_b_3x">
 					<div id="c_3" class="card_img_top flex_center margin_b_1x">
 						<img class="ic_youtube" src="img/ic/ic_youtube.svg">
 					</div>
@@ -435,7 +443,7 @@
 				</div>
 				<!--CARD END-->
 				<!--CARD START-->
-				<div class="card flex_col col3_2 padding_s margin_b_2x">
+				<div class="card flex_col col3_2 margin_b_3x">
 					<div id="c_3" class="card_img_top flex_center margin_b_1x">
 						<img class="ic_youtube" src="img/ic/ic_youtube.svg">
 					</div>
@@ -448,12 +456,12 @@
 			</div>
 		</div>
 		<div class="col2_1 margin_b_2x">
-			<div class="col1 col1_mg_r_1x flex_row padding_2x white white_bg">
-				<p class="subtitle w700 col1">
+			<div class="col1 space_between col1_mg_r_1x flex_row padding_2x white white_bg">
+				<p class="subtitle w700 section_title col1">
 					사진갤러리
 				</p>
 				<!--CARD START-->
-				<div class="card flex_col col3_2 padding_s margin_b_2x">
+				<div class="card flex_col col3_2 margin_b_3x">
 					<div id="c_7" class="card_img_top flex_center margin_b_1x">
 					</div>
 					<p class="title body w700 black900">드럼사진 제목 최대2줄, 2줄 이상 넘어갈 경우 ellipse처리. 컨텐츠 타이틀 끝에 땡땡이로 보임</p>
@@ -463,7 +471,7 @@
 				</div>
 				<!--CARD END-->
 				<!--CARD START-->
-				<div class="card flex_col col3_2 padding_s margin_b_2x">
+				<div class="card flex_col col3_2 margin_b_3x">
 					<div id="c_7" class="card_img_top flex_center margin_b_1x">
 					</div>
 					<p class="title body w700 black900">드럼사진 제목 최대2줄, 2줄 이상 넘어갈 경우 ellipse처리. 컨텐츠 타이틀 끝에 땡땡이로 보임</p>
@@ -473,7 +481,7 @@
 				</div>
 				<!--CARD END-->
 				<!--CARD START-->
-				<div class="card flex_col col3_2 padding_s margin_b_2x">
+				<div class="card flex_col col3_2 margin_b_3x">
 					<div id="c_7" class="card_img_top flex_center margin_b_1x">
 					</div>
 					<p class="title body w700 black900">드럼사진 제목 최대2줄, 2줄 이상 넘어갈 경우 ellipse처리. 컨텐츠 타이틀 끝에 땡땡이로 보임</p>
@@ -483,7 +491,7 @@
 				</div>
 				<!--CARD END-->
 				<!--CARD START-->
-				<div class="card flex_col col3_2 padding_s margin_b_2x">
+				<div class="card flex_col col3_2 margin_b_3x">
 					<div id="c_7" class="card_img_top flex_center margin_b_1x">
 					</div>
 					<p class="title body w700 black900">드럼사진 제목 최대2줄, 2줄 이상 넘어갈 경우 ellipse처리. 컨텐츠 타이틀 끝에 땡땡이로 보임</p>
@@ -493,7 +501,7 @@
 				</div>
 				<!--CARD END-->
 				<!--CARD START-->
-				<div class="card flex_col col3_2 padding_s margin_b_2x">
+				<div class="card flex_col col3_2 margin_b_3x">
 					<div id="c_7" class="card_img_top flex_center margin_b_1x">
 					</div>
 					<p class="title body w700 black900">드럼사진 제목 최대2줄, 2줄 이상 넘어갈 경우 ellipse처리. 컨텐츠 타이틀 끝에 땡땡이로 보임</p>
@@ -503,7 +511,7 @@
 				</div>
 				<!--CARD END-->
 				<!--CARD START-->
-				<div class="card flex_col col3_2 padding_s margin_b_2x">
+				<div class="card flex_col col3_2 margin_b_3x">
 					<div id="c_7" class="card_img_top flex_center margin_b_1x">
 					</div>
 					<p class="title body w700 black900">드럼사진 제목 최대2줄, 2줄 이상 넘어갈 경우 ellipse처리. 컨텐츠 타이틀 끝에 땡땡이로 보임</p>
@@ -516,12 +524,12 @@
 		</div>
 		<div class="col2_1 margin_b_2x">
 			<div class="col1 col1_mg_l_1x flex_row padding_2x white white_bg">
-				<p class="subtitle w700">
+				<p class="subtitle w700 section_title">
 					출고후기
 				</p>
 				<!--SECONDARY PRODUCT LIST WITH IMG-->
 				<div class="list news_list_img flex_row align_center">
-					<div id="c_10" class="thumb_img_small margin_r_1x"></div>
+					<div id="c_12" class="thumb_img_small margin_r_1x"></div>
 					<div class="list_info flex_col">
 						<p class="title ellipse_1line body w700 black900">
 							게시글 제목 최대 1줄보임. 넘어가면 ellise처리.
@@ -536,7 +544,7 @@
 				</div>
 				<!--SECONDARY PRODUCT LIST WITH IMG-->
 				<div class="list news_list_img flex_row align_center">
-					<div id="c_10" class="thumb_img_small margin_r_1x"></div>
+					<div id="c_12" class="thumb_img_small margin_r_1x"></div>
 					<div class="list_info flex_col">
 						<p class="title ellipse_1line body w700 black900">
 							게시글 제목 최대 1줄보임. 넘어가면 ellise처리.
@@ -551,7 +559,7 @@
 				</div>
 				<!--SECONDARY PRODUCT LIST WITH IMG-->
 				<div class="list news_list_img flex_row align_center">
-					<div id="c_10" class="thumb_img_small margin_r_1x"></div>
+					<div id="c_12" class="thumb_img_small margin_r_1x"></div>
 					<div class="list_info flex_col">
 						<p class="title ellipse_1line body w700 black900">
 							게시글 제목 최대 1줄보임. 넘어가면 ellise처리.
@@ -566,7 +574,7 @@
 				</div>
 				<!--SECONDARY PRODUCT LIST WITH IMG-->
 				<div class="list news_list_img flex_row align_center">
-					<div id="c_10" class="thumb_img_small margin_r_1x"></div>
+					<div id="c_12" class="thumb_img_small margin_r_1x"></div>
 					<div class="list_info flex_col">
 						<p class="title ellipse_1line body w700 black900">
 							게시글 제목 최대 1줄보임. 넘어가면 ellise처리.
@@ -583,12 +591,12 @@
 		</div>
 		<div class="col2_1 margin_b_2x">
 			<div class="col1 col1_mg_r_1x flex_row padding_2x white white_bg">
-				<p class="subtitle w700">
+				<p class="subtitle w700 section_title">
 					상품후기
 				</p>
 				<!--SECONDARY PRODUCT LIST WITH IMG-->
 				<div class="list news_list_img flex_row align_center">
-					<div id="c_10" class="thumb_img_small margin_r_1x"></div>
+					<div id="c_12" class="thumb_img_small margin_r_1x"></div>
 					<div class="list_info flex_col">
 						<p class="title ellipse_1line body w700 black900">
 							게시글 제목 최대 1줄보임. 넘어가면 ellise처리.
@@ -603,7 +611,7 @@
 				</div>
 				<!--SECONDARY PRODUCT LIST WITH IMG-->
 				<div class="list news_list_img flex_row align_center">
-					<div id="c_10" class="thumb_img_small margin_r_1x"></div>
+					<div id="c_12" class="thumb_img_small margin_r_1x"></div>
 					<div class="list_info flex_col">
 						<p class="title ellipse_1line body w700 black900">
 							게시글 제목 최대 1줄보임. 넘어가면 ellise처리.
@@ -618,7 +626,7 @@
 				</div>
 				<!--SECONDARY PRODUCT LIST WITH IMG-->
 				<div class="list news_list_img flex_row align_center">
-					<div id="c_10" class="thumb_img_small margin_r_1x"></div>
+					<div id="c_12" class="thumb_img_small margin_r_1x"></div>
 					<div class="list_info flex_col">
 						<p class="title ellipse_1line body w700 black900">
 							게시글 제목 최대 1줄보임. 넘어가면 ellise처리.
@@ -633,7 +641,7 @@
 				</div>
 				<!--SECONDARY PRODUCT LIST WITH IMG-->
 				<div class="list news_list_img flex_row align_center">
-					<div id="c_10" class="thumb_img_small margin_r_1x"></div>
+					<div id="c_12" class="thumb_img_small margin_r_1x"></div>
 					<div class="list_info flex_col">
 						<p class="title ellipse_1line body w700 black900">
 							게시글 제목 최대 1줄보임. 넘어가면 ellise처리.
@@ -650,7 +658,7 @@
 		</div>
 		<div class="col2_1 margin_b_2x">
 			<div class="col1 col1_mg_l_1x flex_row padding_2x white white_bg">
-				<p class="subtitle col1 w700">
+				<p class="subtitle section_title col1 w700">
 					아티스트
 				</p>
 				<div class="artist_5_fix">
@@ -741,7 +749,7 @@
 		<div class="flex_col live_area padding_4x">
 			<div class="flex_row_col align_center col1 space_between">
 				<!--CS CENTER-->
-				<div class="flex_col flex_center margin_vertical_2x">
+				<div class="flex_col flex_center padding_hor_4x footer_border_r_b margin_vertical_2x">
 					<p class="subtitle w700 white900">
 						고객 센터 070 4148 8169
 					</p>
@@ -750,7 +758,7 @@
 					</p>
 				</div>
 				<!--ONLINE COUNSELLING-->
-				<div class="flex_col flex_center padding_2x button trans25_bg border_radius margin_vertical_2x">
+				<div class="flex_col flex_center padding_2x button  border_radius margin_vertical_4x">
 					<p class="subtitle w700 white900">
 						온라인 견적상담
 					</p>
@@ -759,10 +767,10 @@
 					</p>
 				</div>
 				<!--BANK ACCOUNT-->
-				<div class="flex_row align_center margin_vertical_2x">
-					<img src="img/ic/ic_bank.svg">
-					<div class="padding_1x caption w400 white900">
-						<p><span class="w700">국민은행</span> 645137-04-003174</p>
+				<div class="flex_row align_center margin_vertical_2x padding_hor_4x footer_border_l_t">
+					<img class="margin_r_1x" src="img/ic/ic_bank.svg">
+					<div class="caption w400 white900">
+						<p class="subtitle"><span class="w700">국민은행</span> 645137-04-003174</p>
 						<p><span class="w700">예금주</span> 제이에스2프로젝트</p>
 					</div>
 				</div>
@@ -777,6 +785,21 @@
 					<img src="img/ic/social/ic_social_ig.svg">
 					<img src="img/ic/social/ic_social_nv.svg">
 					<img src="img/ic/social/ic_social_yt.svg">
+				</div>
+				<!--SITE MAP-->
+				<div class="flex_row col1 flex_center padding_4x">
+					<div class="body white900 margin_r_4x">
+						회사소개
+					</div>
+					<div class="body white900 margin_r_4x">
+						고객센터
+					</div>
+					<div class="body white900 margin_r_4x">
+						이용안내
+					</div>
+					<div class="body white900">
+						개인정보 정책
+					</div>
 				</div>
 			</div>
 		</div>

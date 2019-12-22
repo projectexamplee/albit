@@ -6,12 +6,28 @@
 .border_radius{
 	border-radius: 3px;
 }
-
 .circle_medium{
 	width: 24px;
 	height: 24px;
 	border-radius: 12px;
 }
+.footer_border_r_b{
+	border-right: solid 0.5px #a0afba;
+}
+.footer_border_l_t{
+	border-left: solid 0.5px #a0afba;
+}
+@media screen and (max-width: 680px) {
+	.footer_border_r_b{
+		border-right: none;
+		border-bottom: solid 0.5px #a0afba;
+	}
+	.footer_border_l_t{
+		border-left: none;
+		border-top: solid 0.5px #a0afba;
+	}
+}
+
 
 
 /*border by color*/

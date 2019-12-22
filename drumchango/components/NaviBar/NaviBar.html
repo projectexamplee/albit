@@ -1,0 +1,91 @@
+<template id="NaviBar">
+	<!-- <link rel="stylesheet"  href="css/type.css">
+	<link rel="stylesheet"  href="css/layout.css">
+	<link rel="stylesheet"  href="css/color.css">
+	<link rel="stylesheet"  href="css/size.css">
+	<link rel="stylesheet"  href="css/shape.css">
+	<link rel="stylesheet"  href="css/components.css">
+	<link rel="stylesheet"  href="css/img_example.css">
+	<link rel="stylesheet"  href="css/common.css"> -->
+	<style>
+		.margin_navi{
+			margin-top: 48px;
+			margin-bottom: 16px;
+		}
+		@media screen and (max-width: 680px) {
+			.margin_navi{
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+		}
+	</style>
+	<div class="navi_bar margin_navi flex_row align_center col1 white_bg  space_between">
+		<!--LEFT SECTION-->
+		<div id="logo" class="flex_row align_center">
+			<!--MENU-->
+			<div class="only_mb">
+				<div class="ic_container">
+					<img id="menu" src="img/ic/ic_menu.svg">
+				</div>
+			</div>
+			<!--LOGO-->
+			<img id="logo_img" class="margin_r_1x only_pc" src="img/logo.svg">
+			<img id="logo_text" class="" src="img/logo_text.svg">
+		</div>
+		<!--SEARCH BAR-->
+		<div id="search_bar" class="search_bar primary_border flex_row align_center">
+			<img class="margin_r_1x ic_small" src="img/ic/ic_search_primary.jpg">
+			<input type="text" class="no_border" name="search bar" placeholder="장비 또는 게시글을 검색해주세요.">
+		</div>
+		<!--RIGHT SECTION-->
+		<div id="right_menu" class="flex_row align_center">
+			<div class="ic_container">
+				<img id="cs" src="img/ic/ic_cs.svg">
+			</div>
+			<div class="ic_container">
+				<img id="arlam" src="img/ic/ic_arlam.svg">
+			</div>
+			<div class="ic_container margin_r_1x">
+				<img id="cart" src="img/ic/ic_cart.svg">
+			</div>
+			<div id="my_menu" class="flex_row only_pc">
+				<div class="my_profile margin_r_1x">
+				</div>
+				<div class="caption">
+					<p>
+						<span>username</span>
+						<span>.LV2</span>
+					</p>
+					<p>
+						<span>
+							포인트: ₩
+						</span>
+						<span>
+							1,231
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--MY MENU FOR MOBILE-->
+		<div id="my_menu_mb" class="flex_row only_mb caption align_center space_between border_bottom">
+			<div class="flex_row align_center">
+				<div class="my_profile margin_r_1x">
+				</div>
+				<p>
+					<span>username</span>
+					<span>.LV2</span>
+				</p>
+			</div>
+			<p>
+				<span>
+					포인트: ₩
+				</span>
+				<span>
+					1,231
+				</span>
+			</p>
+		</div>
+	</div>
+</template>
+<script src="NaviBar.js"></script>

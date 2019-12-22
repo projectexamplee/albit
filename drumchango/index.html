@@ -1,9 +1,153 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+  <title>DRUM CHANGO</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
 </head>
-<body>
 
+<body>
+	<!--TOP AREA-->
+	<div class="col1 flex_col white_bg margin_b_2x">
+		<div class="live_area">
+			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
+			<navi-bar></navi-bar>
+			<!--SITE GLOBAL NAVIGATION TAB-->
+			<tab-main></tab-main>
+		</div>
+	</div>
+	<!--CONTENT AREA-->
+	<div class="live_area flex_row">
+		<div class="col2_1 margin_b_2x">
+			<div class="col1 col1_mg_r_1x flex_row padding_2x white white_bg">
+				<p class=" col1 subtitle w700 section_title">
+					커버스토리
+				</p>
+				<card-full class="col1"></card-full>
+				<div class="col1 flex_row space_between white white_bg">
+					<card-big class="card col2"></card-big>
+					<card-big class="card col2"></card-big>
+				</div>
+			</div>
+		</div>
+		<div class="col2_1 margin_b_2x">
+			<div class="col1 col1_mg_l_1x flex_row padding_2x white white_bg">
+				<p class="col1 subtitle w700 section_title">
+					뉴스
+				</p>
+				<list-news-img class="col1"></list-news-img>
+				<list-news-txt class="col1"></list-news-txt>
+				<list-news-txt class="col1"></list-news-txt>
+				<list-news-txt class="col1"></list-news-txt>
+				<list-news-txt class="col1"></list-news-txt>
+			</div>
+		</div>
+		<div class="col2_1 margin_b_2x">
+			<div class="col1 col1_mg_r_1x flex_row padding_2x white white_bg">
+				<p class="subtitle col1 w700 section_title">
+					중고장터
+				</p>
+				<list-second-prd class="col1"></list-second-prd>
+				<list-second-prd class="col1"></list-second-prd>
+				<list-second-prd class="col1"></list-second-prd>
+				<list-second-prd class="col1"></list-second-prd>
+			</div>
+		</div>
+		<div class="col2_1 margin_b_2x">
+			<div class="col1 col1_mg_l_1x flex_row padding_2x white white_bg">
+				<p class="col1 subtitle w700 section_title">
+					드럼영상
+				</p>
+				<div class="col1 flex_row space_between white white_bg">
+					<card-video class="card col3_2 margin_b_3x"></card-video>
+					<card-video class="card col3_2 margin_b_3x"></card-video>
+					<card-video class="card col3_2 margin_b_3x"></card-video>
+					<card-video class="card col3_2 margin_b_3x"></card-video>
+					<card-video class="card col3_2 margin_b_3x"></card-video>
+					<card-video class="card col3_2 margin_b_3x"></card-video>
+				</div>
+			</div>
+		</div>
+		<div class="col2_1 margin_b_2x">
+			<div class="col1 col1_mg_r_1x flex_row padding_2x white white_bg">
+				<p class="col1 subtitle w700 section_title">
+					사진갤러리
+				</p>
+				<div class="col1 flex_row space_between white white_bg">
+					<card-big class="card col3_2 margin_b_3x"></card-big>
+					<card-big class="card col3_2 margin_b_3x"></card-big>
+					<card-big class="card col3_2 margin_b_3x"></card-big>
+					<card-big class="card col3_2 margin_b_3x"></card-big>
+					<card-big class="card col3_2 margin_b_3x"></card-big>
+					<card-big class="card col3_2 margin_b_3x"></card-big>
+				</div>
+			</div>
+		</div>
+		<div class="col2_1 margin_b_2x">
+			<div class="col1 col1_mg_l_1x flex_row padding_2x white white_bg">
+				<p class="subtitle col1 w700 section_title">
+					출고후기
+				</p>
+				<list-review class="col1"></list-review>
+				<list-review class="col1"></list-review>
+				<list-review class="col1"></list-review>
+				<list-review class="col1"></list-review>
+			</div>
+		</div>
+		<div class="col2_1 margin_b_2x">
+			<div class="col1 col1_mg_r_1x flex_row padding_2x white white_bg">
+				<p class="col1 subtitle w700 section_title">
+					상품후기
+				</p>
+				<list-review class="col1"></list-review>
+				<list-review class="col1"></list-review>
+				<list-review class="col1"></list-review>
+				<list-review class="col1"></list-review>
+			</div>
+		</div>
+		<div class="col2_1 margin_b_2x">
+			<div class="col1 col1_mg_l_1x flex_row padding_2x white white_bg">
+				<p class="subtitle w700 section_title">
+					아티스트
+				</p>
+				<grid-artist class="flex_row col1"></grid-artist>
+			</div>
+		</div>
+	</div>
+	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	// /*CENTER SUBTAB ARRAY*/
+	// subTabList = [
+	// 			  "전체",
+	// 			  "뉴스",
+	// 			  "드럼영상",
+	// 			  "사진갤러리",
+	// 			  "중고장터",
+	// 			  "출고후기",
+	// 			  "상품후기",
+	// 			  "아티스트",
+	// 			  "자유게시판"
+	// 				];
+</script>
+<link rel="import" href="components/NaviBar/NaviBar.html">
+<link rel="import" href="components/TabMain/TabMain.html">
+<link rel="import" href="components/CardFull/CardFull.html">
+<link rel="import" href="components/CardBig/CardBig.html">
+<link rel="import" href="components/CardVideo/CardVideo.html">
+<link rel="import" href="components/ListNewsImg/ListNewsImg.html">
+<link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
+<link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
+<link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/GridArtist/GridArtist.html">
+<link rel="import" href="components/Footer/Footer.html">
 </html>

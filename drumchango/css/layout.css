@@ -64,6 +64,7 @@ body{
 }
 .flex_row_col{
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 }
 @media screen and (max-width: 680px) {
