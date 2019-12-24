@@ -4,7 +4,20 @@
 }
 .col1_2x{
 	width: calc(100% + 16px);
-	margin-left: -8px;
+	/*margin-left: -8px;*/
+}
+.col1_4x{
+	width: calc(100% + 32px);
+	margin-left: -16px;
+}
+.col1_4x_mb{
+	width: 100%;
+}
+@media screen and (max-width: 680px) {
+	.col1_4x_mb{
+		width: calc(100% + 32px);
+		margin-left: -16px;
+	}
 }
 .col2{
 	width: 50%;
@@ -103,10 +116,12 @@
 	padding:32px;
 }
 .padding_hor_2x{
-	padding: 0 16px;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 .padding_hor_4x{
-	padding: 0 32px;
+	padding-left: 32px;
+	padding-right: 32px;
 }
 .padding_l_2x{
 	padding-left: 16px;

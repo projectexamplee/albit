@@ -73,12 +73,27 @@
 			<p class="col1 subtitle w700 section_title">
 				최근 클릭상품
 			</p> 
-			<div class="flex_row col1 space_between">
-				<card-small class="card col5" imgSrc="img/example/c5.jpg"></card-small>
-				<card-small class="card col5" imgSrc="img/example/c6.jpg"></card-small>
-				<card-small class="card col5" imgSrc="img/example/c7.jpg"></card-small>
-				<card-small class="card col5" imgSrc="img/example/c8.jpg"></card-small>
-				<card-small class="card col5" imgSrc="img/example/c9.jpg"></card-small>
+			<style>
+				@media screen and (max-width: 680px) {
+					.card.col5{
+						display: flex;
+						flex-direction: column;
+						width: 148px;
+						margin:0 8px 32px 8px;
+					}
+					.slider{
+						margin-bottom: -32px;
+					}
+				}
+			</style>
+			<div class="flex_row slider col1_4x_mb">
+				<div class="slider_content space_between col1">
+					<card-small class="card col5" imgSrc="img/example/c5.jpg"></card-small>
+					<card-small class="card col5" imgSrc="img/example/c6.jpg"></card-small>
+					<card-small class="card col5" imgSrc="img/example/c7.jpg"></card-small>
+					<card-small class="card col5" imgSrc="img/example/c8.jpg"></card-small>
+					<card-small class="card col5" imgSrc="img/example/c9.jpg"></card-small>
+				</div>
 			</div>
 		</div>
 		<!--특별 상품 배너-->
@@ -114,11 +129,11 @@
 		</div>
 		<!--아티스트-->
 		<div class="col1 margin_b_2x">
-			<div class="col1 flex_row padding_2x white white_bg">
+			<div class="col1 flex_col padding_2x white white_bg">
 				<p class="col1 subtitle w700 section_title">
 					아티스트
 				</p>
-				<list-horizon-artist class="col1"></list-horizon-artist>
+				<list-horizon-artist class="flex_row artist_container col1_4x"></list-horizon-artist>
 			</div>
 		</div>
 	</div>
