@@ -2,6 +2,10 @@
 .col1{
 	width: 100%;
 }
+.col1_2x{
+	width: calc(100% + 16px);
+	margin-left: -8px;
+}
 .col2{
 	width: 50%;
 }
@@ -103,6 +107,9 @@
 }
 .padding_hor_4x{
 	padding: 0 32px;
+}
+.padding_l_2x{
+	padding-left: 16px;
 }
 
 

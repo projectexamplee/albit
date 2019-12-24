@@ -1,0 +1,29 @@
+<template id="TabedContent">
+	<style type="text/css">
+		.tab_sub.col2{
+			width: 50% !important;
+		}
+	</style>
+	<div class="flex_col col1">
+		<!--TAB-->
+		<div class="flex_row col1 margin_b_3x">
+			<div id="qna" class="tab_sub selected col2">
+				QnA
+			</div>
+			<div id="counselling" class="tab_sub col2">
+				고민상담
+			</div>
+		</div>
+		<!--CONTENT1-->
+		<div id="content1">
+			<list-general-post class="flex_col margin_b_1x" imgSrc="img/user/u1.jpg"></list-general-post>
+			<list-general-post class="flex_col margin_b_1x" imgSrc="img/user/u2.jpg"></list-general-post>
+			<list-general-post class="flex_col margin_b_1x" imgSrc="img/user/u3.jpg"></list-general-post>
+			<list-general-post class="flex_col margin_b_1x" imgSrc="img/user/u4.jpg"></list-general-post>
+			<list-general-post class="flex_col margin_b_1x" imgSrc="img/user/u5.jpg"></list-general-post>
+		</div>
+		<!--CONTENT2-->
+	</div>
+<link rel="import" href="components/ListGeneralPost/ListGeneralPost.html">
+</template>
+<script src="TabedContent.js" type="text/javascript"></script>

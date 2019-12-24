@@ -56,6 +56,15 @@ body{
 .col2_1{
 	width: 50%;
 }
+.col3_1{
+	width: 33.3%;
+}
+.space_between>.col3_1{
+	width: calc(33.3% - 8px);
+}
+.space_between>.col5{
+	width: calc(20% - 16px);
+}
 .col3_2{
 	width: 33.3%;
 }
@@ -73,6 +82,9 @@ body{
 	}
 	.col4_2{
 		width: 25%;
+	}
+	.col3_1{
+		width: 100% !important;
 	}
 	.col3_2{
 		width: 50%;

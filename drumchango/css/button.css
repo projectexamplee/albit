@@ -6,6 +6,7 @@
 	align-items: center;
 	justify-content: center;
 	padding:0px 16px;
+	cursor: pointer;
 }
 .button:before{
 	transition: background-color 0.3s;

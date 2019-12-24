@@ -17,9 +17,12 @@
     // Called when element is inserted in DOM
     connectedCallback() {
       const templete = document.importNode(HTMLTemplate.content, true);
-      const subTabList = this.getAttribute('subtablist');
-      console.log(subTabList);
+      const currentTabName = this.getAttribute('currentTab');
       this.appendChild(templete);
+
+      let currentTab = document.getElementById(currentTabName);
+
+      currentTab.classList.add("selected");
 
 
       // Select the template and clone it. Finally attach the cloned node to the shadowDOM's root.

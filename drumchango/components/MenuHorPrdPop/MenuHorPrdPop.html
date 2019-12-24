@@ -1,0 +1,48 @@
+<template id="MenuHorPrdPop">
+	<style type="text/css">
+		.menu_pop{
+			/*인기 카테고리의 수에 따라 결정*/
+			width:calc(100%/17);
+		}
+		#ctg_pop_container{
+			position: relative;
+			height: 64px;
+			overflow: hidden;
+		}
+		.ic_more{
+			position: absolute;
+			top:15px;
+			right:0;
+		}
+		.ic_hide{
+			height: 64px;
+			display: none;
+		}
+		.ic_hide>div{
+			width: 48px;
+			height: 48px;
+		}
+		.height_auto{
+			height: auto !important; 
+		}
+		.height_auto>.ic_more{
+			display: none;
+		}
+		.height_auto>.ic_hide{
+			display: flex;
+		}
+		@media screen and (max-width: 680px) {
+			.menu_pop{
+				/*인기 카테고리의 수에 따라 결정*/
+				width:calc((100% - 24px)/6);
+				min-width: auto;
+			}
+		}
+	</style>
+	<div id="ctg_pop_container" class="flex_row col1">
+		<div class="ic_more only_mb">
+			<img src="img/ic/ic_more.svg">
+		</div>
+	</div>
+</template>
+<script src="MenuHorPrdPop.js" type="text/javascript"></script>
