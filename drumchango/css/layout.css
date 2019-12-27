@@ -93,3 +93,25 @@ body{
 		flex-direction: column;
 	}
 }
+
+/*LIST PAGE*/
+.col_list{
+	width: 628px;
+}
+.col_curated{
+	width: 436px;
+}
+@media screen and (max-width: 680px) {
+	.col_list{
+		width: 100%;
+	}
+	.col_curated{
+		display: none;
+	}
+}
+
+
+.margin_center{
+	margin-left: auto;
+	margin-right: auto;
+}

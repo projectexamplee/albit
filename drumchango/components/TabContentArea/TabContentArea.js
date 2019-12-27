@@ -137,13 +137,23 @@
     if(tabType=="category"){
         console.log(categoryList);
         $.map( categoryList, function( item, i ) {
-         $("#category").append("<div class='tab_sub2'>"+ item.title + "</div>");
+          if(i==0){
+            $("#category").append("<div class='tab_sub2 selected'>"+ item.title + "</div>");
+          }
+          else{
+            $("#category").append("<div class='tab_sub2'>"+ item.title + "</div>");
+          }
       });
     }
     else if(tabType=="brand"){
         console.log(brandList);
         $.map( brandList, function( item, i ) {
-         $("#brand").append("<div class='tab_sub2'>"+ item.title + "</div>");
+         if(i==0){
+            $("#brand").append("<div class='tab_sub2 selected'>"+ item.title + "</div>");
+          }
+          else{
+            $("#brand").append("<div class='tab_sub2'>"+ item.title + "</div>");
+          }
       });
     }
   }

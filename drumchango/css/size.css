@@ -37,6 +37,12 @@
 .margin_4x{
 	margin:32px;
 }
+.margin_5x{
+	margin:40px;
+}
+.margin_6x{
+	margin:48px;
+}
 /*RIGHT*/
 .margin_r_1x{
 	margin-right: 8px;
@@ -102,6 +108,12 @@
 }
 .margin_t_4x{
 	margin-top: 32px;
+}
+.margin_t_5x{
+	margin-top: 40px;
+}
+.margin_t_6x{
+	margin-top: 48px;
 }
 .padding_s{
 	padding:4px;

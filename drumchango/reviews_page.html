@@ -1,0 +1,84 @@
+<html>
+<head>
+  <title>DRUM CHANGO</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+
+<body>
+	<!--TOP AREA-->
+	<div class="col1 flex_col white_bg margin_b_2x">
+		<div class="live_area">
+			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
+			<navi-bar></navi-bar>
+			<!--SITE GLOBAL NAVIGATION TAB-->
+			<tab-main currentTab="center"></tab-main>
+		</div>
+	</div>
+	<!--CONTENT AREA-->
+	<div class="live_area flex_row space_between">
+		<div class="flex_col col_list white_bg padding_2x" id="news_col">
+			<p class=" col1 subtitle w700 section_title">
+				상품후기
+			</p>
+			<list-review class="col1" imgSrc="img/example/c1.jpg"></list-review>
+			<list-review class="col1" imgSrc="img/example/c2.jpg"></list-review>
+			<list-review class="col1" imgSrc="img/example/c3.jpg"></list-review>
+			<list-review class="col1" imgSrc="img/example/c4.jpg"></list-review>
+			<list-review class="col1" imgSrc="img/example/c5.jpg"></list-review>
+			<list-review class="col1" imgSrc="img/example/c6.jpg"></list-review>
+			<list-review class="col1" imgSrc="img/example/c7.jpg"></list-review>
+			<list-review class="col1" imgSrc="img/example/c8.jpg"></list-review>
+			<list-review class="col1" imgSrc="img/example/c9.jpg"></list-review>
+			<list-review class="col1" imgSrc="img/example/c10.jpg"></list-review>
+			<!--게시판 페이지 인덱스-->
+			<div class="flex_row margin_t_6x margin_b_4x margin_center">
+				<div class="board_index current">1</div>
+				<div class="board_index">2</div>
+				<div class="board_index">3</div>
+			</div>
+		</div>
+		<div class="col_curated white_bg padding_2x">
+			<p class=" col1 subtitle w700 section_title">
+				인기 상품후기
+			</p>
+			<div class="col1 flex_row space_between white white_bg margin_b_4x">
+				<card-huge class="card col2 margin_b_2x" imgSrc="img/example/c2.jpg"></card-huge>
+				<card-huge class="card col2 margin_b_2x" imgSrc="img/example/c3.jpg"></card-huge>
+				<card-huge class="card col2" imgSrc="img/example/c2.jpg"></card-huge>
+				<card-huge class="card col2" imgSrc="img/example/c3.jpg"></card-huge>
+			</div>
+			<p class=" col1 subtitle w700 section_title">
+				댓글이 활발한 상품후기
+			</p>
+			<list-review class="col1" imgSrc="img/example/c7.jpg"></list-review>
+			<list-review class="col1" imgSrc="img/example/c8.jpg"></list-review>
+			<list-review class="col1" imgSrc="img/example/c9.jpg"></list-review>
+			<list-review class="col1" imgSrc="img/example/c10.jpg"></list-review>
+		</div>
+	</div>
+	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<link rel="import" href="components/NaviBar/NaviBar.html">
+<link rel="import" href="components/TabMain/TabMain.html">
+<link rel="import" href="components/CardFull/CardFull.html">
+<link rel="import" href="components/CardBig/CardBig.html">
+<link rel="import" href="components/CardHuge/CardHuge.html">
+<link rel="import" href="components/CardVideo/CardVideo.html">
+<link rel="import" href="components/ListNewsImg/ListNewsImg.html">
+<link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
+<link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
+<link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/GridArtist/GridArtist.html">
+<link rel="import" href="components/Footer/Footer.html">
+</html>
