@@ -34,8 +34,20 @@ a{
 .card.col3_2{
 	width: calc(33% - 4px);
 }
+.card.col4_2{
+	width: calc(25% - 4px);
+}
+.card.col5_2{
+	width: calc(20% - 4px);
+}
 @media screen and (max-width: 680px) {
 	.card.col3_2{
+		width: calc(50% - 4px);
+	}
+	.card.col4_2{
+		width: calc(50% - 4px);
+	}
+	.card.col5_2{
 		width: calc(50% - 4px);
 	}
 }

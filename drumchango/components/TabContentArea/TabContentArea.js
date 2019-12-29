@@ -94,6 +94,50 @@
         title: "브랜드12"
       }
   ];
+  const videoList =[
+      {
+        id: "accoustic",
+        title: "전체"
+      },
+      {
+        id: "electronic",
+        title: "연주"
+      },
+      {
+        id: "snare",
+        title: "레슨"
+      },
+      {
+        id: "cymbal",
+        title: "홍보"
+      },
+      {
+        id: "hardware",
+        title: "토크영상"
+      },
+      {
+        id: "accessory",
+        title: "사운드샘플"
+      },
+      {
+        id: "percussion",
+        title: "연주영상"
+      }
+  ];
+  const photoList =[
+      {
+        id: "accoustic",
+        title: "전체"
+      },
+      {
+        id: "electronic",
+        title: "악기갤러리"
+      },
+      {
+        id: "electronic",
+        title: "회원갤러리"
+      }
+  ];
 
   // Parse and select the template tag here instead 
   // of adding it using innerHTML to avoid repeated parsing
@@ -153,6 +197,28 @@
           }
           else{
             $("#brand").append("<div class='tab_sub2'>"+ item.title + "</div>");
+          }
+      });
+    }
+    else if(tabType=="video"){
+        console.log(brandList);
+        $.map( videoList, function( item, i ) {
+         if(i==0){
+            $("#video").append("<div class='tab_sub2 selected'>"+ item.title + "</div>");
+          }
+          else{
+            $("#video").append("<div class='tab_sub2'>"+ item.title + "</div>");
+          }
+      });
+    }
+    else if(tabType=="photo"){
+        console.log(photoList);
+        $.map( photoList, function( item, i ) {
+         if(i==0){
+            $("#photo").append("<div class='tab_sub2 selected'>"+ item.title + "</div>");
+          }
+          else{
+            $("#photo").append("<div class='tab_sub2'>"+ item.title + "</div>");
           }
       });
     }

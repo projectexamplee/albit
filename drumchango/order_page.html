@@ -1,0 +1,228 @@
+<html>
+<head>
+  <title>DRUM CHANGO</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="stylesheet" type="text/css" href="css/img.css">
+	<link rel="stylesheet" type="text/css" href="css/product_page.css">
+	<link rel="stylesheet" type="text/css" href="css/order_page.css">
+</head>
+<body>
+	<!--TOP AREA-->
+	<div class="col1 flex_col white_bg margin_b_2x">
+		<div class="live_area">
+			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
+			<navi-bar keyword="제품명"></navi-bar>
+			<!--SITE GLOBAL NAVIGATION TAB-->
+			<tab-main currentTab="search"></tab-main>
+		</div>
+	</div>
+	<!--CONTENT AREA-->
+	<div class="live_area flex_row space_between margin_t_2x">
+		<!--주문정보-->
+		<div class="col_order_info padding_2x white_bg">
+			<p class="subtitle black900 w700 margin_b_2x">
+				주문정보
+			</p>
+			<list-order-item class="border_bottom" imgSrc="img/example/c7.jpg"></list-order-item>
+			<list-order-item class="border_bottom" imgSrc="img/example/c8.jpg"></list-order-item>
+			<list-order-item class="border_bottom" imgSrc="img/example/c9.jpg"></list-order-item>
+			<div class="flex_col col1 black100_bg padding_2x margin_b_6x">
+				<p class="body w400 black600">
+					상품합계금액
+				</p>
+				<p class="subtitle w700 primary600">
+					123,456,789원
+				</p>
+				<p class="body w400 black300">
+					123,456원 적립
+				</p>
+			</div>
+
+			<p class="subtitle black900 w700 margin_b_2x">
+				주문자정보
+			</p>
+			<div class="flex_col col1 margin_b_6x">
+				<list-value-regular title="주문자" value="김우석"></list-value-regular>
+				<list-value-regular title="주소" value="서울 강남동 타워팔리스 0동 000호"></list-value-regular>
+				<list-value-regular title="전화번호" value="02-123-4567"></list-value-regular>
+				<list-value-regular title="휴대폰" value="010-1234-5678"></list-value-regular>
+				<list-value-regular title="이메일" value="drummania@gmail.com"></list-value-regular>
+			</div>
+			<p class="subtitle black900 w700 margin_b_2x">
+				배송정보
+			</p>
+			<div class="flex_row col1 margin_b_6x">
+				<div class="list_value width_auto margin_r_3x">
+					<label class="radio_btt">기본 배송지
+					  <input name="address_type" type="radio" checked="checked">
+					  <span class="radiomark"></span>
+					</label>
+				</div>
+				<div class="list_value width_auto margin_r_3x">
+					<label class="radio_btt">최근 배송지
+					  <input name="address_type" type="radio">
+					  <span class="radiomark"></span>
+					</label>
+				</div>
+				<div class="list_value width_auto">
+					<label class="radio_btt">신규 배송지
+					  <input name="address_type" type="radio">
+					  <span class="radiomark"></span>
+					</label>
+				</div>
+				<!--주소-->
+				<div class="flex_col mobile_col1" style="width: 60%;">
+					<list-text-single title="받으실분" placeholder="받으실분 이름입력하세요."></list-text-single>
+					<list-text2-single-btt title="우편번호"></list-text2-single-btt>
+					<list-text-single title="주소" placeholder="주소를 입력하세요."></list-text-single>
+					<list-text-single title="세부주소" placeholder="세부주소를 입력하세요."></list-text-single>
+					<list-text3-single title="전화번호"></list-text3-single>
+					<list-text3-single title="휴대폰"></list-text3-single>
+					<list-text-area title="메세지" placeholder="배송시 주의사항을 알려주세요."></list-text-area>
+				</div>
+			</div>
+			<p class="subtitle black900 w700 margin_b_2x">
+				배송선택
+			</p>
+			<div class="flex_row col1">
+				<div class="list_value width_auto margin_r_3x">
+					<label class="radio_btt">기본 배송
+					  <input name="delivery_type" type="radio" checked="checked">
+					  <span class="radiomark"></span>
+					</label>
+				</div>
+				<div class="list_value width_auto margin_r_3x">
+					<label class="radio_btt">퀵서비스
+					  <input name="delivery_type" type="radio">
+					  <span class="radiomark"></span>
+					</label>
+				</div>
+				<div class="list_value width_auto">
+					<label class="radio_btt">직접수령
+					  <input name="delivery_type" type="radio">
+					  <span class="radiomark"></span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<!--주문하기-->
+		<div class="col_order_action padding_2x white_bg">
+			<p class="subtitle black900 w700 margin_b_2x">
+				결제금액
+			</p>
+			<div class="flex_col col1 margin_b_6x">
+				<list-value-regular title="결제금액" value="123,456,789원"></list-value-regular>
+				<list-value-regular title="배송비" value="0원"></list-value-regular>
+				<list-value-regular title="쿠폰할인" value="0원"></list-value-regular>
+				<list-text-single-btt2 title="쿠폰코드" placeholder="쿠폰코드를 입력해주세요" button="쿠폰적용"></list-text-single-btt2>
+				<list-text-single-btt2 title="적립금사용" placeholder="사용할 적립금을 입력해주세요" button="적립금사용"></list-text-single-btt2>
+				<list-value-regular-btt title="보유 적립금" value="10,000원" button="모두사용"></list-value-regular-btt>
+				<list-value-strong title="결제금액" value="123,456,789원"></list-value-strong>
+				<div id="invite_artist" class="flex_row align_end justify_end padding_1x" style="width:100%; height: 124px">
+					<div class="button btt_medium border_radius white_bg primary600 margin_r_1x">
+						아티스트 초대
+					</div>
+					<div class="button btt_medium border_radius white_border white900">
+						아티스트 선택
+					</div>
+				</div>
+			</div>
+			<p class="subtitle black900 w700 margin_b_2x">
+				결제수단
+			</p>
+			<div class="flex_col col1 margin_b_6x">
+				<div class="list_value width_auto border_bottom">
+					<label class="radio_btt">신용카드
+					  <input name="payment_type" type="radio" checked="checked">
+					  <span class="radiomark"></span>
+					</label>
+				</div>
+				<div class="list_value width_auto border_bottom">
+					<label class="radio_btt">가상계좌
+					  <input name="payment_type" type="radio">
+					  <span class="radiomark"></span>
+					</label>
+				</div>
+				<div class="list_value width_auto border_bottom">
+					<label class="radio_btt">핸드폰
+					  <input name="payment_type" type="radio">
+					  <span class="radiomark"></span>
+					</label>
+				</div>
+				<div class="list_value width_auto border_bottom">
+					<label class="radio_btt">에스크로 가상계좌
+					  <input name="payment_type" type="radio">
+					  <span class="radiomark"></span>
+					</label>
+				</div>
+			</div>
+			<p class="subtitle black900 w700 margin_b_2x">
+				구매내역확인
+			</p>
+			<p class="caption black600">
+				구매하실 상품의 상품정보 및 가격을 확인하였으며, 이에동의합니다.<br>
+				(전자상거래법 제8조 제2항)
+			</p>
+			<div class="list_value">
+				<label class="checkbox">위 내용에 동의합니다.
+				  <input name="info_check_agreeent" type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	// /*CENTER SUBTAB ARRAY*/
+	// subTabList = [
+	// 			  "전체",
+	// 			  "뉴스",
+	// 			  "드럼영상",
+	// 			  "사진갤러리",
+	// 			  "중고장터",
+	// 			  "출고후기",
+	// 			  "상품후기",
+	// 			  "아티스트",
+	// 			  "자유게시판"
+	// 				];
+</script>
+<link rel="import" href="components/NaviBar/NaviBar.html">
+<link rel="import" href="components/TabMain/TabMain.html">
+<link rel="import" href="components/CardFull/CardFull.html">
+<link rel="import" href="components/CardBig/CardBig.html">
+<link rel="import" href="components/CardHuge/CardHuge.html">
+<link rel="import" href="components/CardVideo/CardVideo.html">
+<link rel="import" href="components/ListNewsImg/ListNewsImg.html">
+<link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
+<link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
+<link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/ListTextSingleBtt/ListTextSingleBtt.html">
+<link rel="import" href="components/ListText3Single/ListText3Single.html">
+<link rel="import" href="components/ListText2SingleBtt/ListText2SingleBtt.html">
+<link rel="import" href="components/ListTextSingle/ListTextSingle.html">
+<link rel="import" href="components/ListTextArea/ListTextArea.html">
+<link rel="import" href="components/GridArtist/GridArtist.html">
+<link rel="import" href="components/Footer/Footer.html">
+<link rel="import" href="components/ListProduct/ListProduct.html">
+<link rel="import" href="components/ListValueRegular/ListValueRegular.html">
+<link rel="import" href="components/ListValueStrong/ListValueStrong.html">
+<link rel="import" href="components/ListValueRegularBtt/ListValueRegularBtt.html">
+<link rel="import" href="components/ListOrderItem/ListOrderItem.html">
+<link rel="import" href="components/ListTextSingle/ListTextSingle.html">
+<link rel="import" href="components/ListTextSingleBtt2/ListTextSingleBtt2.html">
+<link rel="import" href="components/DropDownCategoryProduct/DropDownCategoryProduct.html">
+</html>

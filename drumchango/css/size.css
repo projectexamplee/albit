@@ -23,6 +23,14 @@
 	width: 50%;
 }
 
+img.col2{
+	width: calc(50% - 8px);
+	height: auto;
+}
+
+.col4{
+	width: 25% !important;
+}
 
 /*margin*/
 .margin_1x{
@@ -152,7 +160,9 @@
 
 
 
-
+.width_auto{
+	width: auto !important; 
+}
 
 
 /*REMOVE DEFAULT MARGIN*/

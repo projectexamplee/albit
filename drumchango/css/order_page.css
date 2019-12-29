@@ -1,0 +1,15 @@
+.col_order_info{
+	width: 704px;
+}
+.col_order_action{
+	width: 360px;
+}
+
+@media screen and (max-width: 680px) {
+	.col_order_info{
+		width: 100%;
+	}
+	.col_order_action{
+		width: 100%;
+	}
+}

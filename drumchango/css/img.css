@@ -1,0 +1,17 @@
+.img_post{
+	width: 64%;
+	height: auto;
+}
+
+@media screen and (max-width: 680px) {
+	.img_post{
+		width: 100%;
+		height: auto;
+	}
+}
+
+#invite_artist{
+	background-image: url("../img/bg_invite_artist.jpg");
+	background-size: cover;
+	background-position: center;
+}

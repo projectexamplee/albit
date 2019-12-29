@@ -13,12 +13,16 @@ body{
 	line-height: 18.6px;
 }
 .caption{
-	font-size: 10.8px;
-	line-height: 16.8px;
+	font-size: 10.8px !important;
+	line-height: 16.8px !important;
 }
 .subtitle{
 	font-size: 16.8px;
 	line-height: 24.8px;
+}
+.big_title{
+	font-size: 20.4px;
+	line-height: 28.8px;
 }
 
 /*Weight*/

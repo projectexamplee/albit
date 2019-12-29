@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<style>
+		.component_title{
+			color: #a0a0a0;
+			font-weight: 700;
+			margin: 32px 0 16px 16px;
+		}
+		.col1_mg_r_1x{
+			width: calc(100% - 8px);
+			margin-right: 8px;
+		}
+		.col1_mg_l_1x{
+			width: calc(100% - 8px);
+			margin-left: 8px;
+		}
+		@media screen and (max-width: 680px) {
+			.col1_mg_r_1x{
+				width: calc(100% - 0px);
+				margin-right: 0px;
+			}
+			.col1_mg_l_1x{
+				width: calc(100% - 0px);
+				margin-left: 0px;
+			}
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="live_area flex_row">
+		<!--big button-->
+		<div class="col2_1">
+			<p class="component_title col1">form basic</p>
+			<div class="col1 col1_mg_r_1x flex_row padding_2x white white_bg">
+				<div class="col2 padding_1x">
+					<div class="list_text_single space_between">
+						<label>입력명</label>
+						<div class="form">
+							<input type="text" placeholder="입력하세요.">
+						</div>
+					</div>
+				</div>
+				<div class="col2 padding_1x">
+					<div class="list_text_single space_between">
+						<label>옵션명</label>
+						<div class="form">
+							<select id="option" name="country">
+							  <option value="" disabled selected>옵션을 선택하세요.</option>
+						      <option value="option1">옵션1</option>
+						      <option value="option2">옵션2</option>
+						    </select>
+						</div>
+					</div>
+				</div>
+		
+			</div>
+		</div>
+		<div class="col2_1">
+			<p class="component_title col1">form basic2</p>
+			<div class="col1 col1_mg_l_1x flex_row padding_2x white white_bg">
+				<div class="col2 padding_1x">
+					<div class="form">
+						<input type="text" placeholder="입력하세요.">
+					</div>
+				</div>
+				<div class="col2 padding_1x">
+					<div class="form">
+						<select id="option" name="country">
+						  <option value="" disabled selected>옵션을 선택하세요.</option>
+					      <option value="option1">옵션1</option>
+					      <option value="option2">옵션2</option>
+					    </select>
+					</div>
+				</div>
+		
+			</div>
+		</div>
+		<div class="col2_1">
+			<p class="component_title col1">form in list</p>
+			<div class="col1 col1_mg_r_1x flex_row white white_bg">
+				<div class="col1 padding_1x">
+					<div class="list_text3_single space_between">
+						<label>입력명</label>
+						<div class="form">
+							<input type="text" placeholder="입력하세요.">
+						</div>
+						-
+						<div class="form">
+							<input type="text" placeholder="입력하세요.">
+						</div>
+						-
+						<div class="form">
+							<input type="text" placeholder="입력하세요.">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--GENERAL BUTTON-->
+		<div class="col2_1">
+			<p class="component_title col1">form in list with button</p>
+			<div class="col1 col1_mg_l_1x flex_row padding_1x white_bg">
+				<div class="col1">
+					<div class="list_text_single_btt">
+						<label>입력명</label>
+						<div class="form">
+							<input type="text" placeholder="입력하세요.">
+						</div>
+						<div class="button btt_medium border_radius primary600_bg white900 margin_r_1x">
+							확인
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col2_1">
+			<p class="component_title col1">form in list with button</p>
+			<div class="col1 col1_mg_r_1x flex_row padding_2x white_bg">
+				<div class="col1 padding_1x">
+					<div class="list_text2_single_btt space_between">
+						<label>입력명</label>
+						<div class="form">
+							<input type="text" placeholder="입력하세요.">
+						</div>
+						<span class="subtitle">-</span>
+						<div class="form">
+							<input type="text" placeholder="입력하세요.">
+						</div>
+						<div class="button btt_medium border_radius primary600_bg white900 margin_r_1x">
+							확인
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--ROUND BUTTON WITH ICON-->
+		<div class="col2_1">
+			<p class="component_title col1">List Value</p>
+			<div class="col1 col1_mg_l_1x flex_row padding_2x white white_bg">
+				<div class="list_value strong border_bottom">
+					<span class="title">판매가격</span>
+					<span class="value">140,000원</span>
+				</div>
+				<div class="list_value regular border_bottom">
+					<span class="title">원산진</span>
+					<span class="value">중국</span>
+				</div>
+			</div>
+		</div>
+		<div class="col2_1">
+			<p class="component_title col1">Selection Control</p>
+			<div class="col1 col1_mg_r_1x flex_row padding_2x white_bg">
+				<div class="list_value">
+					<label class="checkbox">옵션1
+					  <input type="checkbox" checked="checked">
+					  <span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="list_value">
+					<label class="radio_btt">옵션2
+					  <input type="radio" checked="checked">
+					  <span class="radiomark"></span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="col2_1">
+			<p class="component_title col1">long button</p>
+			<div class="col1 col1_mg_l_1x flex_row padding_2x white white_bg">
+				
+			</div>
+		</div>
+	</div>
+</body>
