@@ -1,0 +1,244 @@
+<html>
+<head>
+  <title>DRUM CHANGO</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/mypage.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+</head>
+
+<body>
+	<!--TOP AREA-->
+	<div class="col1 flex_col white_bg margin_b_2x">
+		<div class="live_area">
+			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
+			<navi-bar></navi-bar>
+			<!--SITE GLOBAL NAVIGATION TAB-->
+			<tab-main currentTab="none"></tab-main>
+		</div>
+	</div>
+	<!--CONTENT AREA-->
+	<div class="live_area flex_row space_between">
+		<div class="col_side padding_2x white_bg">
+			<div class="menu selected">
+				마이페이지 홈
+			</div>
+			<div class="menu">
+				기본정보 수정
+			</div>
+			<div class="menu">
+				포인트 적립내역
+			</div>
+			<div class="menu">
+				내가 작성한 글
+			</div>
+			<div class="menu">
+				내가 작성한 댓글
+			</div>
+			<div class="menu">
+				내가 올린 중고상품
+			</div>
+			<div class="menu">
+				내 창고
+			</div>
+		</div>
+		<div class="col_content space_between">
+			<!--프로필-->
+			<div class="flex_col col1 margin_b_2x padding_2x space_between white_bg">
+				<div class="flex_row_col space_between border_bottom padding_2x">
+					<!--프로필 정보-->
+					<div class="flex_row_col align_center">
+						<div id="my_photo" class="profile_b"></div>
+						<div class="padding_2x">
+							<p class="subtitle w400 black900">
+								조이 조디슨. <span class="primary600">LV2</span>
+							</p>
+							<p class="caption black900">
+								포인트: <span class="primary600">123,456원</span>
+							</p>
+						</div>
+					</div>
+					<!--프로필 액션-->	
+					<div class="flex_row align_end space_around">
+						<div class="button border_radius btt_medium black300_border black300 margin_r_2x">
+							<img class="ic_btt" src="img/ic/ic_write_black300.svg">
+							 기본정보 수정
+						</div>
+						<div class="button border_radius btt_medium primary600_bg white900">
+							<img class="ic_btt" src="img/ic/ic_list_white.svg">
+							포인트 적립내역
+						</div>
+					</div>
+				</div>
+				<!--아티스트 소개-->
+				<div class="flex_row col1 margin_t_2x" style="align-items: stretch;">
+					<div class="col2_1 flex_col padding_2x">
+						<div id="c_1" class="card_img_top flex_center margin_b_1x" style="padding:35% 0">
+							<img class="ic_youtube" src="img/ic/ic_youtube.svg">
+						</div>
+						<div class="button btt_full black300 black300_border border_radius margin_t_2x">
+							프로필 비디오 url 변경
+						</div>
+					</div>
+					<div class="col2_1 flex_col space_between padding_2x">
+						<div class="col1">
+							<p class="body col1 w700 black900 margin_b_1x">
+								아티스트 소개
+							</p>
+							<p class="body w400 black600 margin_b_4x">
+								밴드 OOO에서 5년동안 드러머로 활동중이며,  낮에는 OO동에 위치한 입시학원에서 학생들을 지도하고 있습니다. 주로 OO스타일의 연주를 즐기지만 다양한 분들과 주기적으로 합주도 합니다. 현재 직장인 합주모임 운영중인데 관심있으신분 연락주세요.
+							</p>
+							<p class="body col1 w700 black900 margin_b_1x">
+								활동 내역
+							</p>
+							<p class="body w400 black600">
+								- 2010년:  직장인 밴드 톼사자 정기공연<br>
+								- 2010년:  직장인 밴드 톼사자 정기공연
+							</p>
+						</div>
+						<div class="button btt_full black300 black300_border border_radius margin_t_2x">
+							아티스트 소개 수정
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex_row_col space_between">
+				<div class="col2_1 padding_2x flex_row space_between white white_bg margin_b_2x">
+					<p class="subtitle col1 w700 black900 margin_b_2x">
+						내 드럼영상
+					</p>
+					<card-video class="card col2 margin_b_2x" imgSrc="img/example/ucc/c7.jpg"></card-video>
+					<card-video class="card col2 margin_b_2x" imgSrc="img/example/ucc/c8.jpg"></card-video>
+					<card-video class="card col2 margin_b_2x" imgSrc="img/example/ucc/c9.jpg"></card-video>
+					<card-video class="card col2 margin_b_2x" imgSrc="img/example/ucc/c10.jpg"></card-video>
+					<div class="button btt_full black300 black300_border border_radius margin_t_2x">
+						드럼영상 더보기
+					</div>
+				</div>
+				<div class="col2_1 padding_2x flex_row space_between white white_bg margin_b_2x">
+					<p class="subtitle col1 w700 black900 margin_b_2x">
+						내 갤러리
+					</p>
+					<card-big class="card col2 margin_b_2x" imgSrc="img/example/ucc/c1.jpg"></card-big>
+					<card-big class="card col2 margin_b_2x" imgSrc="img/example/ucc/c2.jpg"></card-big>
+					<card-big class="card col2 margin_b_2x" imgSrc="img/example/ucc/c3.jpg"></card-big>
+					<card-big class="card col2 margin_b_2x" imgSrc="img/example/ucc/c4.jpg"></card-big>
+					<div class="button btt_full black300 black300_border border_radius margin_t_2x">
+						사진갤러리 더보기
+					</div>
+				</div>
+				<!--내창고-->
+				<style>
+				@media screen and (max-width: 680px) {
+						.card.col5{
+							display: flex;
+							flex-direction: column;
+							width: 148px;
+							margin:0 8px 32px 8px;
+						}
+						.slider{
+							margin-bottom: -32px;
+						}
+					}
+				</style>
+				<div class="flex_col col1 white_bg padding_2x white_bg margin_b_2x">
+					<p class="subtitle w700 black900 margin_b_2x">
+						내 창고
+					</p>
+					<div class="flex_row slider col1_4x_mb">
+						<div class="slider_content space_between col1">
+							<card-small class="card col5" imgSrc="img/example/c5.jpg"></card-small>
+							<card-small class="card col5" imgSrc="img/example/c6.jpg"></card-small>
+							<card-small class="card col5" imgSrc="img/example/c7.jpg"></card-small>
+							<card-small class="card col5" imgSrc="img/example/c8.jpg"></card-small>
+							<card-small class="card col5" imgSrc="img/example/c9.jpg"></card-small>
+						</div>
+					</div>
+					<div class="button btt_full black300 black300_border border_radius margin_t_2x">
+						내 창고 더보기
+					</div>
+				</div>
+				<!--내가작성한 글-->
+				<div class="flex_col col2_1 white_bg padding_2x white_bg margin_b_2x">
+					<p class="subtitle w700 black900 margin_b_2x">
+						내가 작성한글
+					</p>
+					<list-general-post class="flex_col margin_b_1x" imgSrc="img/user/u1.jpg"></list-general-post>
+					<list-general-post class="flex_col margin_b_1x" imgSrc="img/user/u2.jpg"></list-general-post>
+					<list-general-post class="flex_col margin_b_1x" imgSrc="img/user/u3.jpg"></list-general-post>
+					<list-general-post class="flex_col margin_b_1x"imgSrc="img/user/u4.jpg"></list-general-post>
+					<div class="button btt_full black300 black300_border border_radius margin_t_2x">
+						내가 작성한글 더보기
+					</div>
+				</div>
+				<!--내가작성한 댓글-->
+				<div class="flex_col col2_1 white_bg padding_2x white_bg margin_b_2x">
+					<p class="subtitle w700 black900 margin_b_2x">
+						내가 작성한 댓글
+					</p>
+					<list-general-post class="flex_col margin_b_1x" imgSrc="img/user/u1.jpg"></list-general-post>
+					<list-general-post class="flex_col margin_b_1x" imgSrc="img/user/u2.jpg"></list-general-post>
+					<list-general-post class="flex_col margin_b_1x" imgSrc="img/user/u3.jpg"></list-general-post>
+					<list-general-post class="flex_col margin_b_1x"imgSrc="img/user/u4.jpg"></list-general-post>
+					<div class="button btt_full black300 black300_border border_radius margin_t_2x">
+						내가 작성한 댓글 더보기
+					</div>
+				</div>
+				<!--내가올린 중고 상품-->
+				<div class="flex_col col1 white_bg padding_2x white_bg margin_b_2x">
+					<p class="subtitle w700 black900 margin_b_2x">
+						내가 올린 중고상품
+					</p>
+					<list-second-prd class="col1" imgSrc="img/example/c5.jpg"></list-second-prd>
+					<list-second-prd class="col1" imgSrc="img/example/c6.jpg"></list-second-prd>
+					<list-second-prd class="col1" imgSrc="img/example/c7.jpg"></list-second-prd>
+					<list-second-prd class="col1" imgSrc="img/example/c8.jpg"></list-second-prd>
+					<div class="button btt_full black300 black300_border border_radius margin_t_2x">
+						내가 올린 중고상품 더보기
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	// /*CENTER SUBTAB ARRAY*/
+	// subTabList = [
+	// 			  "전체",
+	// 			  "뉴스",
+	// 			  "드럼영상",
+	// 			  "사진갤러리",
+	// 			  "중고장터",
+	// 			  "출고후기",
+	// 			  "상품후기",
+	// 			  "아티스트",
+	// 			  "자유게시판"
+	// 				];
+</script>
+<link rel="import" href="components/NaviBar/NaviBar.html">
+<link rel="import" href="components/TabMain/TabMain.html">
+<link rel="import" href="components/CardFull/CardFull.html">
+<link rel="import" href="components/CardBig/CardBig.html">
+<link rel="import" href="components/CardSmall/CardSmall.html">
+<link rel="import" href="components/CardVideo/CardVideo.html">
+<link rel="import" href="components/ListNewsImg/ListNewsImg.html">
+<link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
+<link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
+<link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/GridArtist/GridArtist.html">
+<link rel="import" href="components/Footer/Footer.html">
+<link rel="import" href="components/ListHorizonUsers/ListHorizonUsers.html">
+<link rel="import" href="components/TabedContent/TabedContent.html">
+<link rel="import" href="components/ListGeneralPost/ListGeneralPost.html">
+</html>

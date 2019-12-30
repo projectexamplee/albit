@@ -86,6 +86,16 @@
 	height: 36px;
 	border-radius: 50%;
 	background-color: #f0f0f0;
+	background-size: cover;
+	background-position: center;
+}
+.profile_b{
+	width: 108px;
+	height: 108px;
+	border-radius: 50%;
+	background-color: #f0f0f0;
+	background-size: cover;
+	background-position: center;
 }
 @media screen and (max-width: 680px) {
 	.my_profile{
@@ -120,6 +130,7 @@
 	align-items: center;
 	justify-content: center;
 	color: #989898;
+	cursor: pointer;
 }
 /*MAIN NAVIGATION SUB TAB*/
 .tab_sub.selected{
@@ -148,6 +159,7 @@
 	justify-content: center;
 	color: #989898;
 	background-color: #ffffff;
+	cursor: pointer;
 }
 .tab_sub2.selected{
 	color:#ffffff;
@@ -170,12 +182,14 @@
 	position: relative;
 	/*width: auto;*/
 	height: 36px;
+	min-width: 86px;
 	padding:0 16px;
 	font-size: 12.8px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: #989898;
+	cursor: pointer;
 }
 /*MAIN NAVIGATION SUB TAB*/
 .tab_sub3.selected{
@@ -439,6 +453,9 @@
 .product_list_img>.list_info{
 	width: calc(100% - 88px - 64px);
 }
+.cart_item>.list_info{
+	width: calc(100% - 88px - 88px);
+}
 .product_list_img>.product_list_extra{
 	display: flex;
 	flex-direction: column;
@@ -586,4 +603,25 @@
 	.col_items{
 		width: 100%;
 	}
+}
+
+#ic_cart{
+	position: relative;
+}
+.num_cart{
+	position: absolute;
+	top:8px;
+	right:8px;
+	width: 12px;
+	height: 12px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 8.6px;
+	line-height: 12.8px;
+	font-weight: 700;
+	background-color: #EE4123;
 }

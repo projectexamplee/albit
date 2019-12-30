@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic_user_black600</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10,10 C11.8416667,10 13.3333333,8.50833333 13.3333333,6.66666667 C13.3333333,4.825 11.8416667,3.33333333 10,3.33333333 C8.15833333,3.33333333 6.66666667,4.825 6.66666667,6.66666667 C6.66666667,8.50833333 8.15833333,10 10,10 Z M10,11.6666667 C7.775,11.6666667 3.33333333,12.7833333 3.33333333,15 L3.33333333,16.6666667 L16.6666667,16.6666667 L16.6666667,15 C16.6666667,12.7833333 12.225,11.6666667 10,11.6666667 Z" id="path-1"></path>
+    </defs>
+    <g id="ALL-PAGE-PC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="msg-chat" transform="translate(-364.000000, -446.000000)">
+            <g id="Group-6" transform="translate(259.000000, 206.000000)">
+                <g id="Group">
+                    <g id="Buttons-/-Outlined-/-Enabled" transform="translate(84.000000, 229.000000)">
+                        <g id="icon/social/person_24px" transform="translate(18.131148, 8.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g fill-rule="nonzero"></g>
+                            <g id="✱-/-Color-/-Icons-/-Black-/-Inactive" mask="url(#mask-2)" fill="#000000" fill-opacity="0.54" fill-rule="evenodd">
+                                <rect id="Rectangle" x="0" y="0" width="20" height="20"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

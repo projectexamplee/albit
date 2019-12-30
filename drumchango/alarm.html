@@ -1,0 +1,117 @@
+<html>
+<head>
+  <title>DRUM CHANGO</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="stylesheet" type="text/css" href="css/img.css">
+	<link rel="stylesheet" type="text/css" href="css/product_page.css">
+	<link rel="stylesheet" type="text/css" href="css/order_page.css">
+</head>
+<body>
+	<!--TOP AREA-->
+	<div class="col1 flex_col white_bg border_bottom">
+		<div class="live_area">
+			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
+			<navi-bar keyword="제품명"></navi-bar>
+			<!--SITE GLOBAL NAVIGATION TAB-->
+			<tab-main currentTab="none"></tab-main>
+		</div>
+	</div>
+	<!--CONTENT AREA-->
+	<div class="live_area flex_row space_between white_bg margin_t_2x">
+		<div class="flex_row col1 border_bottom">
+			<div id="alram" class="tab_sub3 selected col2_mobile">
+				알람
+			</div>
+			<div id="msg" class="tab_sub3 col2_mobile">
+				메세지
+			</div>
+		</div>
+		<!--알람영역-->
+		<div id="alarm_col" class="flex_col mobile_col1 margin_2x border_black50" style="width: 75%;">
+			<list-alarm type="shipping" msg="주문하신 상품 'oooooo'의 배송이 시작되었습니다." isRead="no" class="col1 flex_col border_bottom"></list-alarmx>
+			<list-alarm type="comment" msg="'ooo'님이 유저님의 글에 댓글을 남기셨습니다. '저도 그렇게 생각합니다...'" isRead="yes" class="col1 flex_col border_bottom"></list-alarmx>
+			<list-alarm type="comment" msg="'ooo'님이 유저님의 글에 댓글을 남기셨습니다. '댓글 메세지 내용...'" isRead="yes" class="col1 flex_col border_bottom"></list-alarmx>
+			<list-alarm type="like" msg="'ooo'님이 유저님의 글을 좋아합니다. 'FX202 사용 후기'" isRead="yes" class="col1 flex_col border_bottom"></list-alarmx>
+		</div>
+		<!--메세지영역-->
+		<div id="msg_col" class="flex_col mobile_col1 margin_2x border_black50 hide" style="width: 75%;">
+			<list-msg imgSrc="img/user/u1.jpg" msg="안녕하세요~ 반가워요" isRead="yes" class="col1 flex_col border_bottom"></list-msg>
+			<list-msg imgSrc="img/user/u2.jpg" msg="타이머 팔렸나요?ㅎㅎ" isRead="no" class="col1 flex_col border_bottom"></list-msg>
+			<list-msg imgSrc="img/user/u3.jpg" msg="합주인원 구하세요?" isRead="yes" class="col1 flex_col"></list-msg>
+		</div>
+	</div>
+	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>	
+<script>
+	$(document).ready(function(){
+	    $('#alram').on('click',function(){
+			$('#alram').addClass("selected");
+			$('#msg').removeClass("selected");
+			$('#alarm_col').removeClass("hide");
+			$('#msg_col').addClass("hide");
+		});
+		$('#msg').on('click',function(){
+			$('#msg').addClass("selected");
+			$('#alram').removeClass("selected");
+			$('#msg_col').removeClass("hide");
+			$('#alarm_col').addClass("hide");
+		});
+	});
+</script>
+<script>
+	// /*CENTER SUBTAB ARRAY*/
+	// subTabList = [
+	// 			  "전체",
+	// 			  "뉴스",
+	// 			  "드럼영상",
+	// 			  "사진갤러리",
+	// 			  "중고장터",
+	// 			  "출고후기",
+	// 			  "상품후기",
+	// 			  "아티스트",
+	// 			  "자유게시판"
+	// 				];
+</script>
+<link rel="import" href="components/NaviBar/NaviBar.html">
+<link rel="import" href="components/TabMain/TabMain.html">
+<link rel="import" href="components/CardFull/CardFull.html">
+<link rel="import" href="components/CardBig/CardBig.html">
+<link rel="import" href="components/CardHuge/CardHuge.html">
+<link rel="import" href="components/CardVideo/CardVideo.html">
+<link rel="import" href="components/ListNewsImg/ListNewsImg.html">
+<link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
+<link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
+<link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/ListTextSingleBtt/ListTextSingleBtt.html">
+<link rel="import" href="components/ListText3Single/ListText3Single.html">
+<link rel="import" href="components/ListText2SingleBtt/ListText2SingleBtt.html">
+<link rel="import" href="components/ListTextSingle/ListTextSingle.html">
+<link rel="import" href="components/ListTextArea/ListTextArea.html">
+<link rel="import" href="components/GridArtist/GridArtist.html">
+<link rel="import" href="components/Footer/Footer.html">
+<link rel="import" href="components/ListProduct/ListProduct.html">
+<link rel="import" href="components/ListValueRegular/ListValueRegular.html">
+<link rel="import" href="components/ListValueStrong/ListValueStrong.html">
+<link rel="import" href="components/ListValueRegularBtt/ListValueRegularBtt.html">
+<link rel="import" href="components/ListOrderItem/ListOrderItem.html">
+<link rel="import" href="components/ListCartItem/ListCartItem.html">
+<link rel="import" href="components/ListTextSingle/ListTextSingle.html">
+<link rel="import" href="components/ListTextSingleBtt2/ListTextSingleBtt2.html">
+<link rel="import" href="components/DropDownCategoryProduct/DropDownCategoryProduct.html">
+<link rel="import" href="components/ListMsg/ListMsg.html">
+<link rel="import" href="components/ListAlarm/ListAlarm.html">
+</html>

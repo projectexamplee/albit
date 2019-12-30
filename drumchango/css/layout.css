@@ -42,11 +42,20 @@ body{
 .space_between{
 	justify-content: space-between;
 }
+.space_around{
+	justify-content: space-around;
+}
+.align_start{
+	align-items: flex-start;
+}
 .align_center{
 	align-items: center;
 }
 .align_end{
 	align-items: flex-end;
+}
+.aign_self_end{
+	align-self: flex-end;
 }
 .justify_center{
 	justify-content: center;
@@ -64,6 +73,10 @@ body{
 
 .col2_1{
 	width: 50%;
+}
+
+.space_between>.col2_1{
+	width: calc(50% - 8px);
 }
 .col3_1{
 	width: 33.3%;
@@ -92,6 +105,9 @@ body{
 	.col2_1{
 		width: 100%;
 	}
+	.col2_mobile{
+		width: 50% !important;
+	}
 	.col4_2{
 		width: 25%;
 	}
@@ -106,6 +122,9 @@ body{
 	}
 	.flex_row_col{
 		flex-direction: column;
+	}
+	.space_between>.col2_1{
+		width: 100%;
 	}
 }
 

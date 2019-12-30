@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic_send_msg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="2.01 21 23 12 2.01 3 2 10 17 12 2 14"></polygon>
+    </defs>
+    <g id="ALL-PAGE-PC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="msg-chat" transform="translate(-1123.000000, -227.000000)">
+            <g id="Text-Field-/-Outlined-/-Filled-/-Enable-small" transform="translate(620.000000, 227.000000)">
+                <g id="Group-4">
+                    <g id="ic_send_msg" transform="translate(503.000000, 0.000000)">
+                        <rect id="Rectangle" fill="#FD4827" x="0" y="0" width="44" height="44" rx="2"></rect>
+                        <g id="icon/content/send_24px" transform="translate(10.000000, 10.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g fill-rule="nonzero"></g>
+                            <g id="✱-/-Color-/-Icons-/-White-/-Active" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,7 +1,10 @@
 a{
 	text-decoration: none;
+	color: inherit;
 }
-
+.hide{
+	display: none !important;
+}
 .component_title{
 	color: #a0a0a0;
 	font-weight: 700;
@@ -29,16 +32,16 @@ a{
 	margin-bottom: 16px;
 }
 .card.col2{
-	width: calc(50% - 4px);
+	width: calc(50% - 8px);
 }
 .card.col3_2{
-	width: calc(33% - 4px);
+	width: calc(33% - 8px);
 }
 .card.col4_2{
-	width: calc(25% - 4px);
+	width: calc(25% - 8px);
 }
 .card.col5_2{
-	width: calc(20% - 4px);
+	width: calc(20% - 8px);
 }
 @media screen and (max-width: 680px) {
 	.card.col3_2{

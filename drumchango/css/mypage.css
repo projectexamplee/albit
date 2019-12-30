@@ -1,0 +1,28 @@
+.col_side{
+	width: 208px
+}
+.col_content{
+	width: calc(100% - 208px - 16px);
+}
+.col_side>.menu{
+	width: 100%;
+	height: 48px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-weight: 400;
+	font-size: 12.8px;
+	color: #383838;
+}
+.col_side>.menu.selected{
+	font-weight: 700;
+	color: #EE4123;
+}
+@media screen and (max-width: 680px) {
+	.col_side{
+		display: none;
+	}
+	.col_content{
+		width: 100%;
+	}
+}

@@ -170,12 +170,17 @@
       if(currentTab){
         currentTab.classList.add("selected");
       }
-      else{
-        $('#main_tab').css("display","none");
-      }
+      // else{
+      //   $('#main_tab').css("display","none");
+      // }
 
       if(tabType=='search'){
         $('.sub_tab_list').addClass("col1");
+        $('#main_tab').css("display","none");
+      }
+
+      if(tabType=='none'){
+        $('.sub_tab_list').css("display","none");
       }
     
       addTabList();

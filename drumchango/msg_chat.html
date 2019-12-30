@@ -1,0 +1,116 @@
+<html>
+<head>
+  <title>DRUM CHANGO</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="stylesheet" type="text/css" href="css/img.css">
+	<link rel="stylesheet" type="text/css" href="css/msg_chat.css">
+</head>
+<body>
+	<!--TOP AREA-->
+	<div class="col1 flex_col white_bg border_bottom">
+		<div class="live_area">
+			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
+			<navi-bar keyword="제품명"></navi-bar>
+			<!--SITE GLOBAL NAVIGATION TAB-->
+			<tab-main currentTab="none"></tab-main>
+		</div>
+	</div>
+	<!--CONTENT AREA-->
+	<div class="live_area flex_row space_between margin_t_2x">
+		<div class="col_user flex_row flex_center padding_2x white_bg">
+			<div id="u6" class="profile_b"></div>
+			<div class="padding_2x">
+				<p class="subtitle w400 black900">
+					비니폴. <span class="primary600">LV2</span>
+				</p>
+				<p class="caption black900">
+					포인트: <span class="primary600">123,456원</span>
+				</p>
+			</div>
+			<div class="button border_radius btt_medium black300_border black600 margin_r_1x">
+				<img class="ic_btt" src="img/ic/ic_user_black600.svg">
+				유저페이지 방문
+			</div>
+		</div>
+		<div class="col_msg padding_2x white_bg">
+			<div class="msg_input flex_row col1 space_between">
+				<div class="form form_height_2x" style="width: calc(100% - 56px)">
+					<textarea id="value" type="text" placeholder="메세지를입력하세요."></textarea>
+				</div>
+				<div class="square border_radius">
+					<img src="img/ic/ic_send_msg.svg">
+				</div>
+			</div>
+			<div class="flex_col col1 align_start padding_4x">
+				<list-msg-bubble2 send="opt" imgSrc="img/user/u3.jpg" msg="안녕하세요 이미 누가 사갔어요TT" isRead="yes" class=" flex_col margin_b_2x"></list-msg-bubble2>
+				<list-msg-bubble send="opt" imgSrc="img/user/u1.jpg" msg="안녕하세요~ 반가워요" isRead="yes" class=" flex_col margin_b_2x"></list-msg-bubble>
+				<list-msg-bubble send="opt" imgSrc="img/user/u2.jpg" msg="타이머 팔렸나요?ㅎㅎ" isRead="no" class=" flex_col margin_b_2x"></list-msg-bubble>
+				<list-msg-bubble send="opt" imgSrc="img/user/u3.jpg" msg="합주인원 구하세요?" isRead="yes" class=" flex_col margin_b_2x"></list-msg-bubble>
+				<list-msg-bubble send="opt" imgSrc="img/user/u3.jpg" msg="합주인원 구하세요?" isRead="yes" class=" flex_col margin_b_2x"></list-msg-bubble>
+			</div>
+		</div>
+	</div>
+	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>	
+<script>
+	$(document).ready(function(){
+	});
+</script>
+<script>
+	// /*CENTER SUBTAB ARRAY*/
+	// subTabList = [
+	// 			  "전체",
+	// 			  "뉴스",
+	// 			  "드럼영상",
+	// 			  "사진갤러리",
+	// 			  "중고장터",
+	// 			  "출고후기",
+	// 			  "상품후기",
+	// 			  "아티스트",
+	// 			  "자유게시판"
+	// 				];
+</script>
+<link rel="import" href="components/NaviBar/NaviBar.html">
+<link rel="import" href="components/TabMain/TabMain.html">
+<link rel="import" href="components/CardFull/CardFull.html">
+<link rel="import" href="components/CardBig/CardBig.html">
+<link rel="import" href="components/CardHuge/CardHuge.html">
+<link rel="import" href="components/CardVideo/CardVideo.html">
+<link rel="import" href="components/ListNewsImg/ListNewsImg.html">
+<link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
+<link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
+<link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/ListTextSingleBtt/ListTextSingleBtt.html">
+<link rel="import" href="components/ListText3Single/ListText3Single.html">
+<link rel="import" href="components/ListText2SingleBtt/ListText2SingleBtt.html">
+<link rel="import" href="components/ListTextSingle/ListTextSingle.html">
+<link rel="import" href="components/ListTextArea/ListTextArea.html">
+<link rel="import" href="components/GridArtist/GridArtist.html">
+<link rel="import" href="components/Footer/Footer.html">
+<link rel="import" href="components/ListProduct/ListProduct.html">
+<link rel="import" href="components/ListValueRegular/ListValueRegular.html">
+<link rel="import" href="components/ListValueStrong/ListValueStrong.html">
+<link rel="import" href="components/ListValueRegularBtt/ListValueRegularBtt.html">
+<link rel="import" href="components/ListOrderItem/ListOrderItem.html">
+<link rel="import" href="components/ListCartItem/ListCartItem.html">
+<link rel="import" href="components/ListTextSingle/ListTextSingle.html">
+<link rel="import" href="components/ListTextSingleBtt2/ListTextSingleBtt2.html">
+<link rel="import" href="components/DropDownCategoryProduct/DropDownCategoryProduct.html">
+<link rel="import" href="components/ListMsg/ListMsg.html">
+<link rel="import" href="components/ListMsgBubble/ListMsgBubble.html">
+<link rel="import" href="components/ListMsgBubble2/ListMsgBubble2.html">
+<link rel="import" href="components/ListAlarm/ListAlarm.html">
+</html>

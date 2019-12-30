@@ -1,0 +1,125 @@
+<html>
+<head>
+  <title>DRUM CHANGO</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="stylesheet" type="text/css" href="css/img.css">
+	<link rel="stylesheet" type="text/css" href="css/product_page.css">
+	<link rel="stylesheet" type="text/css" href="css/order_page.css">
+</head>
+<body>
+	<!--TOP AREA-->
+	<div class="col1 flex_col white_bg margin_b_2x">
+		<div class="live_area">
+			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
+			<navi-bar keyword="제품명"></navi-bar>
+			<!--SITE GLOBAL NAVIGATION TAB-->
+			<tab-main currentTab="none"></tab-main>
+		</div>
+	</div>
+	<!--CONTENT AREA-->
+	<div class="live_area flex_row space_between margin_t_2x">
+		<!--주문정보-->
+		<div class="col_order_info padding_2x white_bg">
+			<p class="subtitle black900 w700 margin_b_2x">
+				주문정보
+			</p>
+			<list-cart-item class="flex_col border_bottom" imgSrc="img/example/c7.jpg"></list-cart-item>
+			<list-cart-item class="flex_col border_bottom" imgSrc="img/example/c8.jpg"></list-cart-item>
+			<list-cart-item class="flex_col border_bottom" imgSrc="img/example/c9.jpg"></list-cart-item>
+			<div class="flex_row col1 space_between margin_t_4x">
+				<div class="flex_row space_between mobile_col1 margin_b_2x">
+					<div class="button caption border_radius btt_medium black300_border black600 margin_r_1x">
+						<img class="ic_btt" src="img/ic/ic_select_all.svg">
+						전체선택
+					</div>
+					<div class="button caption border_radius btt_medium black300_border black600 margin_r_1x">
+						<img class="ic_btt" src="img/ic/ic_delete.svg">
+						선택삭제
+					</div>
+					<div class="button caption border_radius btt_medium black300_border black600">
+						<img class="ic_btt" src="img/ic/ic_cart_empty.svg">
+						비우기
+					</div>
+				</div>
+				<div class="button border_radius btt_medium black100_bg black600 mobile_col1" style="">
+					<img class="ic_btt" src="img/ic/ic_print.svg">
+					선택상품 견적서 출력
+				</div>
+			</div>
+		</div>
+		<!--주문하기-->
+		<div class="col_order_action padding_2x white_bg">
+			<p class="subtitle black900 w700 margin_b_2x">
+				상품합계 금액
+			</p>
+			<div class="flex_col col1 margin_b_2x">
+				<list-value-strong title="결제금액" value="123,456,789원"></list-value-strong>
+				<list-value-regular title="적립급" value="123,456원"></list-value-regular>
+				<a href="order_page.html" class="button btt_big margin_b_2x primary600_bg white900">
+					선택상품 주문
+				</a>
+				<div class="flex_row space_between col1">
+					<img class="col2 margin_b_1x" src="img/banner_kb.jpg">
+					<img class="col2 margin_b_1x" src="img/banner_11pay.jpg">
+					<img class="col2 margin_b_1x" src="img/banner_naver_pay2.jpg">
+					<img class="col2 margin_b_1x" src="img/kakao_pay.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	// /*CENTER SUBTAB ARRAY*/
+	// subTabList = [
+	// 			  "전체",
+	// 			  "뉴스",
+	// 			  "드럼영상",
+	// 			  "사진갤러리",
+	// 			  "중고장터",
+	// 			  "출고후기",
+	// 			  "상품후기",
+	// 			  "아티스트",
+	// 			  "자유게시판"
+	// 				];
+</script>
+<link rel="import" href="components/NaviBar/NaviBar.html">
+<link rel="import" href="components/TabMain/TabMain.html">
+<link rel="import" href="components/CardFull/CardFull.html">
+<link rel="import" href="components/CardBig/CardBig.html">
+<link rel="import" href="components/CardHuge/CardHuge.html">
+<link rel="import" href="components/CardVideo/CardVideo.html">
+<link rel="import" href="components/ListNewsImg/ListNewsImg.html">
+<link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
+<link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
+<link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/ListTextSingleBtt/ListTextSingleBtt.html">
+<link rel="import" href="components/ListText3Single/ListText3Single.html">
+<link rel="import" href="components/ListText2SingleBtt/ListText2SingleBtt.html">
+<link rel="import" href="components/ListTextSingle/ListTextSingle.html">
+<link rel="import" href="components/ListTextArea/ListTextArea.html">
+<link rel="import" href="components/GridArtist/GridArtist.html">
+<link rel="import" href="components/Footer/Footer.html">
+<link rel="import" href="components/ListProduct/ListProduct.html">
+<link rel="import" href="components/ListValueRegular/ListValueRegular.html">
+<link rel="import" href="components/ListValueStrong/ListValueStrong.html">
+<link rel="import" href="components/ListValueRegularBtt/ListValueRegularBtt.html">
+<link rel="import" href="components/ListOrderItem/ListOrderItem.html">
+<link rel="import" href="components/ListCartItem/ListCartItem.html">
+<link rel="import" href="components/ListTextSingle/ListTextSingle.html">
+<link rel="import" href="components/ListTextSingleBtt2/ListTextSingleBtt2.html">
+<link rel="import" href="components/DropDownCategoryProduct/DropDownCategoryProduct.html">
+</html>

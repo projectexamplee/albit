@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="12px" viewBox="0 0 21 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic_select_all</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15,5.83333333 L13.825,4.65833333 L8.54166667,9.94166667 L9.71666667,11.1166667 L15,5.83333333 Z M18.5333333,4.65833333 L9.71666667,13.475 L6.23333333,10 L5.05833333,11.175 L9.71666667,15.8333333 L19.7166667,5.83333333 L18.5333333,4.65833333 Z M0.341666667,11.175 L5,15.8333333 L6.175,14.6583333 L1.525,10 L0.341666667,11.175 Z" id="path-1"></path>
+    </defs>
+    <g id="ALL-PAGE-PC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(0.000000, -4.000000)">
+            <g id="icon/action/done_all_24px" transform="translate(0.510638, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g fill-rule="nonzero"></g>
+                <g id="✱-/-Color-/-Icons-/-Black-/-Inactive" mask="url(#mask-2)" fill="#000000" fill-opacity="0.54" fill-rule="evenodd">
+                    <rect id="Rectangle" x="0" y="0" width="20" height="20"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

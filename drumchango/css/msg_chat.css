@@ -1,0 +1,42 @@
+.col_user{
+	width: 248px;
+}
+.col_msg{
+	width: calc(100% - 248px - 16px);
+}
+.msg_input{
+	padding-bottom: 36px;
+	border-bottom: solid 1px #f0f0f0;
+}
+
+@media screen and (max-width: 680px) {
+	.col_user{
+		display: none;
+	}
+	.col_msg{
+		width: 100%;
+	}
+}
+
+
+.list_bubble{
+	width: auto !important;
+	height: auto !important;
+	padding:4px !important;
+	border-radius: 24px !important;
+	justify-content: flex-start;
+}
+.list_bubble>.list_info{
+	width: auto !important;
+	height: auto !important;
+}
+.opt{
+	background-color: #FAF4F0;
+}
+.me{
+	background-color: #F7F9FA;
+}
+.list_bubble>.profile_s{
+	width: 28px;
+	height: 28px;
+}

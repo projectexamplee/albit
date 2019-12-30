@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic_alarm_like</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14,5.33333333 L9.79333333,5.33333333 L10.4266667,2.28666667 L10.4466667,2.07333333 C10.4466667,1.8 10.3333333,1.54666667 10.1533333,1.36666667 L9.44666667,0.666666667 L5.06,5.06 C4.81333333,5.3 4.66666667,5.63333333 4.66666667,6 L4.66666667,12.6666667 C4.66666667,13.4 5.26666667,14 6,14 L12,14 C12.5533333,14 13.0266667,13.6666667 13.2266667,13.1866667 L15.24,8.48666667 C15.3,8.33333333 15.3333333,8.17333333 15.3333333,8 L15.3333333,6.66666667 C15.3333333,5.93333333 14.7333333,5.33333333 14,5.33333333 Z M0.666666667,6 L3.33333333,6 L3.33333333,14 L0.666666667,14 L0.666666667,6 Z" id="path-1"></path>
+    </defs>
+    <g id="ALL-PAGE-PC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arlam-PC" transform="translate(-230.000000, -492.000000)">
+            <g id="Group-3" transform="translate(180.000000, 238.000000)">
+                <g id="icon/social/thumb_up_alt_24px" transform="translate(50.000000, 254.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g fill-rule="nonzero"></g>
+                    <g id="✱-/-Color-/-Icons-/-Black-/-Inactive" mask="url(#mask-2)" fill="#000000" fill-opacity="0.54" fill-rule="evenodd">
+                        <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
