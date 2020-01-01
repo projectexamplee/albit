@@ -52,6 +52,9 @@ img.col2{
 	margin:48px;
 }
 /*RIGHT*/
+.margin_r_s{
+	margin-right: 4px;
+}
 .margin_r_1x{
 	margin-right: 8px;
 }
@@ -138,6 +141,10 @@ img.col2{
 .padding_hor_2x{
 	padding-left: 16px;
 	padding-right: 16px;
+}
+.padding_ver_2x{
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 .padding_hor_4x{
 	padding-left: 32px;

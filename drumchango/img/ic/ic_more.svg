@@ -11,7 +11,7 @@
             <g id="Group-5" transform="translate(16.000000, 274.000000)">
                 <g id="Group-4">
                     <g id="ic_more" transform="translate(298.844444, 49.000000)">
-                        <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="29.1555556" height="32"></rect>
+                        <rect id="Rectangle" fill="none" x="0" y="0" width="29.1555556" height="32"></rect>
                         <g id="icon/navigation/more_vert_24px" transform="translate(3.644444, 4.000000)">
                             <mask id="mask-2" fill="white">
                                 <use xlink:href="#path-1"></use>

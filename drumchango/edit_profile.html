@@ -1,0 +1,168 @@
+<html>
+<head>
+  <title>DRUM CHANGO</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="stylesheet" type="text/css" href="css/mypage.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+</head>
+
+<body>
+	<!--TOP AREA-->
+	<div class="col1 flex_col white_bg margin_b_2x">
+		<div class="live_area">
+			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
+			<navi-bar></navi-bar>
+			<!--SITE GLOBAL NAVIGATION TAB-->
+			<tab-main currentTab="none"></tab-main>
+		</div>
+	</div>
+	<style type="text/css">
+		.add_photo{
+			position: absolute;
+			bottom:8px;
+			right:8px;
+		}
+	</style>
+	<!--CONTENT AREA-->
+	<div class="live_area flex_row space_between">
+		<div class="col_side padding_2x white_bg">
+			<div class="menu">
+				마이페이지 홈
+			</div>
+			<div class="menu selected">
+				기본정보 수정
+			</div>
+			<div class="menu">
+				포인트 적립내역
+			</div>
+			<div class="menu">
+				내가 작성한 글
+			</div>
+			<div class="menu">
+				내가 작성한 댓글
+			</div>
+			<div class="menu">
+				내가 올린 중고상품
+			</div>
+			<div class="menu">
+				내 창고
+			</div>
+		</div>
+		<div class="col_content space_between">
+			<!--프로필-->
+			<div class="flex_col padding_2x col1 margin_b_2x space_between white_bg">
+				<!--프로필 정보-->
+				<div class="flex_row_col align_center">
+					<div id="my_photo" class="profile_b" style="position: relative;">
+						<img class="add_photo" src="img/ic/ic_add_photo_circle.svg">
+					</div>
+					<div class="padding_2x">
+						<p class="subtitle w400 black900">
+							조이 조디슨. <span class="primary600">LV2</span>
+						</p>
+						<p class="caption black900">
+							포인트: <span class="primary600">123,456원</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex_col align_start white_bg padding_2x margin_b_2x col1">
+				<div class="flex_col mobile_col1" style="width: 60%">
+					<p class="subtitle margin_b_2x">기본정보 수정</p>
+					<list-value-regular title="아이디" input_value="groovelb"></list-value-regular>
+					<list-text-single title="이름" input_value="김우석"></list-text-single>
+					<list-text-single title="닉네임" input_value="조이조디슨"></list-text-single>
+					<div class="flex_row col1">
+						<div class="list_value width_auto margin_r_3x">
+							<span class="title">
+								성별
+							</span>
+							<label class="radio_btt">남자
+							  <input name="gender" type="radio" checked="checked">
+							  <span class="radiomark"></span>
+							</label>
+						</div>
+						<div class="list_value width_auto margin_r_3x">
+							<label class="radio_btt">여자
+							  <input name="gender" type="radio">
+							  <span class="radiomark"></span>
+							</label>
+						</div>
+					</div>
+					<list-text-single-btt title="이메일" input_value="groovelb@gmail.com" btt_label="중복확인"></list-text-single-btt>
+					<list-text-single title="주소" input_value="강남 서초구 00동 1205"></list-text-single>
+					<list-text-single title="상세주소" input_value="OO아파트 202동 123호"></list-text-single>
+					<list-text3-single title="전화번호"></list-text3-single>
+					<list-text3-single title="휴대폰"></list-text3-single>
+					<div class="button border_radius btt_big primary600_bg margin_t_2x white900" style="align-self: flex-end;">
+						<img class="ic_btt" src="img/ic/ic_check_circle_white.svg">
+						기본정보 수정
+					</div>
+				</div>
+			</div>
+			<div class="flex_col align_start white_bg padding_2x col1">
+				<div class="flex_col mobile_col1" style="width: 60%">
+					<p class="subtitle margin_b_2x">비밀번호 수정</p>
+					<div class="flex_col col1">
+						<list-text-single title="현재 비밀번호" placeholder="기존 비밀번호를 입력해주세요."></list-text-single>
+						<list-text-single title="신규 비밀번호" placeholder="신규 비밀번호를 입력해주세요."></list-text-single>
+						<list-text-single title="비밀번호 확인" placeholder="기존 비밀번호를 다시 입력해주세요."></list-text-single>
+					</div>
+					<div class="button border_radius btt_big primary600_bg margin_t_2x white900" style="align-self: flex-end;">
+						<img class="ic_btt" src="img/ic/ic_check_circle_white.svg">
+						비밀번호 수정
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	// /*CENTER SUBTAB ARRAY*/
+	// subTabList = [
+	// 			  "전체",
+	// 			  "뉴스",
+	// 			  "드럼영상",
+	// 			  "사진갤러리",
+	// 			  "중고장터",
+	// 			  "출고후기",
+	// 			  "상품후기",
+	// 			  "아티스트",
+	// 			  "자유게시판"
+	// 				];
+</script>
+<link rel="import" href="components/NaviBar/NaviBar.html">
+<link rel="import" href="components/TabMain/TabMain.html">
+<link rel="import" href="components/CardFull/CardFull.html">
+<link rel="import" href="components/CardBig/CardBig.html">
+<link rel="import" href="components/CardSmall/CardSmall.html">
+<link rel="import" href="components/CardVideo/CardVideo.html">
+<link rel="import" href="components/ListNewsImg/ListNewsImg.html">
+<link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
+<link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
+<link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/GridArtist/GridArtist.html">
+<link rel="import" href="components/Footer/Footer.html">
+<link rel="import" href="components/ListHorizonUsers/ListHorizonUsers.html">
+<link rel="import" href="components/TabedContent/TabedContent.html">
+<link rel="import" href="components/ListGeneralPost/ListGeneralPost.html">
+<link rel="import" href="components/ListValueRegular/ListValueRegular.html">
+<link rel="import" href="components/ListTextSingle/ListTextSingle.html">
+<link rel="import" href="components/ListTextSingleBtt/ListTextSingleBtt.html">
+<link rel="import" href="components/ListText2SingleBtt/ListText2SingleBtt.html">
+<link rel="import" href="components/ListText3Single/ListText3Single.html">
+
+</html>

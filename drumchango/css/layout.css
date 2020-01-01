@@ -16,8 +16,16 @@ body{
 	margin-right: auto;
 	width: 1080px;
 }
+.live_area_narrow{
+	margin-left: auto;
+	margin-right: auto;
+	width: 680px;
+}
 @media screen and (max-width: 680px) {
 	.live_area{
+		width: 100%;
+	}
+	.live_area_narrow{
 		width: 100%;
 	}
 	.mobile_col1{

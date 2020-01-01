@@ -1,0 +1,113 @@
+<html>
+<head>
+  <title>DRUM CHANGO</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/mypage.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+
+<body>
+	<!--TOP AREA-->
+	<div class="col1 flex_col white_bg margin_b_2x">
+		<div class="live_area">
+			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
+			<navi-bar></navi-bar>
+			<!--SITE GLOBAL NAVIGATION TAB-->
+			<tab-main currentTab="none"></tab-main>
+		</div>
+	</div>
+	<!--CONTENT AREA-->
+	<div class="live_area flex_row space_between">
+		<div class="col_side padding_2x white_bg">
+			<div class="menu">
+				마이페이지 홈
+			</div>
+			<div class="menu">
+				기본정보 수정
+			</div>
+			<div class="menu">
+				포인트 적립내역
+			</div>
+			<div class="menu">
+				내가 작성한 글
+			</div>
+			<div class="menu">
+				내가 작성한 댓글
+			</div>
+			<div class="menu">
+				내가 올린 중고상품
+			</div>
+			<div class="menu selected">
+				내 창고
+			</div>
+		</div>
+		<div class="col_content space_between">
+			<!--프로필-->
+			<div class="flex_row padding_2x col1 margin_b_2x space_between white_bg">
+				<p class="subtitle col1 margin_b_2x">내장비 추가</p>
+				<!--SEARCH BAR-->
+				<div id="search_bar" class="search_bar border_black50 flex_row align_center col1" style="margin:0 !important">
+					<img class="margin_r_1x ic_small" src="img/ic/ic_search_primary.jpg">
+					<input id="search_bar_input" value="장비명" type="text" class="no_border col1" name="search bar" placeholder="등록할 장비를 검색해주세요.">
+				</div>
+				<div id="item_list" class="flex_col col1">
+					<list-eq-item class="flex_col border_bottom" imgSrc="img/example/c7.jpg"></list-eq-item>
+					<list-eq-item class="flex_col border_bottom" imgSrc="img/example/c8.jpg"></list-eq-item>
+					<list-eq-item class="flex_col border_bottom" imgSrc="img/example/c9.jpg"></list-eq-item>
+				</div>
+				<div class="flex_row col1 align_start margin_t_2x">
+					<a href="enroll_equip.html" class="button border_radius margin_r_2x btt_medium primary600_bg white900">
+						장비 선택하기
+					</a>
+					<a href="enroll_equip2.html" class="button border_radius btt_medium primary_border primary600">
+						직접등록하기
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	// /*CENTER SUBTAB ARRAY*/
+	// subTabList = [
+	// 			  "전체",
+	// 			  "뉴스",
+	// 			  "드럼영상",
+	// 			  "사진갤러리",
+	// 			  "중고장터",
+	// 			  "출고후기",
+	// 			  "상품후기",
+	// 			  "아티스트",
+	// 			  "자유게시판"
+	// 				];
+</script>
+<link rel="import" href="components/NaviBar/NaviBar.html">
+<link rel="import" href="components/TabMain/TabMain.html">
+<link rel="import" href="components/CardFull/CardFull.html">
+<link rel="import" href="components/CardBig/CardBig.html">
+<link rel="import" href="components/CardSmall/CardSmall.html">
+<link rel="import" href="components/CardVideo/CardVideo.html">
+<link rel="import" href="components/ListNewsImg/ListNewsImg.html">
+<link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
+<link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
+<link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/GridArtist/GridArtist.html">
+<link rel="import" href="components/Footer/Footer.html">
+<link rel="import" href="components/ListHorizonUsers/ListHorizonUsers.html">
+<link rel="import" href="components/TabedContent/TabedContent.html">
+<link rel="import" href="components/ListEqItem/ListEqItem.html">
+<link rel="import" href="components/ListGeneralPost/ListGeneralPost.html">
+</html>

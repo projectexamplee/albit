@@ -19,10 +19,19 @@
       const templete = document.importNode(HTMLTemplate.content, true);
       const keyword = this.getAttribute('keyword');
       this.appendChild(templete);
+      const slide_menu = this.querySelector('.slide_menu');
 
       if(keyword){
         $("#search_bar_input").attr("value",keyword);
       }
+
+      console.log(slide_menu);
+
+      this.querySelector('#menu').addEventListener("click",function(){
+        slide_menu.classList.toggle("open");
+        this.classList.toggle("opacity_0");
+      });
+
       // const shadowRoot = this.attachShadow({ mode: 'open' });
 
       // // Clone the template and the cloned node to the shadowDOM's root.

@@ -19,12 +19,13 @@
       const templete = document.importNode(HTMLTemplate.content, true);
       const title = this.getAttribute("title");
       const placeholder = this.getAttribute("placeholder");
-
+      const value = this.getAttribute("input_value");
 
       this.appendChild(templete);
 
       this.querySelector("#title").innerHTML= title;
-      this.querySelector("#value").setAttribute("placeholder",placeholder);
+      if(placeholder)this.querySelector("#value").setAttribute("placeholder",placeholder);
+      if(value)this.querySelector("#value").setAttribute("value",value);
       // const shadowRoot = this.attachShadow({ mode: 'open' });
 
       // // Clone the template and the cloned node to the shadowDOM's root.

@@ -8,13 +8,50 @@
 	padding-bottom: 36px;
 	border-bottom: solid 1px #f0f0f0;
 }
-
+.msg_area{
+	padding:32px 64px;
+}
 @media screen and (max-width: 680px) {
 	.col_user{
 		display: none;
 	}
 	.col_msg{
 		width: 100%;
+	}
+	.msg_area{
+		width: 100%;
+		padding: 0px;
+		height: calc(100% - 64px);
+		position: absolute;
+		top:0;
+		left:0;
+		padding: 16px;
+		background-color: #fff;
+		flex-direction: column-reverse;
+	}
+	.msg_input{
+		background-color: #fff;
+		justify-content: space-around !important; 
+		position: absolute;
+		left:0;
+		bottom:0;
+		height: 56px;
+		align-items: center;
+		padding:0;
+		border-top: solid 1px #f0f0f0;
+		border-bottom: none;
+	}
+	.msg_input>.form{
+		height: 48px !important;
+	}
+	#search_bar{
+		display: none;
+	}
+	navi-bar{
+		position: absolute;
+		top:0;
+		left:0;
+		z-index: 999;
 	}
 }
 

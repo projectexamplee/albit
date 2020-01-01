@@ -1,0 +1,118 @@
+<template id="ListMsgBubble">
+	<!--LIST WITH PROFILE-->
+	<style type="text/css">
+		.list_comment{
+			position: relative;
+			border-radius: 4px;
+		}
+		.ic_more{
+			position: absolute;
+			top: 8px;
+			right: 12px;
+		}
+		#more_function{
+			position: absolute;
+			top: 40px;
+			right: 12px;
+			z-index: 99;
+		}
+		#msg{
+			padding: 10px;
+			padding-right: 32px !important;
+			margin-bottom: 4px;
+		}
+		.profile_s{
+			margin-top: 8px;
+		}
+		#list_replies{
+			border-left: solid 2px #EE4123;
+		}
+		#list_replies>.list{
+			padding-right: 0px !important;
+		}
+	</style>
+	<div class="list list_profile list_bubble list_comment flex_row">
+		<div class="profile_s margin_r_1x"></div>
+		<div class="list_info flex_col align_start" style="width: calc(100% - 36px) !important;">
+			<!--커멘트 내용-->
+			<div id="msg" class="body col1 opt w400 black900" style="width: 100% !important;">
+				<p class="flex_row">
+					<span class="caption w400 black600">username</span>
+					<span class="caption w400 black400">12.20</span>
+				</p>
+				<p id="msg_content">안녕하세요! OOO팔렸나요?</p>
+			</div>
+			<!--커멘트 기능-->
+			<div id="comment_action" class="flex_row align_center col1">
+				<p id="ic_reply" class="button text caption black300">
+					답글달기
+				</p>
+				<span class="black300" style="font-size:6px; margin:0 4px;"> | </span>
+				<p id="ic_show_replies" class="button text caption black300">
+					답글보기(2)
+				</p>
+			</div>
+			<!--대댓글 리스트-->
+			<div id="list_replies" class="col1 hide margin_t_1x">
+				<div class="list list_profile list_bubble list_comment flex_row">
+					<div id="u9" class="profile_s margin_r_1x"></div>
+					<div class="list_info flex_col align_start" style="width: calc(100% - 36px) !important;">
+						<div id="msg" class="body col1 opt w400 black900" style="width: 100% !important;">
+							<p class="flex_row">
+								<span class="caption w400 black600">username1</span>
+								<span class="caption w400 black400">12.20</span>
+							</p>
+							안녕하세요! 반가워요!
+						</div>
+						<!--커멘트 기능-->
+						<div id="" class="flex_row align_center col1">
+							<p class="button text caption black300">
+								답글달기
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="list list_profile list_bubble list_comment flex_row">
+					<div id="u10" class="profile_s margin_r_1x"></div>
+					<div class="list_info flex_col align_start" style="width: calc(100% - 36px) !important;">
+						<div id="msg" class="body col1 opt w400 black900" style="width: 100% !important;">
+							<p class="flex_row">
+								<span class="caption w400 black600">username2</span>
+								<span class="caption w400 black400">12.20</span>
+							</p>
+							<span class="primary600">@username1</span> 안녕하세요! 저도 너무 반갑네요!
+						</div>
+						<!--커멘트 기능-->
+						<div id="" class="flex_row align_center col1">
+							<p class="button text caption black300">
+								답글달기
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--대댓글 인풋-->
+			<div id="input_reply" class="col1 hide margin_t_1x">
+				<div class="input_comment margin_b_2x">
+					<div class="my_input flex_row col1 space_between margin_b_2x">
+						<div id="my_photo" class="profile_t"></div>
+						<div class="form form_height_2x" style="width: calc(100% - 36px) !important;">
+							<textarea id="value" type="text" placeholder="댓글을 입력하세요."></textarea>
+						</div>
+					</div>
+					<div class="button btt_medium primary600_bg white900">
+						답글달기
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--추가기능 버튼-->
+		<img id="ic_more" class="ic_more" src="img/ic/ic_more.svg">
+		<div id="more_function" class="white_bg caption black600 box_shadow border_radius padding_1x hide">
+			<div class="menu">
+				신고하기
+			</div>
+		</div>
+	</div>
+</template>
+<script src="CommentBubble.js" type="text/javascript"></script>

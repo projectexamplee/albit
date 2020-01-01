@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="10px" viewBox="0 0 14 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic_view_black_600</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.41666667,2.96527778 C5.45016835,2.96527778 4.66666667,3.74877947 4.66666667,4.71527778 C4.66666667,5.68177609 5.45016835,6.46527778 6.41666667,6.46527778 C7.38316498,6.46527778 8.16666667,5.68177609 8.16666667,4.71527778 C8.16666667,3.74877947 7.38316498,2.96527778 6.41666667,2.96527778 L6.41666667,2.96527778 Z M6.41666667,7.63194444 C4.80583615,7.63194444 3.5,6.3261083 3.5,4.71527778 C3.5,3.10444726 4.80583615,1.79861111 6.41666667,1.79861111 C8.02749719,1.79861111 9.33333333,3.10444726 9.33333333,4.71527778 C9.33333333,6.3261083 8.02749719,7.63194444 6.41666667,7.63194444 L6.41666667,7.63194444 Z M6.41666667,0.340277778 C3.5,0.340277778 1.00916667,2.15444444 0,4.71527778 C1.00916667,7.27611111 3.5,9.09027778 6.41666667,9.09027778 C9.33333333,9.09027778 11.8241667,7.27611111 12.8333333,4.71527778 C11.8241667,2.15444444 9.33333333,0.340277778 6.41666667,0.340277778 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="content-state" transform="translate(-51.000000, -3.000000)">
+            <g id="Group" transform="translate(51.000000, 0.000000)">
+                <g id="Icon-/-view" transform="translate(0.000000, 1.000000)">
+                    <g id="✱-/-Color-/-Icons-/-Black-/-Active" transform="translate(0.583333, 2.333333)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask" fill-rule="nonzero"></g>
+                        <g id="✱-/-Color-/-Icons-/-Black-/-Inactive" mask="url(#mask-2)" fill="#989898" fill-opacity="1">
+                            <g transform="translate(0.000000, -2.333333)" id="Rectangle">
+                                <rect x="0" y="0" width="13" height="13"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

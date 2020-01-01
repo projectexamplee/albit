@@ -1,0 +1,138 @@
+<html>
+<head>
+  <title>DRUM CHANGO</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/img.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/mypage.css">
+	<link rel="stylesheet" type="text/css" href="css/product_page.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<link rel="stylesheet" type="text/css" href="css/my_equip.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+
+<body>
+	<!--TOP AREA-->
+	<div class="col1 flex_col white_bg margin_b_2x">
+		<div class="live_area">
+			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
+			<navi-bar></navi-bar>
+			<!--SITE GLOBAL NAVIGATION TAB-->
+			<tab-main currentTab="none"></tab-main>
+		</div>
+	</div>
+	<!--CONTENT AREA-->
+	<div class="live_area flex_row space_between">
+		<div class="col_side padding_2x white_bg">
+			<div class="menu">
+				마이페이지 홈
+			</div>
+			<div class="menu">
+				기본정보 수정
+			</div>
+			<div class="menu">
+				포인트 적립내역
+			</div>
+			<div class="menu">
+				내가 작성한 글
+			</div>
+			<div class="menu">
+				내가 작성한 댓글
+			</div>
+			<div class="menu">
+				내가 올린 중고상품
+			</div>
+			<div class="menu selected">
+				내 창고
+			</div>
+		</div>
+		<div class="col_content white_bg padding_4x">
+			<div class="flex_col align_center col1 border_black100 col_photo">
+				<div class="eqp_main empty_img margin_b_2x"></div>
+				<div id="eqp_thumb" class="flex_row col1 space_between">
+					<div id="" class="prd_thumb border_black50 flex_col flex_center">
+						<img src="img/ic/ic_add_black.svg">
+						<p class="caption black300">이미지 추가</p>
+					</div>
+					<!-- <div id="thumb2" class="prd_thumb border_black50"></div>
+					<div id="thumb3" class="prd_thumb border_black50"></div>
+					<div id="thumb4" class="prd_thumb border_black50"></div> -->
+				</div>
+			</div>
+			<div class="list_text_single space_between margin_b_1x">
+				<label>카테고리</label>
+				<div class="form">
+					<select id="option" name="country">
+					  <option value="" disabled selected>카테고리를 선택하세요.</option>
+				      <option value="option1">아쿠어스틱 드럼</option>
+				      <option value="option2">전자드럼</option>
+				      <option value="option3">스틱</option>
+				      <option value="option4">옵션4</option>
+				    </select>
+				</div>
+			</div>
+			<list-text-single title="일련번호" placeholder="일련번호를 입력하세요"></list-text-single>
+			<list-text-single title="시리얼넘버" placeholder="시리얼넘버를 입력하세요"></list-text-single>
+			<list-text-single title="상품명" placeholder="상품명을 입력하세요"></list-text-single>
+			<list-text-single title="구매일자" placeholder="eg.2019-12-03"></list-text-single>
+			<div class="list_text_single space_between margin_b_1x">
+				<label>구매처</label>
+				<div class="form">
+					<select id="option" name="country">
+					  <option value="" disabled selected>구매처를 선택하세요.</option>
+				      <option value="option1">신품구매</option>
+				      <option value="option2">중고구매</option>
+				    </select>
+				</div>
+			</div>
+			<div class="flex_row col1 justify_end margin_t_4x">
+				<a href="my_garage.html" class="button btt_big border_radius btt_medium primary600_bg white900">
+					장비 등록하기
+				</a>
+			</div>
+		</div>
+	</div>
+	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	// /*CENTER SUBTAB ARRAY*/
+	// subTabList = [
+	// 			  "전체",
+	// 			  "뉴스",
+	// 			  "드럼영상",
+	// 			  "사진갤러리",
+	// 			  "중고장터",
+	// 			  "출고후기",
+	// 			  "상품후기",
+	// 			  "아티스트",
+	// 			  "자유게시판"
+	// 				];
+</script>
+<link rel="import" href="components/NaviBar/NaviBar.html">
+<link rel="import" href="components/TabMain/TabMain.html">
+<link rel="import" href="components/CardFull/CardFull.html">
+<link rel="import" href="components/CardBig/CardBig.html">
+<link rel="import" href="components/CardSmall/CardSmall.html">
+<link rel="import" href="components/CardVideo/CardVideo.html">
+<link rel="import" href="components/ListNewsImg/ListNewsImg.html">
+<link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
+<link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
+<link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/GridArtist/GridArtist.html">
+<link rel="import" href="components/Footer/Footer.html">
+<link rel="import" href="components/ListHorizonUsers/ListHorizonUsers.html">
+<link rel="import" href="components/TabedContent/TabedContent.html">
+<link rel="import" href="components/ListGeneralPost/ListGeneralPost.html">
+<link rel="import" href="components/ListValueRegular/ListValueRegular.html">
+<link rel="import" href="components/ListTextSingle/ListTextSingle.html">
+</html>

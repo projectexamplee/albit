@@ -1,0 +1,73 @@
+<html>
+<head>
+  <title>DRUM CHANGO</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+</head>
+
+<body>
+	<!--TOP AREA-->
+	<div class="col1 flex_col white_bg margin_b_2x">
+		<div class="live_area">
+			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
+			<navi-bar></navi-bar>
+			<!--SITE GLOBAL NAVIGATION TAB-->
+			<tab-main currentTab="community"></tab-main>
+		</div>
+	</div>
+	<!--CONTENT AREA-->
+	<div class="live_area live_area_narrow flex_col align_center white_bg padding_2x margin_t_2x">
+		<div class="col1 margin_b_2x">
+			<p class="col1 subtitle w700 section_title margin_b_2x">
+				아티스트
+			</p>
+			<grid-artist-big class="flex_row col1"></grid-artist-big>
+		</div>
+		<div class="button border_radius btt_big primary600_bg white900 margin_b_4x">
+			<img class="ic_btt" src="img/ic/ic_add_white.svg">
+			아티스트 등록
+		</div>
+	</div>
+	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	// /*CENTER SUBTAB ARRAY*/
+	// subTabList = [
+	// 			  "전체",
+	// 			  "뉴스",
+	// 			  "드럼영상",
+	// 			  "사진갤러리",
+	// 			  "중고장터",
+	// 			  "출고후기",
+	// 			  "상품후기",
+	// 			  "아티스트",
+	// 			  "자유게시판"
+	// 				];
+</script>
+<link rel="import" href="components/NaviBar/NaviBar.html">
+<link rel="import" href="components/TabMain/TabMain.html">
+<link rel="import" href="components/CardFull/CardFull.html">
+<link rel="import" href="components/CardBig/CardBig.html">
+<link rel="import" href="components/CardVideo/CardVideo.html">
+<link rel="import" href="components/ListNewsImg/ListNewsImg.html">
+<link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
+<link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
+<link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/GridArtist/GridArtist.html">
+<link rel="import" href="components/GridArtistBig/GridArtistBig.html">
+<link rel="import" href="components/Footer/Footer.html">
+<link rel="import" href="components/ListHorizonUsers/ListHorizonUsers.html">
+<link rel="import" href="components/TabedContent/TabedContent.html">
+<link rel="import" href="components/ListGeneralPost/ListGeneralPost.html">
+</html>

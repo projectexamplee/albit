@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic_alarm_buy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.66666667,12 C3.93333333,12 3.34,12.6 3.34,13.3333333 C3.34,14.0666667 3.93333333,14.6666667 4.66666667,14.6666667 C5.4,14.6666667 6,14.0666667 6,13.3333333 C6,12.6 5.4,12 4.66666667,12 Z M0.666666667,2.66666667 L2,2.66666667 L4.4,7.72666667 L3.5,9.35333333 C3.01333333,10.2466667 3.65333333,11.3333333 4.66666667,11.3333333 L12.6666667,11.3333333 L12.6666667,10 L4.66666667,10 L5.4,8.66666667 L10.3666667,8.66666667 C10.8666667,8.66666667 11.3066667,8.39333333 11.5333333,7.98 L13.92,3.65333333 C14.1666667,3.21333333 13.8466667,2.66666667 13.34,2.66666667 L3.47333333,2.66666667 L2.84666667,1.33333333 L0.666666667,1.33333333 L0.666666667,2.66666667 Z M11.3333333,12 C10.6,12 10.0066667,12.6 10.0066667,13.3333333 C10.0066667,14.0666667 10.6,14.6666667 11.3333333,14.6666667 C12.0666667,14.6666667 12.6666667,14.0666667 12.6666667,13.3333333 C12.6666667,12.6 12.0666667,12 11.3333333,12 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="activity-log-/-buy" transform="translate(-16.000000, -13.000000)">
+            <g id="icon/maps/local_grocery_store_24px" transform="translate(16.000000, 12.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g fill-rule="nonzero"></g>
+                <g id="✱-/-Color-/-Icons-/-Black-/-Inactive" mask="url(#mask-2)" fill="#000000" fill-opacity="0.54" fill-rule="evenodd">
+                    <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

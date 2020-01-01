@@ -21,14 +21,14 @@
 	<div class="col1 flex_col white_bg border_bottom">
 		<div class="live_area">
 			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
-			<navi-bar keyword="제품명"></navi-bar>
+			<navi-bar noSearchBar="yes" keyword="제품명"></navi-bar>
 			<!--SITE GLOBAL NAVIGATION TAB-->
-			<tab-main currentTab="none"></tab-main>
+			<tab-main class="only_pc" currentTab="none"></tab-main>
 		</div>
 	</div>
 	<!--CONTENT AREA-->
-	<div class="live_area flex_row space_between margin_t_2x">
-		<div class="col_user flex_row flex_center padding_2x white_bg">
+	<div class="live_area flex_row space_between margin_t_2x ">
+		<div class="col_user flex_row flex_center padding_2x white_bg only_pc">
 			<div id="u6" class="profile_b"></div>
 			<div class="padding_2x">
 				<p class="subtitle w400 black900">
@@ -52,8 +52,8 @@
 					<img src="img/ic/ic_send_msg.svg">
 				</div>
 			</div>
-			<div class="flex_col col1 align_start padding_4x">
-				<list-msg-bubble2 send="opt" imgSrc="img/user/u3.jpg" msg="안녕하세요 이미 누가 사갔어요TT" isRead="yes" class=" flex_col margin_b_2x"></list-msg-bubble2>
+			<div class="msg_area flex_col col1 align_start">
+				<list-msg-bubble2 send="opt" imgSrc="img/user/u3.jpg" msg="안녕하세요 이미 누가 사갔어요TT" isRead="yes" class=" flex_col margin_b_2x aign_self_end"></list-msg-bubble2>
 				<list-msg-bubble send="opt" imgSrc="img/user/u1.jpg" msg="안녕하세요~ 반가워요" isRead="yes" class=" flex_col margin_b_2x"></list-msg-bubble>
 				<list-msg-bubble send="opt" imgSrc="img/user/u2.jpg" msg="타이머 팔렸나요?ㅎㅎ" isRead="no" class=" flex_col margin_b_2x"></list-msg-bubble>
 				<list-msg-bubble send="opt" imgSrc="img/user/u3.jpg" msg="합주인원 구하세요?" isRead="yes" class=" flex_col margin_b_2x"></list-msg-bubble>
@@ -61,7 +61,7 @@
 			</div>
 		</div>
 	</div>
-	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+	<footer-custom class="flex_col col1 margin_t_4x only_pc"></footer-custom>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>	

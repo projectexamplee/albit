@@ -176,7 +176,7 @@
 
       if(tabType=='search'){
         $('.sub_tab_list').addClass("col1");
-        $('#main_tab').css("display","none");
+        // $('#main_tab').css("display","none");
       }
 
       if(tabType=='none'){

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic_check_circle_white@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10,1.66666667 C5.4,1.66666667 1.66666667,5.4 1.66666667,10 C1.66666667,14.6 5.4,18.3333333 10,18.3333333 C14.6,18.3333333 18.3333333,14.6 18.3333333,10 C18.3333333,5.4 14.6,1.66666667 10,1.66666667 Z M8.33333333,14.1666667 L4.16666667,10 L5.34166667,8.825 L8.33333333,11.8083333 L14.6583333,5.48333333 L15.8333333,6.66666667 L8.33333333,14.1666667 Z" id="path-1"></path>
+    </defs>
+    <g id="ALL-PAGE-PC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0.1.1-edit-profile" transform="translate(-991.000000, -1175.000000)">
+            <g id="Group-10" transform="translate(401.000000, 384.000000)">
+                <g id="Buttons-/-Outlined-/-Enabled-Copy" transform="translate(571.000000, 782.000000)">
+                    <g id="icon/action/check_circle_24px" transform="translate(18.131148, 8.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="✱-/-Color-/-Icons-/-White-/-Active" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
+                            <rect id="Rectangle-13" x="0" y="0" width="20" height="20"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

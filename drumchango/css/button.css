@@ -8,6 +8,24 @@
 	padding:0px 16px;
 	cursor: pointer;
 }
+.button.text{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding:2px 4px;
+	cursor: pointer;
+}
+.button.menu{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	/*padding:2px 4px;*/
+	cursor: pointer;
+}
 .button:before{
 	transition: background-color 0.3s;
 	background-color: rgba(0,0,0,0);

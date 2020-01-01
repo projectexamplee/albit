@@ -15,3 +15,8 @@
 	background-size: cover;
 	background-position: center;
 }
+.empty_img{
+	background-size: cover;
+	background-position: center;
+	background-image: url("../img/empty_img.svg");
+}
