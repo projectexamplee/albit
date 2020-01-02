@@ -6,6 +6,14 @@ modal-regular-signup{
 	width: 100%;
 	height: 100%;
 }
+modal-regular-signin{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
 
 .modal_bg{
 	display: flex;
@@ -17,6 +25,7 @@ modal-regular-signup{
 	height: 100%;
 	left: 0;
 	top:0;
+	overflow: scroll;
 	z-index: 99;
     background: rgba(0,0,0,0.4);
 }

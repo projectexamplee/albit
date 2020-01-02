@@ -21,6 +21,7 @@
       const isLoged = this.getAttribute('isLoged');
       this.appendChild(templete);
       const slide_menu = this.querySelector('.slide_menu');
+     
 
       if(keyword){
         $("#search_bar_input").attr("value",keyword);
@@ -41,16 +42,28 @@
         slide_menu.classList.toggle("open");
         this.classList.toggle("opacity_0");
       });
-       this.querySelector('#signup').addEventListener("click",function(event){
+      this.querySelector('#signup').addEventListener("click",function(event){
           event.stopPropagation();
           addModal("signup");
       });
+      this.querySelector('#signin').addEventListener("click",function(event){
+          event.stopPropagation();
+          addModal("signin");
+      });
+
+      
 
       function addModal(type){
           $("body").append("<div class='modal_bg'></div>");
 
           if(type=="signup"){
             $(".modal_bg").append("<modal-regular-signup></modal-regular-signup>");
+            $(".modal_regular").on("click",function(event){
+              event.stopPropagation();
+            });
+          }
+          else if(type=="signin"){
+            $(".modal_bg").append("<modal-regular-signin></modal-regular-signin>");
             $(".modal_regular").on("click",function(event){
               event.stopPropagation();
             });

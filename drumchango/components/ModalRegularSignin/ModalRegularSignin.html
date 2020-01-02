@@ -1,0 +1,39 @@
+<template id="ModalRegularSignin">
+	<link rel="stylesheet"  href="css/form.css">
+	<div class="modal modal_regular flex_col align_start">
+		<div class="ic_close">
+			<img src="img/ic/ic_close.svg">
+		</div>
+		<div id="login" class="flex_col col1 margin_b_2x border_bottom">
+			<p class="big_title black900 w700 margin_b_4x margin_center">로그인</p>
+			<div class="flex_col col1 margin_b_2x">
+				<list-text-single class="col1" title="아이디" placeholder="아디디를 입력해주세요."></list-text-single>
+				<list-text-single class="col1" title="비밀번호" placeholder="비밀번호를  입력해주세요."></list-text-single>
+				<div class="flex_row col1 justify_end margin_b_2x">
+					<p class="caption link w700 margin_r_2x">
+						비밀번호 찾기
+					</p>
+					<p class="caption link w700">
+						회원가입 하기
+					</p>
+				</div>
+			</div>
+			<div id="btt_signup" class="button col1 btt_big primary600_bg white900 margin_b_2x">
+				로그인 하기
+			</div>
+		</div>
+		<div id="login_social" class="flex_col col1">
+			<p class="body black600 w400 margin_b_2x margin_center">소셜 로그인</p>
+			<div class="flex_row col1 space_around">
+				<img src="img/ic/social/ic_fb_color.svg">
+				<img src="img/ic/social/ic_kakao_color.svg">
+				<img src="img/ic/social/ic_naver_color.svg">
+			</div>
+		</div>
+		
+	</div>
+</template>
+<script src="ModalRegularSignin.js"></script>
+<link rel="import" href="../ListTextSingleBtt2/ListTextSingleBtt2.html">
+<link rel="import" href="../ListTextSingle/ListTextSingle.html">
+<link rel="import" href="../ListTextSingleBtt/ListTextSingleBtt.html">

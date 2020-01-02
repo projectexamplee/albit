@@ -106,11 +106,35 @@ option[disabled]{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	flex-wrap: wrap;
 	height: 64px;
 	width: 100%;
 }
 .list_text_single>.form{
 	width: calc(100% - 80px);
+}
+@media screen and (max-width: 680px) {
+	.list_text_single{
+		margin-bottom: 8px;
+	}
+	.list_text_single>.form{
+		width: 100%;
+	}
+	.list_text_single{
+		height: auto !important;
+	}
+	.list_text_single>label{
+		margin:8px 0;
+	}
+}
+.list_text_single>.col3{
+	width: calc((100% - 80px)/3 - 4px) !important;
+}
+@media screen and (max-width: 680px) {
+	.list_text_single>.col3{
+		width: calc(33% - 4px) !important;
+		margin:0px !important;
+	}
 }
 .list_text_single>label{
 	width: 72px;
@@ -139,6 +163,7 @@ option[disabled]{
 /*List with button*/
 .list_text_single_btt{
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: center;
 	height: 64px;
@@ -153,6 +178,22 @@ option[disabled]{
 	margin-right: 8px;
 	font-size: 11.8px;
 	color: #383838;
+}
+@media screen and (max-width: 680px){
+	.list_text_single_btt{
+		height: auto !important;
+		margin-bottom: 8px;
+	}
+	.list_text_single_btt>.form{
+		width: calc(100% - 72px) !important;
+		margin-right: 8px;
+	}
+	.list_text_single_btt>.form{
+		width: calc(100% - 80px);
+	}
+	.list_text_single_btt>label{
+		margin:8px 0;
+	}
 }
 .list_text_single_btt>.button{
 	width: 64px !important;

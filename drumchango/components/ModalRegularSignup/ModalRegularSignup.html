@@ -5,56 +5,125 @@
 			<img src="img/ic/ic_close.svg">
 		</div>
 		<p class="big_title black900 w700 margin_b_4x margin_center">회원가입</p>
-		<p class="subtitle black900 w700 margin_b_1x">
-			드럼창고 서비스 이용 동의
-		</p>
-		<p class="body black600 margin_b_1x">
-			회원가입시 개인정보 수집 및 이용 동의가 필요합니다.
-		</p>
-		<div class="list_value small space_between">
-			<label class="checkbox">전체 동의하기
-			  <input type="checkbox">
-			  <span class="checkmark"></span>
-			</label>
-		</div>
-		<div class="list_value small space_between">
-			<label class="checkbox">개인정보 수집 및 동의
-			  <input type="checkbox">
-			  <span class="checkmark"></span>
-			</label>
-			<a class="caption black300 w400">자세히보기</a>
-		</div>
-		<div class="list_value small margin_b_4x space_between">
-			<label class="checkbox">마켓팅 활용 및 광고정보 수신 동의
-			  <input type="checkbox">
-			  <span class="checkmark"></span>
-			</label>
-			<a class="caption black300 w400">자세히보기</a>
-		</div>
-		<p class="subtitle black800 w700 margin_b_1x">
-			이메일 인증
-		</p>
-		<p class="body black600 margin_b_1x">
-			이메일 인증이 완료되면 다음단계로 진행합니다.
-		</p>
-		<div class="list_button col1 flex_row margin_b_1x">
-			<div class="form margin_r_1x">
-				<input type="text" placeholder="이메일 주소를 입력하세요">
+		<div id="step1" class="flex_col col1 align_start">
+			<p class="subtitle black900 w700 margin_b_1x">
+				드럼창고 서비스 이용 동의
+			</p>
+			<p class="body black600 margin_b_1x">
+				회원가입시 개인정보 수집 및 이용 동의가 필요합니다.
+			</p>
+			<div class="list_value small space_between">
+				<label class="checkbox">전체 동의하기
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
 			</div>
-			<div class="button btt_medium black100_bg black600 caption">
-				인증번호 전송
+			<div class="list_value small space_between">
+				<label class="checkbox">개인정보 수집 및 동의
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<a class="caption black300 w400">자세히보기</a>
+			</div>
+			<div class="list_value small margin_b_4x space_between">
+				<label class="checkbox">마켓팅 활용 및 광고정보 수신 동의
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<a class="caption black300 w400">자세히보기</a>
+			</div>
+			<p class="subtitle black800 w700 margin_b_1x">
+				이메일 인증
+			</p>
+			<p class="body black600 margin_b_1x">
+				이메일 인증이 완료되면 다음단계로 진행합니다.
+			</p>
+			<div class="list_button col1 flex_row margin_b_1x">
+				<div class="form margin_r_1x">
+					<input type="text" placeholder="이메일 주소를 입력하세요">
+				</div>
+				<div class="button btt_medium black100_bg black600 caption">
+					인증번호 전송
+				</div>
+			</div>
+			<div class="list_singe col1 flex_row margin_b_1x">
+				<div class="form">
+					<input type="text" placeholder="인증번호를 입력하세요">
+				</div>
+			</div>
+			<div id="btt_check_email" class="button col1 btt_big primary600_bg white900 margin_t_2x">
+				이메일 인증하기
 			</div>
 		</div>
-		<div class="list_singe col1 flex_row margin_b_1x">
-			<div class="form">
-				<input type="text" placeholder="인증번호를 입력하세요">
+		<div id="step2" class="flex_col col1 align_start hide">
+			<p class="subtitle black900 w700 margin_b_1x">
+				필수정보
+			</p>
+			<p class="body black600 margin_b_1x">
+				반드시 입력해야하는 정보입니다.
+			</p>
+			<div class="flex_col col1 border_bottom margin_b_2x">
+				<list-text-single-btt class="col1" title="아이디" button="중복확인" placeholder="아이디를 입력해주세요."></list-text-single-btt>
+				<list-text-single class="col1" title="비밀번호" placeholder="비밀번호를 입력해주세요."></list-text-single>
+				<list-text-single class="col1 margin_b_1x" title="비밀번호 확인" placeholder="비밀번호를  재입력해주세요."></list-text-single>
 			</div>
-		</div>
-		<div class="button col1 btt_big primary600_bg white900 margin_r_1x">
-			이메일 인증하기
+			
+			<p class="subtitle black900 w700 margin_b_1x">
+				선택정보
+			</p>
+			<p class="body black600 margin_b_1x">
+				커뮤니티 활동시 필요한 정보입니다. 전화번호 인증시포인트 5000점 적립.
+			</p>
+			<list-text-single-btt class="col1" title="아이디" button="중복확인" placeholder="닉네임을 입력해주세요."></list-text-single-btt>
+			<div class="flex_row col1">
+				<div class="list_value width_auto margin_r_3x">
+					<span class="title">
+						성별
+					</span>
+					<label class="radio_btt">남자
+					  <input name="gender" type="radio">
+					  <span class="radiomark"></span>
+					</label>
+				</div>
+				<div class="list_value width_auto margin_r_3x">
+					<label class="radio_btt">여자
+					  <input name="gender" type="radio">
+					  <span class="radiomark"></span>
+					</label>
+				</div>
+			</div>
+			<div class="list_text_single space_between">
+				<label class="mobile_col1">생년월일</label>
+				<div class="form col3" style="margin-left: -8px;">
+					<select id="option" name="country">
+					  <option value="" disabled selected>연도</option>
+				      <option value="option1">옵션1</option>
+				      <option value="option2">옵션2</option>
+				    </select>
+				</div>
+				<div class="form col3">
+					<select id="option" name="country">
+					  <option value="" disabled selected>월</option>
+				      <option value="option1">옵션1</option>
+				      <option value="option2">옵션2</option>
+				    </select>
+				</div>
+				<div class="form col3">
+					<select id="option" name="country">
+					  <option value="" disabled selected>일</option>
+				      <option value="option1">옵션1</option>
+				      <option value="option2">옵션2</option>
+				    </select>
+				</div>
+			</div>
+			<list-text-single-btt class="col1" title="휴대폰 인증" button="인증번호 받기" placeholder="휴대폰 번호를 입력."></list-text-single-btt>
+			<div id="btt_signup" class="button col1 btt_big primary600_bg white900 margin_t_2x">
+				회원가입하기
+			</div>
 		</div>
 	</div>
 </template>
 <script src="ModalRegularSignup.js"></script>
 <link rel="import" href="../ListTextSingleBtt2/ListTextSingleBtt2.html">
 <link rel="import" href="../ListTextSingle/ListTextSingle.html">
+<link rel="import" href="../ListTextSingleBtt/ListTextSingleBtt.html">
