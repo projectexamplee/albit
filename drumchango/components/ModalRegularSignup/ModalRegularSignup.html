@@ -1,0 +1,60 @@
+<template id="ModalRegularSignup">
+	<link rel="stylesheet"  href="css/form.css">
+	<div class="modal modal_regular flex_col align_start">
+		<div class="ic_close">
+			<img src="img/ic/ic_close.svg">
+		</div>
+		<p class="big_title black900 w700 margin_b_4x margin_center">회원가입</p>
+		<p class="subtitle black900 w700 margin_b_1x">
+			드럼창고 서비스 이용 동의
+		</p>
+		<p class="body black600 margin_b_1x">
+			회원가입시 개인정보 수집 및 이용 동의가 필요합니다.
+		</p>
+		<div class="list_value small space_between">
+			<label class="checkbox">전체 동의하기
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+		</div>
+		<div class="list_value small space_between">
+			<label class="checkbox">개인정보 수집 및 동의
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+			<a class="caption black300 w400">자세히보기</a>
+		</div>
+		<div class="list_value small margin_b_4x space_between">
+			<label class="checkbox">마켓팅 활용 및 광고정보 수신 동의
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+			<a class="caption black300 w400">자세히보기</a>
+		</div>
+		<p class="subtitle black800 w700 margin_b_1x">
+			이메일 인증
+		</p>
+		<p class="body black600 margin_b_1x">
+			이메일 인증이 완료되면 다음단계로 진행합니다.
+		</p>
+		<div class="list_button col1 flex_row margin_b_1x">
+			<div class="form margin_r_1x">
+				<input type="text" placeholder="이메일 주소를 입력하세요">
+			</div>
+			<div class="button btt_medium black100_bg black600 caption">
+				인증번호 전송
+			</div>
+		</div>
+		<div class="list_singe col1 flex_row margin_b_1x">
+			<div class="form">
+				<input type="text" placeholder="인증번호를 입력하세요">
+			</div>
+		</div>
+		<div class="button col1 btt_big primary600_bg white900 margin_r_1x">
+			이메일 인증하기
+		</div>
+	</div>
+</template>
+<script src="ModalRegularSignup.js"></script>
+<link rel="import" href="../ListTextSingleBtt2/ListTextSingleBtt2.html">
+<link rel="import" href="../ListTextSingle/ListTextSingle.html">

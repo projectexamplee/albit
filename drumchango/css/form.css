@@ -1,9 +1,28 @@
+.list_singe{
+	width: 100%;
+	padding:0;
+}
+.list>.form{
+	width: 100% !important;
+}
+.list_button>.form{
+	width: calc(100% - 104px) !important;
+}
+.list_button>.button{
+	width: 96px !important;
+	height: 44px;
+}
+
+
 .list_value{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	height: 56px;
 	width: 100%;
+}
+.list_value.small{
+	height: 44px;
 }
 .list_value.btt>.value{
 	width: calc(100% - 80px - 72px) !important;
@@ -170,8 +189,6 @@ option[disabled]{
 	width: 64px !important;
 	height: 44px !important;
 }
-
-
 
 .list_text_single.small{
 	height: 48px !important;

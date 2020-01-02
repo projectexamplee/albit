@@ -18,20 +18,60 @@
     connectedCallback() {
       const templete = document.importNode(HTMLTemplate.content, true);
       const keyword = this.getAttribute('keyword');
+      const isLoged = this.getAttribute('isLoged');
       this.appendChild(templete);
       const slide_menu = this.querySelector('.slide_menu');
 
       if(keyword){
         $("#search_bar_input").attr("value",keyword);
       }
+      
+      if(!isLoged){
+        $(".logedout").addClass("hide");
+      }
+      else if(isLoged=='no'){
+        $(".loged").addClass("hide");
+        $(".logedout").removeClass("hide");
+        // this.querySelector(".loged").classList.add("hide");
+        // this.querySelector(".logedout").classList.remove("hide");
+      }
 
-      console.log(slide_menu);
 
       this.querySelector('#menu').addEventListener("click",function(){
         slide_menu.classList.toggle("open");
         this.classList.toggle("opacity_0");
       });
+       this.querySelector('#signup').addEventListener("click",function(event){
+          event.stopPropagation();
+          addModal("signup");
+      });
 
+      function addModal(type){
+          $("body").append("<div class='modal_bg'></div>");
+
+          if(type=="signup"){
+            $(".modal_bg").append("<modal-regular-signup></modal-regular-signup>");
+            $(".modal_regular").on("click",function(event){
+              event.stopPropagation();
+            });
+          }
+
+          $("body").on("click",function(){
+            $(".modal_bg").remove();
+          });
+          $(".ic_close").on("click",function(){
+            $(".modal_bg").remove();
+          });
+
+      }
+
+      function addModalBG(){
+          $("body").append("<div class='modal_bg'></div>");
+      }
+      function addModalEventListener(){
+        
+        
+      }
       // const shadowRoot = this.attachShadow({ mode: 'open' });
 
       // // Clone the template and the cloned node to the shadowDOM's root.

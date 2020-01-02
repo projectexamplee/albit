@@ -1,0 +1,48 @@
+modal-regular-signup{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.modal_bg{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top:0;
+	z-index: 99;
+    background: rgba(0,0,0,0.4);
+}
+.modal{
+	z-index: 9999;
+	position: relative;
+}
+.modal>.ic_close{
+	position: absolute;
+	top:16px;
+	right:16px;
+}
+.modal_regular{
+	width: 486px;
+	padding: 32px;
+	background-color: #fff;
+	border-radius: 4px;
+}
+
+@media screen and (max-width: 680px) {
+	.modal_regular{
+		width: calc(100% - 32px);
+		height: calc(100% - 32px);
+		overflow: scroll;
+		padding: 32px;
+		background-color: #fff;
+		border-radius: 4px;
+	}
+}
