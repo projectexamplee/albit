@@ -197,40 +197,40 @@
     if(tabType=="center"){
         $.map(centerTabList, function( item, i ) {
           if(i==0){
-            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab_sub selected'>"+ item.title + "</a>");
+            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab tab_sub selected'>"+ item.title + "</a>");
           }
           else{
-            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab_sub'>"+ item.title + "</a>");
+            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab tab_sub'>"+ item.title + "</a>");
           }
       });
     }
     else if(tabType=="community"){
         $.map(communityTabList, function( item, i ) {
          if(i==0){
-            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab_sub selected'>"+ item.title + "</a>");
+            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab tab_sub selected'>"+ item.title + "</a>");
           }
           else{
-            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab_sub'>"+ item.title + "</a>");
+            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab tab_sub'>"+ item.title + "</a>");
           }
       });
     }
     else if(tabType=="shop"){
         $.map(shopTabList, function( item, i ) {
          if(i==0){
-            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab_sub selected'>"+ item.title + "</a>");
+            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab tab_sub selected'>"+ item.title + "</a>");
           }
           else{
-            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab_sub'>"+ item.title + "</access>");
+            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab tab_sub'>"+ item.title + "</access>");
           }
       });
     }
     else if(tabType=="search"){
         $.map(searchList, function( item, i ) {
          if(i==0){
-            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab_sub3 selected'>"+ item.title + "</a>");
+            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab tab_sub3 selected'>"+ item.title + "</a>");
           }
           else{
-            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab_sub3'>"+ item.title + "</access>");
+            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab tab_sub3'>"+ item.title + "</access>");
           }
       });
     }

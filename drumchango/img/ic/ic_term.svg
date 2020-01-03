@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="44px" viewBox="0 0 30 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic_term</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ALL-PAGE-PC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="customer-service" transform="translate(-588.000000, -508.000000)" fill-rule="nonzero">
+            <g id="Group-2-Copy-3" transform="translate(570.000000, 482.000000)">
+                <g id="Group-9" transform="translate(18.000000, 26.000000)">
+                    <g id="Group-8" transform="translate(-0.000000, 0.000000)">
+                        <g id="ic_term" transform="translate(-0.000000, 0.000000)">
+                            <path d="M27.7644231,1.95555556 L27.7644231,42.0444444 L1.85096154,42.0444444 L1.85096154,1.95555556 L27.7644231,1.95555556 L27.7644231,1.95555556 Z M29.6153846,0 L0,0 L0,44 L29.6153846,44 L29.6153846,0 L29.6153846,0 Z" id="Shape" fill="#989898"></path>
+                            <rect id="Rectangle" fill="#989898" x="6.34615385" y="6.38709677" width="17.6282051" height="2.83870968"></rect>
+                            <rect id="Rectangle" fill="#989898" x="6.34615385" y="13.483871" width="17.6282051" height="1.41935484"></rect>
+                            <rect id="Rectangle" fill="#989898" x="6.34615385" y="18.4516129" width="17.6282051" height="1.41935484"></rect>
+                            <rect id="Rectangle" fill="#989898" x="6.34615385" y="22.7096774" width="17.6282051" height="1.41935484"></rect>
+                            <rect id="Rectangle" fill="#989898" x="5.64102564" y="26.9677419" width="10.5769231" height="1.41935484"></rect>
+                            <path d="M4.93589744,32.6451613 L4.93589744,39.0322581 L14.1025641,39.0322581 L14.1025641,32.6451613 L4.93589744,32.6451613 Z M11.4735641,36.6672074 L10.6884391,37.4487143 L9.64160577,36.4062488 L8.5943141,37.4487143 L7.80873077,36.6672074 L8.85602244,35.6247419 L7.80873077,34.5827327 L8.59385577,33.8007696 L9.6406891,34.8427788 L10.6879808,33.8007696 L11.4731058,34.5827327 L10.4258141,35.6247419 L11.4735641,36.6672074 Z" id="Shape" fill="#989898"></path>
+                            <path d="M15.5128205,32.6451613 L15.5128205,39.0322581 L24.6794872,39.0322581 L24.6794872,32.6451613 L15.5128205,32.6451613 Z M20.8872372,36.6348157 L20.1286955,37.3894055 L18.2325705,35.5020184 L18.9906538,34.7474286 L20.1282372,35.8797696 L21.8978622,34.1182995 L22.6559455,34.8728894 L20.8872372,36.6348157 Z" id="Shape" fill="#FA6400"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

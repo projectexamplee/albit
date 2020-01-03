@@ -1,0 +1,126 @@
+<html>
+<head>
+  <title>DRUM CHANGO</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<link rel="stylesheet" type="text/css" href="css/cs.css">
+</head>
+
+<body>
+	<!--TOP AREA-->
+	<div class="col1 flex_col white_bg margin_b_2x">
+		<div class="live_area">
+			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
+			<navi-bar></navi-bar>
+			<!--SITE GLOBAL NAVIGATION TAB-->
+			<tab-main currentTab="none"></tab-main>
+		</div>
+	</div>
+	<!--CONTENT AREA-->
+	<div class="live_area flex_row_col space_between align_start">
+		<div class="flex_col col_side white_bg only_pc">
+			<div class="cs flex_row align_center col1 height2 padding_2x border_bottom">
+				<div class="board_title flex_row align_center margin_r_8 col2">
+					<div class="cs_img margin_r_1x">
+						<img class="" src="img/ic/ic_inquiry.svg">
+					</div>
+					<div>
+						<p class="subtitle black600">1:1 문의</p>
+						<p class="body black600">나만의 맞춤 문의하기!</p>
+					</div>
+				</div>
+				<div class="go_board flex_col body w100 align_start">
+					<p class="margin_b_1x">1:1문의 게시판 가기</p>
+					<img class="margin_l_1x" src="img/ic/ic_arrow_long.svg">
+				</div>
+			</div>
+			<div class="cs flex_row align_center col1 height2 padding_2x border_bottom">
+				<div class="board_title flex_row align_center margin_r_8 col2">
+					<div class="cs_img margin_r_1x">
+						<img class="" style="margin-left: -4px" src="img/ic/ic_price_qna.svg">
+					</div>
+					<div>
+						<p class="subtitle black600">견적 문의하기</p>
+						<p class="body black600">합리적인 가격을 찾으세요!</p>
+					</div>
+				</div>
+				<div class="go_board flex_col body w100 align_start">
+					<p class="margin_b_1x">견적상담 게시판 가기</p>
+					<img class="margin_l_1x" src="img/ic/ic_arrow_long.svg">
+				</div>
+			</div>
+			<div class="cs flex_row align_center col1 height2 padding_2x">
+				<div class="board_title flex_row align_center margin_r_8 col2">
+					<div class="cs_img margin_r_1x">
+						<img class="" src="img/ic/ic_term.svg">
+					</div>
+					<div>
+						<p class="subtitle black600">이용안내</p>
+						<p class="body black600">자세히 확실히 알려드립니다!</p>
+					</div>
+				</div>
+				<div class="go_board flex_col body w100 align_start">
+					<p class="margin_b_1x">이용안내 자세히 보기</p>
+					<img class="margin_l_1x" src="img/ic/ic_arrow_long.svg">
+				</div>
+			</div>
+		</div>
+		<div class="flex_col col_content space_between">
+			<div class="flex_col padding_2x col1 margin_b_2x space_between white_bg">
+				<p class="subtitle w700 black900 margin_b_2x">
+					견적 문의하기
+				</p>
+				<list-general-post class="flex_col col1 margin_b_1x" imgSrc="img/user/u1.jpg"></list-general-post>
+				<list-general-post class="flex_col col1 margin_b_1x" imgSrc="img/user/u2.jpg"></list-general-post>
+				<list-general-post class="flex_col col1 margin_b_1x" imgSrc="img/user/u3.jpg"></list-general-post>
+				<list-general-post class="flex_col col1 margin_b_1x"imgSrc="img/user/u4.jpg"></list-general-post>
+				<div class="button border_radius margin_t_2x btt_medium primary600_bg white900" style="align-self: flex-end;">
+					<img class="ic_btt" src="img/ic/ic_write_white.svg">
+					견적 문의하기 올리기
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	// /*CENTER SUBTAB ARRAY*/
+	// subTabList = [
+	// 			  "전체",
+	// 			  "뉴스",
+	// 			  "드럼영상",
+	// 			  "사진갤러리",
+	// 			  "중고장터",
+	// 			  "출고후기",
+	// 			  "상품후기",
+	// 			  "아티스트",
+	// 			  "자유게시판"
+	// 				];
+</script>
+<link rel="import" href="components/NaviBar/NaviBar.html">
+<link rel="import" href="components/TabMain/TabMain.html">
+<link rel="import" href="components/CardFull/CardFull.html">
+<link rel="import" href="components/CardBig/CardBig.html">
+<link rel="import" href="components/CardSmall/CardSmall.html">
+<link rel="import" href="components/CardVideo/CardVideo.html">
+<link rel="import" href="components/ListNewsImg/ListNewsImg.html">
+<link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
+<link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
+<link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/GridArtist/GridArtist.html">
+<link rel="import" href="components/Footer/Footer.html">
+<link rel="import" href="components/ListHorizonUsers/ListHorizonUsers.html">
+<link rel="import" href="components/TabedContent/TabedContent.html">
+<link rel="import" href="components/ListGeneralPost/ListGeneralPost.html">
+</html>

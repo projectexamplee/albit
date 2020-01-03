@@ -73,8 +73,33 @@ img.col2{
 .margin_r_6x{
 	margin-right: 48px;
 }
+.margin_r_8x{
+	margin-right: 64px;
+}
 .margin_t_2x{
 	margin-top: 16px;
+}
+/*LEFT*/
+.margin_l_1x{
+	margin-left: 8px;
+}
+.margin_l_2x{
+	margin-left: 16px;
+}
+.margin_l_3x{
+	margin-left: 24px;
+}
+.margin_l_4x{
+	margin-left: 32px;
+}
+.margin_l_5x{
+	margin-left: 40px;
+}
+.margin_l_6x{
+	margin-left: 48px;
+}
+.margin_l_8x{
+	margin-left: 64px;
 }
 /*BOTTOM*/
 .margin_b_1x{
@@ -134,6 +159,9 @@ img.col2{
 }
 .padding_2x{
 	padding:16px;
+}
+.padding_3x{
+	padding:24px;
 }
 .padding_4x{
 	padding:32px;

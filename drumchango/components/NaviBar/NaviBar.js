@@ -57,13 +57,13 @@
           $("body").append("<div class='modal_bg'></div>");
 
           if(type=="signup"){
-            $(".modal_bg").append("<modal-regular-signup></modal-regular-signup>");
+            $(".modal_bg").append("<modal-regular-signup id='" + type + "'></modal-regular-signup>");
             $(".modal_regular").on("click",function(event){
               event.stopPropagation();
             });
           }
           else if(type=="signin"){
-            $(".modal_bg").append("<modal-regular-signin></modal-regular-signin>");
+            $(".modal_bg").append("<modal-regular-signin id='" + type + "'></modal-regular-signin>");
             $(".modal_regular").on("click",function(event){
               event.stopPropagation();
             });

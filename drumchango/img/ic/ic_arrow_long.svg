@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic_arrow_long</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="12.2727273 0.272727273 11.3113636 1.23409091 15.1159091 5.04545455 0.272727273 5.04545455 0.272727273 6.40909091 15.1159091 6.40909091 11.3113636 10.2204545 12.2727273 11.1818182 17.7272727 5.72727273"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="button-/-goto" transform="translate(-19.000000, -28.000000)">
+            <g id="ic_arrow_long">
+                <g transform="translate(19.000000, 28.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="icon/navigation/arrow_forward_24px" fill="#EF4122" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

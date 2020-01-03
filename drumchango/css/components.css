@@ -44,7 +44,7 @@ html, body{
 		height: auto;
 	}
 	#logo_text{
-		width: 132px;
+		width: 114px;
 		height: auto;
 	}
 }
@@ -124,6 +124,19 @@ html, body{
 }
 
 /*TAB*/
+.tab:before{
+	transition: background-color 0.3s;
+	background-color: rgba(0,0,0,0);
+}
+.tab:hover:before{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background-color: rgba(0,0,0,0.032);
+}
 .tab_main{
 	width: auto;
 	height: 48px;

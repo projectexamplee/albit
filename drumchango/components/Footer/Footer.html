@@ -1,7 +1,18 @@
 <!--FOOTER-->
 <template id="footer">
+	<style type="text/css">
+		@media screen and (max-width: 680px) {
+			#footer_container{
+				padding: 16px !important;
+			}
+			#sitemap{
+				padding: 16px 0px !important;
+				margin-bottom: 32px;
+			}
+		}
+	</style>
 	<div class="flex_col col1 dark_blue_bg">
-		<div class="flex_col live_area padding_4x">
+		<div id="footer_container" class="flex_col live_area padding_4x">
 			<div class="flex_row_col align_center col1 space_between">
 				<!--CS CENTER-->
 				<div class="flex_col flex_center padding_2x padding_hor_4x footer_border_r_b margin_vertical_2x">
@@ -42,7 +53,7 @@
 					<img src="img/ic/social/ic_social_yt.svg">
 				</div>
 				<!--SITE MAP-->
-				<div class="flex_row col1 flex_center padding_2x">
+				<div id="sitemap" class="flex_row col1 flex_center padding_2x">
 					<div class="body white900 margin_r_2x">
 						회사소개
 					</div>
