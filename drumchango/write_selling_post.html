@@ -1,0 +1,171 @@
+<html>
+<head>
+  <title>DRUM CHANGO</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="stylesheet" type="text/css" href="css/mypage.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+</head>
+
+<body>
+	<!--TOP AREA-->
+	<div class="col1 flex_col white_bg margin_b_2x">
+		<div class="live_area">
+			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
+			<navi-bar></navi-bar>
+			<!--SITE GLOBAL NAVIGATION TAB-->
+			<tab-main currentTab="none"></tab-main>
+		</div>
+	</div>
+	<style type="text/css">
+		.add_photo{
+			position: absolute;
+			bottom:8px;
+			right:8px;
+		}
+	</style>
+	<!--CONTENT AREA-->
+	<div class="live_area flex_row align_center white_bg">
+		<div class="flex_col align_center padding_2x margin_b_2x col1">
+			<div class="flex_col mobile_col1" style="width: 60%">
+				<p class="subtitle margin_b_2x margin_t_2x">게시글 작성</p>
+				<div class="list_text_single space_between margin_b_1x">
+					<label>카테고리</label>
+					<div class="form">
+						<select id="option" name="board">
+						  <option value="" disabled>구매처를 선택하세요.</option>
+					      <option value="option1">뉴스</option>
+					      <option value="option2">드럼 영상</option>
+					      <option value="option3">드럼 갤러리</option>
+					      <option value="option4">상품후기</option>
+					      <option value="option5" selected>중고상품</option>
+					      <option value="option6">QnA</option>
+					      <option value="option7">고민상담</option>
+					    </select>
+					</div>
+				</div>
+				<list-text-single title="타이틀" input_value="타마 드럼스틱 FTXX판매합니다!"></list-text-single>			
+				<list-text-single title="연락처" placeholder="연락처를 입력해주세요"></list-text-single>
+				<list-text-single title="판매가격" placeholder="판매가격을 입력해주세요."></list-text-single>
+				<div class="col1">
+					<style type="text/css">
+						#price_option{
+							padding-left:80px; margin-top:-20px;
+						}
+						@media screen and (max-width: 680px) {
+							#price_option{
+								padding-left:0px; margin-top:-20px;
+							}
+						}
+					</style>
+					<div class="flex_col col1" id="price_option">
+						<div class="list_value">
+							<label class="checkbox">가격절충 불가
+							  <input type="checkbox">
+							  <span class="checkmark"></span>
+							</label>
+						</div>
+						<!-- <p class="caption black300" style="margin-top: -12px;">
+							가격절충을 원하지 않으시면 체크해주세요.
+						</p> -->
+					</div>
+				</div>
+				<div class="list_text_single space_between margin_b_1x">
+					<label>판매지역</label>
+					<div class="form">
+						<select name="area">
+							<option value="" disabled selected="">지역을 선택하세요</option>
+							<option value="1">강원도</option>
+							<option value="2">경기도</option>
+							<option value="3">경상남도</option>
+							<option value="4">경상북도</option>
+							<option value="5">광주시</option>
+							<option value="6">대구시</option>
+							<option value="7">대전시</option>
+							<option value="8">부산시</option>
+							<option value="9">서울시</option>
+							<option value="10">세종시</option>
+							<option value="11">울산시</option>
+							<option value="12">인천시</option>
+							<option value="13">전라남도</option>
+							<option value="14">전라북도</option>
+							<option value="15">제주도</option>
+							<option value="16">충청남도</option>
+							<option value="17">충청북도</option>
+					</select>
+					</div>
+				</div>	
+				<div class="list_text_single space_between margin_b_1x">
+					<label>제품상태</label>
+					<div class="form">
+						<select id="option" name="status">
+						  <option value="" disabled selected>제품상태를 선택하세요.</option>
+					      <option value="option1">미개봉 신품</option>
+					      <option value="option2">신동품(A급중고)</option>
+					      <option value="option3">약간의 사용감 있음 (비교적 양호)</option>
+					      <option value="option4">사용감 많음</option>
+					      <option value="option5">상태 안좋음</option>
+					      <option value="option6">일부 파손, 부품용</option>
+					      <option value="option7">고장났음</option>
+					    </select>
+					</div>
+				</div>
+				<list-btt2 class="margin_b_1x" title="미디어" button1="이미지 추가" img1="img/ic/ic_add_photo_black600.svg" button2="유튜브 추가" img2="img/ic/ic_add_video_black600.svg"></list-btt2>
+				<list-text-area-big title="게시글 내용" placeholder="내용을 입력해주세요."></list-text-area-big>
+				<div class="button border_radius btt_big primary600_bg margin_t_2x white900" style="align-self: flex-end;">
+					게시글 작성
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	// /*CENTER SUBTAB ARRAY*/
+	// subTabList = [
+	// 			  "전체",
+	// 			  "뉴스",
+	// 			  "드럼영상",
+	// 			  "사진갤러리",
+	// 			  "중고장터",
+	// 			  "출고후기",
+	// 			  "상품후기",
+	// 			  "아티스트",
+	// 			  "자유게시판"
+	// 				];
+</script>
+<link rel="import" href="components/NaviBar/NaviBar.html">
+<link rel="import" href="components/TabMain/TabMain.html">
+<link rel="import" href="components/CardFull/CardFull.html">
+<link rel="import" href="components/CardBig/CardBig.html">
+<link rel="import" href="components/CardSmall/CardSmall.html">
+<link rel="import" href="components/CardVideo/CardVideo.html">
+<link rel="import" href="components/ListNewsImg/ListNewsImg.html">
+<link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
+<link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
+<link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/GridArtist/GridArtist.html">
+<link rel="import" href="components/Footer/Footer.html">
+<link rel="import" href="components/ListHorizonUsers/ListHorizonUsers.html">
+<link rel="import" href="components/TabedContent/TabedContent.html">
+<link rel="import" href="components/ListGeneralPost/ListGeneralPost.html">
+<link rel="import" href="components/ListValueRegular/ListValueRegular.html">
+<link rel="import" href="components/ListTextSingle/ListTextSingle.html">
+<link rel="import" href="components/ListTextSingleBtt/ListTextSingleBtt.html">
+<link rel="import" href="components/ListText2SingleBtt/ListText2SingleBtt.html">
+<link rel="import" href="components/ListText3Single/ListText3Single.html">
+<link rel="import" href="components/ListBtt2/ListBtt2.html">
+<link rel="import" href="components/ListTextAreaBig/ListTextAreaBig.html">
+
+</html>

@@ -760,9 +760,19 @@ html, body{
 .input_comment>.my_input>.form{
 	width: calc(100% - 56px);
 }
-.input_comment>.button{
-	align-self: flex-end;
-}
 .commtent_list{
 	padding-left: 12px;
+}
+
+@media screen and (max-width: 680px) {
+	.input_comment>.my_input>.form{
+		width: calc(100% - 40px);
+	}
+	.commtent_list{
+		padding-left: 0px;
+	}
+
+}
+.input_comment>.button{
+	align-self: flex-end;
 }

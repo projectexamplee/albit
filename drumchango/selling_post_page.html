@@ -28,27 +28,14 @@
 	</div>
 	<!--CONTENT AREA-->
 	<style type="text/css">
-		.writter{
+		#writer{
 			position: relative;
 			min-width: 128px;
 			cursor: pointer;
 		}
-		#writter_up{
-
-		}
-		#writter_down{
-
-		}
-		.writter_dropdown{
+		#writer_dropdown{
 			position: absolute;
-			z-index: 99;
-		}
-		#writter_dropdown1{
 			top:36px;
-			left:0px;
-		}
-		#writter_dropdown2{
-			top:56px;
 			left:0px;
 		}
 		.menu{
@@ -60,13 +47,13 @@
 		<div class="live_area_narrow padding_2x">
 			<div id="post_header" class="flex_row space_between col1 padding_ver_2x border_bottom">
 				<p class="black900 col1 big_title w700 margin_t_2x margin_b_2x">
-					핸드 스피드 올리는 10계명
+					DW 콜렉터 스네어 4.5
 				</p>
-				<div id="writter_up" class="writter flex_row align_center">
+				<div id="writer" class="flex_row align_center">
 					<div id="u3" class="profile_t margin_r_1x">
 					</div>
 					<span class="caption black600 w400">username</span>
-					<div id="writter_dropdown1" class="writter_dropdown white_bg caption black600 box_shadow border_radius hide">
+					<div id="writer_dropdown" class="white_bg caption black600 box_shadow border_radius hide">
 						<div class="menu button">
 							유저페이지 방문
 						</div>
@@ -91,25 +78,22 @@
 					<img src="img/ic/ic_more.svg">
 				</div>
 			</div>
+			<div id="product_info" class="flex_col col1 margin_b_2x">
+				<list-value-strong title="현재상태" input_value="판매중"></list-value-strong>
+				<list-value-regular title="연락처" input_value="010xxxxxxx"></list-value-regular>
+				<list-value-regular title="판매가격" input_value="500,0000원"></list-value-regular>
+				<list-value-regular title="판매지역" input_value="서울"></list-value-regular>
+				<list-value-regular title="제품상태" input_value="신동품(A급중고)"></list-value-regular>
+
+			</div>
 			<div id="post_content" class="flex_col1 col1 black900 w400 body margin_b_4x">
+				<img src="img/example/second_prd1.jpg">
+				<img src="img/example/second_prd2.jpg">
 				<p>
-					안녕하세요.
-					드럼창고 장실장입니다.
-					오랜만에 자판을 두들기는 것 같네요. 안녕들하셨죠?^^
-					오늘은 사실 최근에 찍은 사진들을 좀 보여드릴까 해서 이렇게 글을 씁니다.
-					악기의 특성이나 그런건 나중에 다뤄보도록 하고 오늘은 그냥 사진에 집중을 해볼게요.
-					일단, 사진 먼저 보실까요?
-				</p>
-				<img src="img/example/post_img1.jpg">
-				<img src="img/example/post_img2.jpg">
-				<p>
-					위에서 보신 사진들은 지난주에 스튜디오에서 찍은 사진들입니다. 간지가 좀 나나요?ㅎㅎ
-					드럼창고를 시작한지 햇수로 9년째 입니다.
-					(사실 이 일을 처음 시작했을때는 한 5년정도만 할 생각이었습니다.ㅎ)
-					드럼창고는 처음 시작할때부터 포토그래퍼를 직원으로 채용하고 시작했던 회사입니다.
-					처음 시작할 때부터 다른 직원 다 없어도 사진만은 프로페셔널로 고용을 해야겠다 라고 생각했었죠.
-					그래서 상담,배송,튜닝 다 제가 했었고 
-					한명이자 전부인 직원은 포토그래퍼 한명이었습니다.
+					모든 파츠 신형이고 쉘은 잘 익은 06년산에 국내에서 보기 힘든 4.5" 깊이 입니다.<br>
+					깔끔하고 힘 있는 소리 좋아시면 딱 입니다 .<br>
+					좋은 가격에 7호선 이수역 4번 출구에서 직거래 가능하신 분과 거래하고 자 합니다.<br>
+					010XXXXXXX<br>
 				</p>
 			</div>
 			<div id="post_state" class="flex_row col1 flex_center padding_2x border_bottom">
@@ -131,34 +115,14 @@
 					<img class="ic_medium margin_r_s" style="margin-bottom: 3px" src="img/ic/ic_like_black600.svg">
 					<span>게시글 좋아요</span>
 				</div>
-				<div id="writter_down" class="writter flex_row align_center padding_ver_2x">
+				<div id="writer2" class="flex_row align_center padding_ver_2x">
 					<div id="u3" class="profile_t margin_r_1x">
 					</div>
 					<span class="body black600 w400 margin_r_s">username</span>
 					<img src="img/ic/ic_more.svg">
-					<div id="writter_dropdown2" class="writter_dropdown white_bg caption black600 box_shadow border_radius hide">
-						<div class="menu button">
-							유저페이지 방문
-						</div>
-						<div class="menu button">
-							쪽지 보내기
-						</div>
-						<div class="menu button">
-							전체 게시글
-						</div>
-						<div class="menu button">
-							중고매물
-						</div>
-						<div class="menu button">
-							보유장비
-						</div>
-					</div>
 				</div>
 			</div>
 			<div id="comment_area" class="margin_b_4x">
-				<style type="text/css">
-					
-				</style>
 				<div class="flex_col align_start col1">
 					<div class="input_comment margin_b_2x">
 						<div class="my_input flex_row col1 space_between margin_b_2x">
@@ -172,9 +136,9 @@
 						</div>
 					</div>
 					<div class="commtent_list flex_col col1 align_start">
-						<comment-bubble imgSrc="img/user/u3.jpg" msg="글 잘읽었습니다. 2번 읽었네요" isRead="yes" class="col1 flex_col marginb_b_1x"></comment-bubble>
-						<comment-bubble imgSrc="img/user/u5.jpg" msg="읽어봤더니 정말 손이 빨라 졌습니다 감사합니다!" isRead="yes" class=" col1 flex_col marginb_b_1x"></comment-bubble>
-						<comment-bubble imgSrc="img/user/u4.jpg" msg="감동적입니다. 여러번 읽으면 더 빨라질까요?" isRead="yes" class=" col1 flex_col marginb_b_1x"></comment-bubble>
+						<comment-bubble imgSrc="img/user/u3.jpg" msg="꼭 사고싶은데 제가 부산이 살아서TT" isRead="yes" class="col1 flex_col marginb_b_1x"></comment-bubble>
+						<comment-bubble imgSrc="img/user/u5.jpg" msg="혹시 타마 208스네어랑 교환도 가능할까요?" isRead="yes" class=" col1 flex_col marginb_b_1x"></comment-bubble>
+						<comment-bubble imgSrc="img/user/u4.jpg" msg="이좋은걸 왜 파시나요?" isRead="yes" class=" col1 flex_col marginb_b_1x"></comment-bubble>
 					</div>
 					
 				</div>
@@ -184,27 +148,9 @@
 	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
 <script type="text/javascript">
-	const writter_dropdown1 = document.querySelector("#writter_dropdown1");
-	const writter_dropdown2 = document.querySelector("#writter_dropdown2");
-
-	document.querySelector('#writter_dropdown1').addEventListener("click",function(event){
-		event.stopPropagation();
-	});
-	document.querySelector('#writter_dropdown2').addEventListener("click",function(event){
-		event.stopPropagation();
-	});
-	document.querySelector("#writter_up").addEventListener("click",function(event){
-		event.stopPropagation();
-		writter_dropdown1.classList.toggle("hide");
-	});
-	document.querySelector("#writter_down").addEventListener("click",function(event){
-		event.stopPropagation();
-		writter_dropdown2.classList.toggle("hide");
-	});
-	document.querySelector("body").addEventListener("click",function(){
-		console.log("body click");
-		writter_dropdown1.classList.add("hide");
-		writter_dropdown2.classList.add("hide");
+	const writer_dropdown = document.querySelector("#writer_dropdown");
+	document.querySelector("#writer").addEventListener("click",function(){
+		writer_dropdown.classList.toggle("hide");
 	});
 </script>
 </body>
@@ -218,6 +164,8 @@
 <link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
 <link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
 <link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/ListValueRegular/ListValueRegular.html">
+<link rel="import" href="components/ListValueStrong/ListValueStrong.html">
 <link rel="import" href="components/GridArtist/GridArtist.html">
 <link rel="import" href="components/GridArtistBig/GridArtistBig.html">
 <link rel="import" href="components/Footer/Footer.html">
