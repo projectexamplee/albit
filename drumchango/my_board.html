@@ -1,0 +1,129 @@
+<html>
+<head>
+  <title>DRUM CHANGO</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>DRUM CHANGO</title>
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/size.css">
+	<link rel="stylesheet" type="text/css" href="css/shape.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/img_example.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/mypage.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+
+<body>
+	<!--TOP AREA-->
+	<div class="col1 flex_col white_bg margin_b_2x">
+		<div class="live_area">
+			<!--TOP NAVIGATION INCLUDE SLIDE MENU FOR-->
+			<navi-bar></navi-bar>
+			<!--SITE GLOBAL NAVIGATION TAB-->
+			<tab-main currentTab="none"></tab-main>
+		</div>
+	</div>
+	<!--CONTENT AREA-->
+	<div class="live_area flex_row space_between">
+		<div class="col_side padding_2x white_bg">
+			<div class="menu selected">
+				마이페이지 홈
+			</div>
+			<div class="menu">
+				기본정보 수정
+			</div>
+			<div class="menu">
+				포인트 적립내역
+			</div>
+			<div class="menu">
+				내가 작성한 글
+			</div>
+			<div class="menu">
+				내가 작성한 댓글
+			</div>
+			<div class="menu">
+				내가 올린 중고상품
+			</div>
+			<div class="menu">
+				내 창고
+			</div>
+		</div>
+		<style type="text/css">
+			#my_board{
+				padding:48px;
+			}
+			#profile_board{
+				width: calc(100% - 124px);
+			}
+			@media screen and (max-width: 680px) {
+				#my_board{
+					padding:16px;
+				}
+				#profile_board{
+					width: calc(100% - 104px);
+				}
+			}
+		</style>
+		<div id="my_board" class="col_content space_between padding_2x white_bg">
+			<div class='flex_row col1 align_center margin_b_4x'>
+				<div id="my_photo" class="profile_b primary_border box_shadow_primary margin_r_2x">	
+				</div>
+				<p id="profile_board" class="big_title w400 col1">
+					123번째 아티스트<br><span class="primary600">드러머</span>님에게<br>
+					메세지를 남겨주세요!
+				</p>
+			</div>
+			<div class="flex_col col1">
+				<div id="comment_area" class="margin_b_4x col1">
+					<div class="flex_col align_start col1">
+						<div class="input_comment margin_b_2x">
+							<div class="my_input flex_row col1 space_between margin_b_2x">
+								<div id="my_photo" class="profile_s"></div>
+								<div class="form form_height_2x">
+									<textarea id="value" type="text" placeholder="댓글을 입력하세요."></textarea>
+								</div>
+							</div>
+							<div class="button btt_medium primary600_bg white900">
+								댓글달기
+							</div>
+						</div>
+						<div class="commtent_list flex_col col1 align_start">
+							<comment-bubble imgSrc="img/user/u3.jpg" msg="글 잘읽었습니다. 2번 읽었네요" isRead="yes" class="col1 flex_col marginb_b_1x"></comment-bubble>
+							<comment-bubble imgSrc="img/user/u5.jpg" msg="읽어봤더니 정말 손이 빨라 졌습니다 감사합니다!" isRead="yes" class=" col1 flex_col marginb_b_1x"></comment-bubble>
+							<comment-bubble imgSrc="img/user/u4.jpg" msg="감동적입니다. 여러번 읽으면 더 빨라질까요?" isRead="yes" class=" col1 flex_col marginb_b_1x"></comment-bubble>
+							<comment-bubble imgSrc="img/user/u4.jpg" msg="공연또 언제하세요?" isRead="yes" class=" col1 flex_col marginb_b_1x"></comment-bubble>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer-custom class="flex_col col1 margin_t_4x"></footer-custom>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+</script>
+<link rel="import" href="components/NaviBar/NaviBar.html">
+<link rel="import" href="components/TabMain/TabMain.html">
+<link rel="import" href="components/CardFull/CardFull.html">
+<link rel="import" href="components/CardBig/CardBig.html">
+<link rel="import" href="components/CardSmall/CardSmall.html">
+<link rel="import" href="components/CardVideo/CardVideo.html">
+<link rel="import" href="components/ListNewsImg/ListNewsImg.html">
+<link rel="import" href="components/ListNewsTxt/ListNewsTxt.html">
+<link rel="import" href="components/ListSecondPrd/ListSecondPrd.html">
+<link rel="import" href="components/ListReview/ListReview.html">
+<link rel="import" href="components/GridArtist/GridArtist.html">
+<link rel="import" href="components/Footer/Footer.html">
+<link rel="import" href="components/ListHorizonUsers/ListHorizonUsers.html">
+<link rel="import" href="components/ListHorizonBrand/ListHorizonBrand.html">
+<link rel="import" href="components/TabedContent/TabedContent.html">
+<link rel="import" href="components/CommentBubbleSimple/CommentBubbleSimple.html">
+<link rel="import" href="components/CommentBubble/CommentBubble.html">
+<link rel="import" href="components/ListGeneralPost/ListGeneralPost.html">
+</html>

@@ -52,6 +52,9 @@ html, body{
 .search_bar{
 	height: 48px;
 	padding: 0px 16px;
+	
+}
+#search_bar_main{
 	margin-left: -124px;
 }
 .search_bar>input{
@@ -63,7 +66,7 @@ html, body{
 @media screen and (max-width: 680px) {
 	.search_bar{
 		height: 48px;
-		margin:16px;
+		margin:16px !important;
 		width: calc(100% - 32px);
 	}
 	.search_bar>input{
@@ -75,7 +78,7 @@ html, body{
 	#logo{
 		order:0;
 	}
-	#search_bar{
+	#search_bar_main{
 		order:3;
 	}
 	#right_menu{
@@ -113,13 +116,21 @@ html, body{
 	height: 108px;
 	border-radius: 50%;
 	background-color: #f0f0f0;
-	background-size: cover;
+	background-size: 108%;
 	background-position: center;
 }
 @media screen and (max-width: 680px) {
 	.my_profile{
 		width: 28px;
 		height: 28px;
+	}
+	.profile_b{
+		width: 86px;
+		height: 86px;
+		border-radius: 50%;
+		background-color: #f0f0f0;
+		background-size: 108%;
+		background-position: center;
 	}
 }
 
@@ -235,7 +246,8 @@ html, body{
 	height: 3px;
 	color: #ffffff;
 	background-color: #EE4123;
-	bottom: 0px;
+	bottom: 0px !important;
+	top: unset !important;
 	left: calc(50% - 32px);
 }
 
@@ -326,7 +338,16 @@ html, body{
 		color: #ffffff;
 		background-color: #EE4123;
 		bottom: 0px;
+		top: unset !important;
 		left: calc(50% - 32px);
+	}
+	.tab_sub2.block.selected{
+		color:#ffffff !important;
+		background-color: #EE4123 !important;
+		font-weight: 400 !important;
+	}
+	.tab_sub2.block.selected:before{
+		display: none;
 	}
 	.tab_sub3{
 		width: 33%;

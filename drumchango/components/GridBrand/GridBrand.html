@@ -1,0 +1,47 @@
+<template>
+	<style type="text/css">
+		#GridBrand{
+			height: 286px;
+			overflow: scroll;
+			overflow-x: hidden;
+		}
+		#selectedBrand{
+			display: -webkit-inline-box;
+			height: 108px;
+			width: 100%;
+			flex-wrap: nowrap;
+			overflow-y: hidden;
+			overflow-x: scroll; 
+		}
+		.selected_brand{
+			position: relative;
+			padding-bottom: 0px !important;
+		}
+		.selected_brand:before{
+			position: absolute;
+			top:16px;
+			right:8px;
+			content: url( "img/ic/ic_remove_circle.svg" );
+		}
+		@media screen and (max-width: 680px) {
+			#GridBrand{
+				height: 186px;
+				overflow: scroll;
+				overflow-x: hidden;
+			}
+			#selectedBrand{
+				height: 96px;
+			}
+			.selected_brand{
+				width: 56px !important;
+			}
+
+		}
+	</style>
+	<div id="GridBrand" class="flex_row col1 margin_b_2x">
+	</div>
+	<p class="title margin_center w700 black900 col1 textcenter margin_b_1x">선택된 브랜드</p>
+	<div id="selectedBrand" class="flex_row site_bg padding_ver_1x border_top">
+	</div>
+</template>
+<script src="GridBrand.js" type="text/javascript"></script>

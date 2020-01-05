@@ -86,6 +86,9 @@ body{
 .space_between>.col2_1{
 	width: calc(50% - 8px);
 }
+.space_between>.col2{
+	width: calc(50% - 8px);
+}
 .col3_1{
 	width: 33.3%;
 }

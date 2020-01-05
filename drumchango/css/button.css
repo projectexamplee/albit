@@ -45,6 +45,7 @@
 .btt_big{
 	font-size: 14.8px;
 	height: 44px;
+	min-width: 86px;
 }
 .btt_medium{
 	font-size: 12.8px;

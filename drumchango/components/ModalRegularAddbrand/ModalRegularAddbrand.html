@@ -1,0 +1,34 @@
+<template id="ModalRegularAddbrand">
+	<link rel="stylesheet"  href="css/form.css">
+	<style type="text/css">
+		#search_bar_brand{
+			width: 100% !important;
+			margin: 0px 0px 16px 0px !important;
+		}
+	</style>
+	<div class="modal modal_regular flex_col align_start space_between">
+		<div class="ic_close">
+			<img src="img/ic/ic_close.svg">
+		</div>
+		<p class="title margin_center w700 black900 col1 textcenter margin_b_1x">협찬 브랜드 선택</p>
+		<!--SEARCH BAR-->
+		<div id="search_bar_brand" class="search_bar primary_border flex_row align_center col1 margin_b_2x">
+			<img class="margin_r_1x ic_small" src="img/ic/ic_search_primary.jpg">
+			<input id="search_bar_input"  type="text" class="no_border" name="search bar" placeholder="찾으시는 브랜드를 검색해주세요.">
+		</div>
+		<grid-brand class="flex_col col1 margin_b_2x"></grid-brand>
+		<div class="flex_row col1 justify_end">
+			<div id="id_cancel" class="button btt_big border_black100 padding_2x_hor black300 margin_r_1x">
+				취소
+			</div>
+			<div id="id_confirm" class="button btt_big primary600_bg padding_2x_hor white900">
+				완료
+			</div>
+		</div>
+	</div>
+</template>
+<script src="ModalRegularAddbrand.js"></script>
+<link rel="import" href="../GridBrand/GridBrand.html">
+<link rel="import" href="../ListTextSingleBtt2/ListTextSingleBtt2.html">
+<link rel="import" href="../ListTextSingle/ListTextSingle.html">
+<link rel="import" href="../ListTextSingleBtt/ListTextSingleBtt.html">

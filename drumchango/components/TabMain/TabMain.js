@@ -139,7 +139,7 @@
                           title: "중고장터"
                         },
                         {
-                          id: "product",
+                          id: "post",
                           title: "게시물"
                         },
                     ];
@@ -227,11 +227,19 @@
     else if(tabType=="search"){
         $.map(searchList, function( item, i ) {
          if(i==0){
-            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab tab_sub3 selected'>"+ item.title + "</a>");
+            $("#main_sub_tab_list").append("<div id='" + item.id  + "' class='tab search_tab tab_sub3 selected'>"+ item.title + "</div>");
           }
           else{
-            $("#main_sub_tab_list").append("<a href='" + item.url  + "' class='tab tab_sub3'>"+ item.title + "</access>");
+            $("#main_sub_tab_list").append("<div id='" + item.id  + "' class='tab search_tab tab_sub3'>"+ item.title + "</div>");
           }
+          $("#" + item.id).on("click",function(){
+            $(".search_tab").removeClass("selected");
+            $("#" + item.id).addClass("selected");
+
+            $(".search_tab_content").addClass("hide");
+            $("#" + item.id + "_tab").removeClass("hide");
+          });
+
       });
     }
   }
