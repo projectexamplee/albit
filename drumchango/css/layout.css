@@ -9,6 +9,9 @@ body{
     box-sizing: border-box;
     outline: none;
 }
+.no_wrap{
+	flex-wrap: nowrap !important;
+}
 
 /*컨텐츠 영역 PC에서 1080px으로 고정*/
 .live_area{
@@ -84,10 +87,10 @@ body{
 }
 
 .space_between>.col2_1{
-	width: calc(50% - 8px);
+	width: calc(50% - 8px) !important;
 }
 .space_between>.col2{
-	width: calc(50% - 8px);
+	width: calc(50% - 8px) !important;
 }
 .col3_1{
 	width: 33.3%;

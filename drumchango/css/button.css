@@ -40,7 +40,7 @@
 	background-color: rgba(0,0,0,0.032);
 }
 .button.col2{
-	width: calc(50% - 8px);
+	width: calc(50% - 8px) !important;
 }
 .btt_big{
 	font-size: 14.8px;

@@ -28,13 +28,13 @@ html, body{
 	height: 68px;
 }
 .slide_menu{
-	/*position: fixed;
+	position: fixed;
 	top:0;
 	left:-100%;
 	width: 100%;
 	height: 100%;
 	z-index: 999;
-	transition: left 0.3s;*/
+	transition: left 0.3s;
 }
 .slide_menu.open{
 	left: 0% !important;
@@ -796,4 +796,42 @@ html, body{
 }
 .input_comment>.button{
 	align-self: flex-end;
+}
+.progressive_bar{
+	position: fixed;
+	z-index: 99999;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 3px;
+	background-color: #f0f0f0;
+}
+.progressive_bar>.fill{
+	width: 0%;
+	height: 100%;
+	background-color: #EE4123;
+}
+.fill_on{
+	animation: filled 0.3s;
+}
+@-webkit-keyframes filled {
+  from {width: 0%;}
+  to {width: 100%;}
+}
+.toast{
+	width: 256px;
+	top: 68%;
+	left:calc(50% - 78px);
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.5s, top 0.5s;
+	z-index: 9999;
+	transition-timing-function: ease-in-out;
+}
+.toast_show{
+	top: 60%;
+	opacity: 1;
 }

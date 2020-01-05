@@ -35,91 +35,91 @@
       {
         id: "accoustic",
         img: "img/ctg/c1.jpg",
-        title: "어쿠어스틱"
+        title: "드럼스틱"
       },
       {
         id: "electronic",
         img: "img/ctg/c2.jpg",
-        title: "전자드럼"
+        title: "브러쉬/말렛"
       },
       {
         id: "snare",
         img: "img/ctg/c3.jpg",
-        title: "스네어"
+        title: "드럼헤드"
       },
       {
         id: "cymbal",
         img: "img/ctg/c4.jpg",
-        title: "심벌"
+        title: "연습패드"
       },
       {
         id: "hardware",
         img: "img/ctg/c5.jpg",
-        title: "하드웨어"
+        title: "페달"
       },
       {
         id: "accessory",
         img: "img/ctg/c6.jpg",
-        title: "악세사리"
+        title: "의자"
       },
       {
         id: "percussion",
         img: "img/ctg/c7.jpg",
-        title: "퍼커션"
+        title: "T자스탠드"
       },
       {
         id: "percussion2",
         img: "img/ctg/c8.jpg",
-        title: "타악기"
+        title: "1자스탠드"
       },
       {
         id: "keyboard",
         img: "img/ctg/c9.jpg",
-        title: "건반"
+        title: "스네어스탠드"
       }
       ,{
         id: "midi",
         img: "img/ctg/c10.jpg",
-        title: "미디"
+        title: "하이햇스탠드"
       },{
         id: "etc",
         img: "img/ctg/c11.jpg",
-        title: "기타"
+        title: "스틱가방"
       },{
         id: "sound",
         img: "img/ctg/c12.jpg",
-        title: "음향"
+        title: "케이스"
       }
       ,{
         id: "sound",
         img: "img/ctg/c13.jpg",
-        title: "음향"
+        title: "메트로놈"
       }
       ,{
         id: "sound",
         img: "img/ctg/c14.jpg",
-        title: "음향"
+        title: "드럼키"
       }
       ,{
         id: "sound",
         img: "img/ctg/c15.jpg",
-        title: "음향"
+        title: "튜닝기"
       }
       ,{
         id: "sound",
         img: "img/ctg/c16.jpg",
-        title: "음향"
+        title: "드럼마이크"
       }
       ,{
         id: "sound",
         img: "img/ctg/c17.jpg",
-        title: "음향"
+        title: "드럼쉴드"
       }
   ];
   $(document).ready(function(){
     /*MENU LIST DATA BINDING*/
     $.map( menuList, function( item, i ) {
-       $("#ctg_pop_container").append("<div class='caption black600 tab_icon menu_pop'>"
+       $("#ctg_pop_container").append("<div class='small black600 tab_icon menu_pop'>"
                                      + "<img src='" + item.img + "'>"
                                      + item.title
                                      + "</div>");

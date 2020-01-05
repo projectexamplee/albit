@@ -99,6 +99,9 @@
                            + "<span>" + item.title + "(" + item.numb + ") </span>"
                             + "</div>");
     });
+    $(".ic_close").on("click",function(){
+       $(".slide_menu").removeClass("open");
+    });
   });
 
 })();

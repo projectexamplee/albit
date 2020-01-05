@@ -40,7 +40,7 @@
 
       this.querySelector('#menu').addEventListener("click",function(){
         slide_menu.classList.toggle("open");
-        this.classList.toggle("opacity_0");
+        // this.classList.toggle("opacity_0");
       });
       this.querySelector('#signup').addEventListener("click",function(event){
           event.stopPropagation();
