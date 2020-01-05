@@ -353,13 +353,13 @@ html, body{
 	.tab_sub2.selected:before{
 		content: "";
 		position: absolute;
-		width: 64px;
+		width: 100px;
 		height: 3px;
 		color: #ffffff;
 		background-color: #EE4123;
 		bottom: 0px;
 		top: unset !important;
-		left: calc(50% - 32px);
+		left: 0px;
 	}
 	.tab_sub2.block.selected{
 		color:#ffffff !important;
@@ -435,6 +435,15 @@ html, body{
 	background-size: cover;
 	background-position: center;
 }
+.prd_img_top{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	padding: 43% 0;
+	background-size: cover;
+	background-position: center;
+}
 @media screen and (max-width: 680px) {
 	.container_img_bg{
 		height: 96px;
@@ -472,7 +481,8 @@ html, body{
 /*LIST*/
 .list{
 	width: 100%;
-	padding: 0px 0px 8px 8px;
+	/*padding: 0px 0px 8px 8px;*/
+	padding:0px;
 	height: 68px;
 }
 .list>.thumb_img_small{
@@ -500,7 +510,8 @@ html, body{
 @media screen and (max-width: 680px) {
 	.list{
 		width: 100%;
-		padding: 0px 0px 4px 4px;
+		padding: 0px;
+		/*padding: 0px 0px 4px 4px;*/
 	}
 	.list_profile>.list_info{
 		width:calc(100% - 40px - 44px);
@@ -842,7 +853,7 @@ html, body{
 .toast{
 	width: 256px;
 	top: 68%;
-	left:calc(50% - 78px);
+	left:calc(50% - 128px);
 	position: fixed;
 	display: flex;
 	flex-direction: column;

@@ -32,6 +32,23 @@
 			bottom:8px;
 			right:8px;
 		}
+		.artist_activity_list{
+			position: relative;
+		}
+		.artist_activity_list:before{
+			position: absolute;
+		    top: 0px;
+		    right: -8px;
+		    content: url(img/ic/ic_remove_circle.svg);
+		}
+		@media screen and (max-width: 680px) {
+			.artist_activity_list:before{
+				position: absolute;
+			    top: 16px;
+			    right: -8px;
+			    content: url(img/ic/ic_remove_circle.svg);
+			}
+		}
 	</style>
 	<!--CONTENT AREA-->
 	<div class="live_area flex_row space_between">
@@ -63,7 +80,7 @@
 				<div class="flex_col align_start mobile_col1" style="width: 60%">
 					<p class="subtitle margin_b_4x margin_t_2x">아티스트 정보 수정</p>
 					<list-text-area-big class="margin_b_1x col1" title="아티스트 소개" placeholder="아티스트 소개글을 입력해주세요."></list-text-area-big>
-					<list-text2-artist-log class="col1" title="활동연역" placeholder1="연도"  placeholder2="활동내용"></list-text2-artist-log>
+					<list-text2-artist-log class="col1 artist_activity_list" title="활동연역" placeholder1="연도"  placeholder2="활동내용"></list-text2-artist-log>
 					<div class="button border_radius btt_medium primary600_bg white900 margin_t_2x margin_b_4x" style="align-self: flex-end;">
 						<img class="ic_btt" src="img/ic/ic_add_white.svg">
 						활동내역 추가

@@ -19,7 +19,7 @@
       const templete = document.importNode(HTMLTemplate.content, true);
       const imgSrc = this.getAttribute('imgSrc');
       this.appendChild(templete);
-      this.querySelector('.thumb_img_small').style.backgroundImage =  "url(" + imgSrc + ")";
+      
       // const shadowRoot = this.attachShadow({ mode: 'open' });
 
       // // Clone the template and the cloned node to the shadowDOM's root.

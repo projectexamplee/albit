@@ -126,6 +126,11 @@
                            id: "secondprd",
                            title: "중고장터",
                            url:"second_sell_page.html"
+                          },
+                          {
+                           id: "artist",
+                           title: "아티스트",
+                           url:"artist_page.html"
                           }
                         ];
 
