@@ -1,0 +1,31 @@
+<template id="ModalRegularInviteArtist">
+	<link rel="stylesheet"  href="css/form.css">
+	<div class="modal modal_regular flex_col align_start">
+		<div class="ic_close">
+			<img src="img/ic/ic_close.svg">
+		</div>
+		<div id="login" class="flex_col col1 margin_b_2x border_bottom">
+			<p class="big_title black900 w700 margin_b_2x margin_center">아티스트 초대하기</p>
+			<p class="caption black600 w400 paddingh_hor_4x margin_b_4x">
+				초대받은 아티스트가 가입> 아티스트 등록시 username님과 동일한 포인트를 받게됩니다.
+			</p>
+			<div class="flex_col col1 margin_b_2x">
+				<list-text-single class="col1" title="아티스트 이름" placeholder="초대할 아티스트 이름을 입력해주세요."></list-text-single>
+				<list-text-single class="col1" title="전화로 초대" placeholder="초대할 아티스트의 전화번호"></list-text-single>
+			</div>
+			<div class="flex_row col1 space_between">
+				<div id="id_cancel" class="button col2 btt_big border_black100 padding_2x_hor black300">
+					취소
+				</div>
+				<div id="id_invite" class="button col2 btt_big primary600_bg white900 margin_b_2x">
+					초대하기
+				</div>
+			</div>
+		</div>
+	
+	</div>
+</template>
+<script src="ModalRegularInviteArtist.js"></script>
+<link rel="import" href="../ListTextSingleBtt2/ListTextSingleBtt2.html">
+<link rel="import" href="../ListTextSingle/ListTextSingle.html">
+<link rel="import" href="../ListTextSingleBtt/ListTextSingleBtt.html">

@@ -1,5 +1,5 @@
 (async () => {
-  const res = await fetch('components/ListHorizonBrand/ListHorizonBrand.html');
+  const res = await fetch('components/ListValue2Regular/ListValue2Regular.html');
   const textTemplate = await res.text();
 
   // Parse and select the template tag here instead 
@@ -8,7 +8,7 @@
   const HTMLTemplate = new DOMParser().parseFromString(textTemplate, 'text/html')
                            .querySelector('template');
 
-  class ListHorizonBrand extends HTMLElement {
+  class ListValue2Regular extends HTMLElement {
     constructor() {
       // If you define a constructor, always call super() first as it is required by the CE spec.
       super();
@@ -17,39 +17,16 @@
     // Called when element is inserted in DOM
     connectedCallback() {
       const templete = document.importNode(HTMLTemplate.content, true);
+      const title = this.getAttribute("title");
+      const value1= this.getAttribute("input_value1");
+      const value2 = this.getAttribute("input_value2");
+
+
       this.appendChild(templete);
-      const type = this.getAttribute("type");
 
-      if(type!='my'){
-        this.querySelector("#btt_add_brand").classList.add("hide");
-      }
-
-      this.querySelector('#btt_add_brand').addEventListener("click",function(event){
-          event.stopPropagation();
-          addModal("add_brand");
-      });
-
-      
-
-      function addModal(type){
-          $("body").append("<div class='modal_bg'></div>");
-
-          if(type=="add_brand"){
-            $(".modal_bg").append("<modal-regular-addbrand id='" + type + "'></modal-regular-addbrand>");
-            $(".modal_regular").on("click",function(event){
-              event.stopPropagation();
-            });
-          }
-
-          $("body").on("click",function(){
-            $(".modal_bg").remove();
-          });
-          $(".ic_close").on("click",function(){
-            $(".modal_bg").remove();
-          });
-
-      }
-      
+      this.querySelector("#title").innerHTML= title;
+      this.querySelector("#value1").innerHTML= value1;
+      this.querySelector("#value2").innerHTML= value2;
       // const shadowRoot = this.attachShadow({ mode: 'open' });
 
       // // Clone the template and the cloned node to the shadowDOM's root.
@@ -61,6 +38,6 @@
     }
   }
 
-  customElements.define('list-horizon-brand', ListHorizonBrand);
+  customElements.define('list-value2-regular', ListValue2Regular);
 
 })();

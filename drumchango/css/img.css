@@ -10,7 +10,7 @@
 	}
 }
 
-#invite_artist{
+#invite_artist_banner{
 	background-image: url("../img/bg_invite_artist.jpg");
 	background-size: cover;
 	background-position: center;
@@ -19,4 +19,8 @@
 	background-size: cover;
 	background-position: center;
 	background-image: url("../img/empty_img.svg");
+}
+
+#point_photo{
+	background-image: url("../img/bg_point.jpg");
 }

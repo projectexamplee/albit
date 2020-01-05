@@ -53,6 +53,9 @@
 .primary_border{
 	border: solid 0.5px #EE4123;
 }
+.border_bold{
+	border-width: 2px !important;
+}
 .black300_border{
 	border: solid 0.5px #c0c0c0;
 }

@@ -22,6 +22,22 @@ modal-regular-addbrand{
 	width: 100%;
 	height: 100%;
 }
+modal-regular-select-artist{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+modal-regular-invite-artist{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
 
 .modal_bg{
 	display: flex;

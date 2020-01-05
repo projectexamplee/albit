@@ -225,7 +225,7 @@ html, body{
 	position: relative;
 	/*width: auto;*/
 	height: 36px;
-	min-width: 86px;
+	/*min-width: 86px;*/
 	padding:0 16px;
 	font-size: 12.8px;
 	display: flex;
@@ -285,6 +285,7 @@ html, body{
 }
 /* Hide scrollbar for IE and Edge */
 .sub_tab_container {
+	position: relative;
   -ms-overflow-style: none;
 }
 .sub_tab_list{
@@ -305,9 +306,24 @@ html, body{
 		width: calc(33.3% - 32px);
 	}
 	.sub_tab_list{
+		position: relative;
 		display: -webkit-inline-box;
 		flex-wrap: nowrap;
 	}
+	tab-contentarea{
+		position: relative;
+	}
+	tab-contentarea:before{
+		content:"";
+		position: absolute;
+		width: 56px;
+		height: 100%;
+		z-index: 9;
+		top:0;
+		right:0;
+		background-image: linear-gradient(90deg,rgba(255,255,255,0) 0% , rgba(255,255,255,1) 60% ); /* Standard syntax (must be last) */
+	}
+	
 	.tab_sub{
 		background-color: #EE4123;
 		color: #fafafa;
@@ -350,6 +366,7 @@ html, body{
 		display: none;
 	}
 	.tab_sub3{
+		font-size: 10.8px;
 		width: 33%;
 	}
 
@@ -494,8 +511,8 @@ html, body{
 }
 .product_list_img>.circle_medium{
 	position: absolute;
-	top:-8px;
-	left:-12px;
+	top:-4px;
+	left:-4px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -834,4 +851,8 @@ html, body{
 .toast_show{
 	top: 60%;
 	opacity: 1;
+}
+.ic_close{
+	width: 24px;
+	height: 24px;
 }
