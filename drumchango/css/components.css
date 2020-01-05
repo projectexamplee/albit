@@ -44,7 +44,7 @@ html, body{
 		height: auto;
 	}
 	#logo_text{
-		width: 114px;
+		width: 100%;
 		height: auto;
 	}
 }
@@ -75,8 +75,12 @@ html, body{
 		font-size: 14.8px;
 		outline: none;
 	}
-	#logo{
+	#logo_container{
+		width: calc(100% - 48px*3);
 		order:0;
+	}
+	#logo{
+		width: calc(100% - 48px);
 	}
 	#search_bar_main{
 		order:3;
