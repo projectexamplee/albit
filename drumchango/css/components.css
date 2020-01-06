@@ -187,6 +187,7 @@ html, body{
 .tab_sub.selected:before{
 	content: "";
 	position: absolute;
+	top: unset !important;
 	width: 64px;
 	height: 3px;
 	color: #ffffff;
