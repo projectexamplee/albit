@@ -5,7 +5,7 @@
 			width:calc(100%/17);
 		}
 		.menu_pop:hover{
-			border: solid 0.5px #EE4123;
+			/*border: solid 0.5px #EE4123;*/
 		}
 		#ctg_pop_container{
 			position: relative;
@@ -34,10 +34,19 @@
 		.height_auto>.ic_hide{
 			display: flex;
 		}
+		.menu_pop>img{
+			/*width: 36px;
+			height: 36px;*/
+		}
 		@media screen and (max-width: 680px) {
 			.menu_pop{
 				/*인기 카테고리의 수에 따라 결정*/
 				width:calc((100% - 24px)/6);
+				min-width: auto;
+			}
+			.menu_pop_extend{
+				/*인기 카테고리의 수에 따라 결정*/
+				width:calc(100% /6);
 				min-width: auto;
 			}
 		}

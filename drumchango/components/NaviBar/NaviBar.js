@@ -52,6 +52,15 @@
           addModal("signin");
       });
 
+      var search_bar_input = this.querySelector("#search_bar_input");
+      // Execute a function when the user releases a key on the keyboard
+      search_bar_input.addEventListener("keyup", function(event) {
+        // Number 13 is the "Enter" key on the keyboard
+        if (event.keyCode === 13) {
+          window.location.href = 'search_results.html';
+        }
+      });
+
       
 
       function addModal(type){

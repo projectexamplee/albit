@@ -133,11 +133,13 @@
     /*THE MORE EVENT*/
     $(".ic_more").on("click",function(){
         $("#ctg_pop_container").addClass("height_auto");
+        $(".menu_pop").addClass("menu_pop_extend");
     });
     /*HIDE EVENT*/
     /*THE MORE EVENT*/
     $(".ic_hide").on("click",function(){
         $("#ctg_pop_container").removeClass("height_auto");
+        $(".menu_pop").removeClass("menu_pop_extend");
     })
   });
 

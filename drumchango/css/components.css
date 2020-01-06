@@ -523,7 +523,7 @@ html, body{
 /*PRODUCT LIST*/
 .product_list_img{
 	position: relative;
-	height: 100px !important;
+	height: 97px !important;
 }
 .product_list_img>.circle_medium{
 	position: absolute;
