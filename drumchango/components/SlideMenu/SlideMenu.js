@@ -101,6 +101,7 @@
     });
     $(".ic_slide_close").on("click",function(){
        $(".slide_menu").removeClass("open");
+       $("body").removeClass("scroll_disable");
     });
   });
 

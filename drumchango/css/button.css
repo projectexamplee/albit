@@ -51,6 +51,11 @@
 	font-size: 12.8px;
 	height: 32px;
 }
+.btt_small{
+	font-size: 10.8px;
+	height: 28px;
+	padding: 0px 8px;
+}
 .btt_full{
 	font-size: 12.8px;
 	width: 100%;
@@ -60,4 +65,12 @@
 /*ICON IN BUTTON*/
 .button>.ic_btt{
 	margin-right: 8px;
+}
+.button_board_bottom{
+	align-self: flex-end;
+}
+@media screen and (max-width: 680px) {
+	.button_board_bottom{
+		align-self: center;
+	}
 }

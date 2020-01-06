@@ -40,6 +40,7 @@
 
       this.querySelector('#menu').addEventListener("click",function(){
         slide_menu.classList.toggle("open");
+        $("body").addClass("scroll_disable");
         // this.classList.toggle("opacity_0");
       });
       this.querySelector('#signup').addEventListener("click",function(event){

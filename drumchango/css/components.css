@@ -18,7 +18,7 @@ html, body{
 		display: inherit;
 	}
 	.only_pc{
-		display: none;
+		display: none !important;
 	}
 }
 
@@ -55,7 +55,7 @@ html, body{
 	
 }
 #search_bar_main{
-	margin-left: -124px;
+	margin-left: -64px;
 }
 .search_bar>input{
 	width: 320px;
@@ -871,4 +871,8 @@ html, body{
 .ic_close{
 	width: 24px;
 	height: 24px;
+}
+
+.scroll_disable{
+	overflow: hidden !important;
 }
