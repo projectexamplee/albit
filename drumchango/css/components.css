@@ -401,7 +401,7 @@ html, body{
 	background-position: center;
 	width: 100%;
 	padding: 16px;
-	height: 128px;
+	height: 131px;
 }
 .container_img_bg_big{
 	height: 168px;
@@ -493,7 +493,7 @@ html, body{
 	background-position: center;
 }
 .news_list_img{
-	height: 100px;
+	height: 97px;
 }
 .news_list_img>.list_info{
 	width:calc(100% - 88px - 36px);
@@ -604,7 +604,7 @@ html, body{
 	align-items: center;
 	justify-content: center;
 	width: 20%;
-	padding-bottom: 20px;
+	padding-bottom: 19px;
 }
 .artist_8_fix{
 	display: flex;
