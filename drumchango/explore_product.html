@@ -26,7 +26,26 @@
 		</div>
 	</div>
 	<!--CONTENT AREA-->
-	<div id="product_tab" class="search_tab_content live_area flex_row margin_t_2x">
+	<div class="live_area flex_row">
+		<!--CATEGORY-->
+		<div class="flex_col col1 border_radius white_bg margin_b_2x">
+			<!--ALL CATEGORY-->
+			<div class="flex_row col1 padding_1x only_pc border_bottom">
+				<p class="col1 black300 caption padding_l_2x">
+					모든 카테고리
+				</p>
+				<menu-hor-prd-all class="col1"></menu-hor-prd-all>
+			</div>
+			<!--POPULAR CATEGORY-->
+			<div class="flex_row col1 white_bg padding_1x">
+				<p class="col1 black300 caption padding_l_2x">
+					인기 카테고리
+				</p>
+				<menu-hor-prd-pop class="col1"></menu-hor-prd-pop>
+			</div>
+		</div>
+	</div>
+	<div id="product_tab" class="search_tab_content live_area flex_row">
 		<div class="search_result">
 			<div class="col_cetegory padding_2x white_bg">
 				<dropdown-ctg-prd></dropdown-ctg-prd>
@@ -235,4 +254,6 @@
 <link rel="import" href="components/ListProduct/ListProduct.html">
 <link rel="import" href="components/DropDownCategoryProduct/DropDownCategoryProduct.html">
 <link rel="import" href="components/ListGeneralPost/ListGeneralPost.html">
+<link rel="import" href="components/MenuHorPrdAll/MenuHorPrdAll.html">
+<link rel="import" href="components/MenuHorPrdPop/MenuHorPrdPop.html">
 </html>

@@ -35,6 +35,7 @@ html, body{
 	height: 100%;
 	z-index: 999;
 	transition: left 0.3s;
+	overflow-y: scroll;
 }
 .slide_menu.open{
 	left: 0% !important;
@@ -66,8 +67,8 @@ html, body{
 @media screen and (max-width: 680px) {
 	.search_bar{
 		height: 48px;
-		margin:16px !important;
-		width: calc(100% - 32px);
+		margin:8px !important;
+		width: calc(100% - 16px);
 	}
 	.search_bar>input{
 		width: calc(100% - 48px);
@@ -209,6 +210,18 @@ html, body{
 	background-color: #ffffff;
 	cursor: pointer;
 }
+.tab_sub2>.circle_small{
+	position: absolute;
+	top:2px;
+	left:2px;
+	border-radius: 6px;
+	width: 12px;
+	height: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 8.6px;
+}
 .tab_sub2.selected{
 	color:#ffffff;
 	background-color: #EE4123;
@@ -309,6 +322,7 @@ html, body{
 @media screen and (max-width: 680px) {
 	.tab_main{
 		width: calc(33.3% - 32px);
+		height: 32px;
 	}
 	.sub_tab_list{
 		position: relative;
@@ -455,13 +469,24 @@ html, body{
 }
 
 .card>.title.body{
-	height: 36px;
+	height: 40px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
 	-webkit-line-clamp: 2; /* 라인수 */
 	-webkit-box-orient: vertical;
 	word-wrap:break-word;
+	position: relative;
+}
+#title_sentence{
+	width: calc(100% - 20px);
+}
+#num_reply{
+	position: absolute;
+	top:16px;
+	right:0px;
+	padding:4px;
+	background-color: #fff;
 }
 .card>.title_s.body{
 	height: 18px !important;

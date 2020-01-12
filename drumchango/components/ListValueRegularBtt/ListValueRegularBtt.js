@@ -18,7 +18,7 @@
     connectedCallback() {
       const templete = document.importNode(HTMLTemplate.content, true);
       const title = this.getAttribute("title");
-      const value = this.getAttribute("value");
+      const value = this.getAttribute("input_value");
       const button = this.getAttribute("button");
 
       this.appendChild(templete);

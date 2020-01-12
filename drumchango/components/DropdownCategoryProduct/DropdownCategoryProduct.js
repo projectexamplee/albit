@@ -93,7 +93,7 @@
 
   function addTabList(){
      $.map( menuList, function( item, i ) {
-        $("#prd_ctg").append("<div class='flex_row padding_1x caption black600'>"
+        $("#prd_ctg").append("<div class='flex_row padding_1x border_bottom caption black600'>"
                             + "<img class='margin_r_1x' src='img/ic/ic_extend_black600.svg'>"
                            + "<span>" + item.title + "(" + item.numb + ") </span>"
                             + "</div>");

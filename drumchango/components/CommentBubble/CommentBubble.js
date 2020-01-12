@@ -34,7 +34,7 @@
 
 
       this.querySelector("#ic_reply").addEventListener("click",function(){
-        comment_action.classList.add("hide");
+        // comment_action.classList.add("hide");
         replyInput.classList.remove("hide");
         replyList.classList.remove("hide");
       });

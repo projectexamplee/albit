@@ -193,10 +193,14 @@
         console.log(brandList);
         $.map( brandList, function( item, i ) {
          if(i==0){
-            $("#brand").append("<div class='tab_sub2 selected'>"+ item.title + "</div>");
+            $("#brand").append("<div class='tab_sub2 selected'>"
+                                + "<div class='circle_small black100_bg w700 black300'>" + (i+1) +"</div>"
+                                + item.title + "</div>");
           }
           else{
-            $("#brand").append("<div class='tab_sub2'>"+ item.title + "</div>");
+            $("#brand").append("<div class='tab_sub2'>"
+                                + "<div class='circle_small black100_bg w700 black300'>" + (i+1) +"</div>"
+                                + item.title + "</div>");
           }
       });
     }

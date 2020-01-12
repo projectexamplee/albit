@@ -17,7 +17,54 @@
     // Called when element is inserted in DOM
     connectedCallback() {
       const templete = document.importNode(HTMLTemplate.content, true);
+      const isLoged = this.getAttribute('isLoged');
       this.appendChild(templete);
+
+      console.log(isLoged);
+      if(isLoged=='no'){
+        $("#slide_loged").addClass("hide");
+        $("#slide_logedout").removeClass("hide");
+        $("#signout").addClass("hide");
+      }
+      else{
+        $("#slide_loged").removeClass("hide");
+        $("#slide_logedout").addClass("hide");
+        $("#signout").removeClass("hide");
+      }
+
+      this.querySelector('#signup').addEventListener("click",function(event){
+          event.stopPropagation();
+          addModal("signup");
+      });
+      this.querySelector('#signin').addEventListener("click",function(event){
+          event.stopPropagation();
+          addModal("signin");
+      });
+
+      function addModal(type){
+          $("body").append("<div class='modal_bg'></div>");
+
+          if(type=="signup"){
+            $(".modal_bg").append("<modal-regular-signup id='" + type + "'></modal-regular-signup>");
+            $(".modal_regular").on("click",function(event){
+              event.stopPropagation();
+            });
+          }
+          else if(type=="signin"){
+            $(".modal_bg").append("<modal-regular-signin id='" + type + "'></modal-regular-signin>");
+            $(".modal_regular").on("click",function(event){
+              event.stopPropagation();
+            });
+          }
+
+          $("body").on("click",function(){
+            $(".modal_bg").remove();
+          });
+          $(".ic_close").on("click",function(){
+            $(".modal_bg").remove();
+          });
+
+      }
 
       // const shadowRoot = this.attachShadow({ mode: 'open' });
 
@@ -94,7 +141,7 @@
         ];
   $(document).ready(function(){
     $.map( menuList, function( item, i ) {
-       $("#menu_list").append("<div class='flex_row padding_1x caption black600'>"
+       $("#menu_list").append("<div class='flex_row padding_2x body border_bottom black600'>"
                             + "<img class='margin_r_1x' src='img/ic/ic_extend_black600.svg'>"
                            + "<span>" + item.title + "(" + item.numb + ") </span>"
                             + "</div>");

@@ -18,6 +18,11 @@
 				margin-bottom: 0px;
 			}
 		}
+		.logedout{
+			/*position: absolute;
+			top:0;
+			right:0;*/
+		}
 	</style>
 	<div class="navi_bar margin_navi flex_row align_center col1 white_bg  space_between">
 		<div class="progressive_bar">
@@ -77,8 +82,15 @@
 					포인트 충전
 				</div> -->
 			</div>
-			<div class="logedout flex_row col1">
-				<div id="signup" class="button btt_medium primary600_bg white900 margin_r_1x">
+			<div class="logedout flex_row align_center col1">
+				<!-- <a href="cs.html" class="ic_container">
+					<img id="cs" src="img/ic/ic_cs.svg" style="width:20px; height: 19px;">
+				</a> -->
+				<a id="ic_cart" href="cart.html" class="ic_container margin_r_1x">
+					<div class="num_cart">3</div>
+					<img id="cart" src="img/ic/ic_cart.svg">
+				</a>
+				<div id="signup" class="button btt_medium primary600_bg white900 margin_r_1x only_pc">
 					회원가입
 				</div>
 				<div id="signin" class="button btt_medium primary600">

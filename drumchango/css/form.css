@@ -107,7 +107,7 @@ option[disabled]{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	height: 64px;
 	width: 100%;
 }
@@ -119,13 +119,14 @@ option[disabled]{
 		margin-bottom: 8px;
 	}
 	.list_text_single>.form{
-		width: 100%;
+		width: 100% !important;
 	}
 	.list_text_single{
 		height: auto !important;
 	}
 	.list_text_single>label{
 		margin:8px 0;
+		width: 100% !important;
 	}
 }
 .list_text_single>.col3{
@@ -164,7 +165,7 @@ option[disabled]{
 /*List with button*/
 .list_text_single_btt{
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: center;
 	height: 64px;
@@ -189,11 +190,12 @@ option[disabled]{
 		width: calc(100% - 72px) !important;
 		margin-right: 8px;
 	}
-	.list_text_single_btt>.form{
+	/*.list_text_single_btt>.form{
 		width: calc(100% - 80px) !important;
-	}
+	}*/
 	.list_text_single_btt>label{
 		margin:8px 0;
+		width: 100%;
 	}
 }
 .list_text_single_btt>.button{

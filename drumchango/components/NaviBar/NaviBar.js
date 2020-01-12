@@ -27,14 +27,16 @@
         $("#search_bar_input").attr("value",keyword);
       }
       
-      if(!isLoged){
+      if(isLoged!='no'){
+        console.log("login");
         $(".logedout").addClass("hide");
       }
       else if(isLoged=='no'){
+        console.log("logout");
+        $("slide-menu").attr('isLoged','no');
         $(".loged").addClass("hide");
         $(".logedout").removeClass("hide");
-        // this.querySelector(".loged").classList.add("hide");
-        // this.querySelector(".logedout").classList.remove("hide");
+        $("slide-menu").attr("isLoged",isLoged);
       }
 
 

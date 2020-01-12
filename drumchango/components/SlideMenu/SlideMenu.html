@@ -5,16 +5,53 @@
 			top:0;
 			left:0;
 		}
+		#my_menu_slide{
+			margin-left: -16;
+    		width: calc(100% + 32px);
+		}
 	</style>
-	<div class="flex_col col1 padding_4x white_bg">
+	<div class="flex_col col1 padding_2x white_bg">
 		<div class="ic_container ic_slide_close">
 			<img src="img/ic/ic_close.svg">
 		</div>
-		<p class="subtitle w700 black600 margin_b_2x margin_t_4x">
+		<div id="my_menu_slide" class="flex_col col1 padding_2x margin_t_4x body_bg">
+			<div id="slide_loged" class="flex_col col1">
+				<div class="flex_row col1 body align_center space_between">
+					<a href="my_page.html" class="flex_row align_center">
+						<div id="my_photo" class="my_profile margin_r_1x">
+						</div>
+						<p>
+							<span>username</span>
+							<span>.LV2</span>
+						</p>
+					</a>
+					<p>
+						<span>
+							포인트: ₩
+						</span>
+						<span>
+							1,231
+						</span>
+					</p>
+				</div>	
+			</div>
+			<div id="slide_logedout" class="flex_row col1 space_between border_radius white_bg">
+				<div id="signup" class="button btt_medium primary600_bg  col2 white900">
+					회원가입
+				</div>
+				<div id="signin" class="button btt_medium primary_border col2 primary600">
+					로그인
+				</div>
+			</div>
+		</div>
+		<p class="subtitle w700 black600 margin_b_1x margin_t_2x">
 			제품 카테고리
 		</p>
 		<div id="menu_list" class="flex_col col1">
 		</div>
+		<div id="signout" class="button col margin_t_4x btt_medium primary_border primary600">
+			로그아웃
+		</div>	
 	</div>
 </template>
 <script src="SlideMenu.js" type="text/javascript"></script>

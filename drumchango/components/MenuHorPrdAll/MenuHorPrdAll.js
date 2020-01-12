@@ -81,7 +81,7 @@
   ];
   $(document).ready(function(){
     $.map( menuList, function( item, i ) {
-       $("#ctg_all_container").append("<div class='caption black600 button tab_small'>"+ item.title + "</div>");
+       $("#ctg_all_container").append("<div class='caption black600 button tab_ctg tab_small'>"+ item.title + "</div>");
     });
   });
 

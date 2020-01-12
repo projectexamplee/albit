@@ -151,6 +151,38 @@ img.col2{
 .margin_t_6x{
 	margin-top: 48px;
 }
+
+@media screen and (max-width: 680px) {
+	/*BOTTOM*/
+	.margin_b_1x{
+		margin-bottom: 6px;
+	}
+	.margin_b_2x{
+		margin-bottom: 12px;
+	}
+	.margin_b_3x{
+		margin-bottom: 18px;
+	}
+	.margin_b_4x{
+		margin-bottom: 24px;
+	}
+	/*TOP*/
+	.margin_t_1x{
+		margin-top: 6px;
+	}
+	.margin_t_2x{
+		margin-top: 12px;
+	}
+	.margin_t_3x{
+		margin-top: 18px;
+	}
+	.margin_t_4x{
+		margin-top: 24px;
+	}
+}
+
+
+
 .padding_s{
 	padding:4px;
 }

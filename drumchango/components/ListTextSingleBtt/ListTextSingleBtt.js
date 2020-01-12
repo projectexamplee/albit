@@ -19,8 +19,8 @@
       const templete = document.importNode(HTMLTemplate.content, true);
       const title = this.getAttribute("title");
       const placeholder = this.getAttribute("placeholder");
-      const btt_label = this.getAttribute("btt_label");
-      const value = this.getAttribute("intput_value");
+      const btt_label = this.getAttribute("button");
+      const value = this.getAttribute("input_value");
 
 
       this.appendChild(templete);

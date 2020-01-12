@@ -52,7 +52,9 @@
 .dark_blue_bg{
 	background-color: #2F4050;
 }
-
+.body_bg{
+	background-color: #f7f6f5;
+}
 
 /*BORDER COlOR*/
 .primary_border{
