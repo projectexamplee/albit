@@ -897,7 +897,11 @@ html, body{
 	width: 24px;
 	height: 24px;
 }
-
 .scroll_disable{
 	overflow: hidden !important;
+}
+.btt_more_small{
+	text-decoration: underline;
+	font-size: 10.8px;
+	color: #a0a0a0;
 }
