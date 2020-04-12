@@ -52,10 +52,15 @@
 						비우기
 					</div>
 				</div>
-				<div class="button border_radius btt_medium black100_bg black600 mobile_col1" style="">
+				<a 
+					id="btt_print_estimate"
+					class="button border_radius btt_medium black100_bg black600 mobile_col1" 
+					href="print_estimate.html"
+					target="_blank"
+					style="">
 					<img class="ic_btt" src="img/ic/ic_print.svg">
 					선택상품 견적서 출력
-				</div>
+				</a>
 			</div>
 		</div>
 		<!--주문하기-->
@@ -83,18 +88,28 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
-	// /*CENTER SUBTAB ARRAY*/
-	// subTabList = [
-	// 			  "전체",
-	// 			  "뉴스",
-	// 			  "드럼영상",
-	// 			  "사진갤러리",
-	// 			  "중고장터",
-	// 			  "출고후기",
-	// 			  "상품후기",
-	// 			  "아티스트",
-	// 			  "자유게시판"
-	// 				];
+	document.querySelector('#btt_print_estimate').addEventListener("click",function(event){
+          event.stopPropagation();
+          addModal("print_estimate");
+     });
+	function addModal(type){
+          $("body").append("<div class='modal_bg'></div>");
+
+          if(type=="print_estimate"){
+            $(".modal_bg").append("<modal-regular-select-artist id='" + type + "'></modal-regular-select-artist>");
+            $(".modal_regular").on("click",function(event){
+              event.stopPropagation();
+            });
+          }
+
+          $("body").on("click",function(){
+            $(".modal_bg").remove();
+          });
+          $(".ic_close").on("click",function(){
+            $(".modal_bg").remove();
+          });
+
+      }
 </script>
 <link rel="import" href="components/NaviBar/NaviBar.html">
 <link rel="import" href="components/TabMain/TabMain.html">

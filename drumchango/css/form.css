@@ -83,6 +83,12 @@
 	border: none;
 	color: #383838;
 }
+.textfield{
+	height: 28px;
+	width: 100%;
+	font-weight: 400;
+	color: #383838;
+}
 .form>input[type=text]{
 	height: 28px;
 	width: 100%;
@@ -378,4 +384,17 @@ option[disabled]{
 	height: 8px;
 	border-radius: 50%;
 	background: white;
+}
+
+/*table*/
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  height: 50px;
 }
